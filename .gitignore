@@ -1,0 +1,7 @@
+venv/
+data/raw/
+indices/*.faiss
+models/*.pkl
+__pycache__/
+*.pyc
+.env

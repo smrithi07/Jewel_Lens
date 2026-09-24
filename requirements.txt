@@ -1,0 +1,11 @@
+torch
+torchvision
+transformers
+faiss-cpu
+flask
+scikit-learn
+pillow
+numpy
+pandas
+requests
+python-dotenv
