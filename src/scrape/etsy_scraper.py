@@ -1,11 +1,12 @@
 """
 Phase 1 — Etsy catalogue scraper.
-Scrapes by category x subtype x color facet, downloads ALL images per
-listing (tagged to the same catalogue_id) for real same-item photo pairs,
-and writes a metadata table.
+Uses includes=Images to avoid per-listing API calls (stays well under the
+5 QPS / 5000 QPD limit), with rate limiting, retry/backoff, and a resumable
+checkpoint so a crash or quota stop doesn't lose progress.
 """
 
 import os
+import json
 import time
 import requests
 import pandas as pd
@@ -17,32 +18,65 @@ API_KEY = config.ETSY_API_KEY
 BASE_URL = "https://openapi.etsy.com/v3/application/listings/active"
 HEADERS = {"x-api-key": API_KEY}
 
+_last_request_time = 0.0
+_request_count = 0
 
-def search_listings(query, limit=100, max_results=120):
+
+def _rate_limited_get(url, params):
+    """Enforces REQUESTS_PER_SECOND, retries on 429/5xx with backoff, tracks daily budget."""
+    global _last_request_time, _request_count
+
+    if _request_count >= config.DAILY_REQUEST_BUDGET - config.REQUEST_BUDGET_BUFFER:
+        raise RuntimeError("DAILY_BUDGET_REACHED")
+
+    min_interval = 1.0 / config.REQUESTS_PER_SECOND
+    elapsed = time.time() - _last_request_time
+    if elapsed < min_interval:
+        time.sleep(min_interval - elapsed)
+
+    max_retries = 5
+    for attempt in range(max_retries):
+        resp = requests.get(url, headers=HEADERS, params=params)
+        _last_request_time = time.time()
+        _request_count += 1
+
+        if resp.status_code == 200:
+            return resp
+        if resp.status_code == 429:
+            wait = int(resp.headers.get("Retry-After", 2 ** attempt))
+            print(f"    [429] rate limited, waiting {wait}s (attempt {attempt+1}/{max_retries})")
+            time.sleep(wait)
+            continue
+        if 500 <= resp.status_code < 600:
+            wait = 2 ** attempt
+            print(f"    [{resp.status_code}] server error, retrying in {wait}s")
+            time.sleep(wait)
+            continue
+        print(f"    [warn] HTTP {resp.status_code}: {resp.text[:150]}")
+        return resp
+    return resp
+
+
+def search_listings(query, max_results):
+    """Page through search results with includes=Images — no per-listing call needed."""
     results = []
     offset = 0
     while len(results) < max_results:
-        params = {"keywords": query, "limit": min(limit, max_results - len(results)), "offset": offset}
-        resp = requests.get(BASE_URL, headers=HEADERS, params=params)
+        params = {
+            "keywords": query,
+            "limit": min(100, max_results - len(results)),
+            "offset": offset,
+            "includes": "Images",
+        }
+        resp = _rate_limited_get(BASE_URL, params)
         if resp.status_code != 200:
-            print(f"  [warn] {query!r} -> HTTP {resp.status_code}: {resp.text[:200]}")
             break
-        data = resp.json()
-        batch = data.get("results", [])
+        batch = resp.json().get("results", [])
         if not batch:
             break
         results.extend(batch)
         offset += len(batch)
-        time.sleep(0.2)
     return results[:max_results]
-
-
-def get_listing_images(listing_id):
-    url = f"https://openapi.etsy.com/v3/application/listings/{listing_id}/images"
-    resp = requests.get(url, headers=HEADERS)
-    if resp.status_code != 200:
-        return []
-    return resp.json().get("results", [])
 
 
 def download_image(url, path):
@@ -57,10 +91,28 @@ def download_image(url, path):
     return False
 
 
+def load_progress():
+    if os.path.exists(config.SCRAPE_PROGRESS_PATH):
+        with open(config.SCRAPE_PROGRESS_PATH) as f:
+            return set(json.load(f))
+    return set()
+
+
+def save_progress(done_facets):
+    with open(config.SCRAPE_PROGRESS_PATH, "w") as f:
+        json.dump(list(done_facets), f)
+
+
+def append_partial(rows):
+    with open(config.SCRAPE_PARTIAL_PATH, "a") as f:
+        for row in rows:
+            f.write(json.dumps(row) + "\n")
+
+
 def scrape_facet(category, facet_type, facet_value, max_results):
     query = f"{facet_value} {category}"
     print(f"Searching: {query!r} ({facet_type}, target {max_results})")
-    listings = search_listings(query, max_results=max_results)
+    listings = search_listings(query, max_results)
 
     rows = []
     for listing in listings:
@@ -69,8 +121,7 @@ def scrape_facet(category, facet_type, facet_value, max_results):
         price_info = listing.get("price", {})
         price = price_info.get("amount", 0) / max(price_info.get("divisor", 1), 1)
         url = listing.get("url", "")
-
-        images = get_listing_images(listing_id)
+        images = listing.get("images", [])  # embedded via includes=Images, no extra call
         if not images:
             continue
 
@@ -100,32 +151,48 @@ def scrape_facet(category, facet_type, facet_value, max_results):
             "image_paths": ";".join(saved_images),
             "primary_image": saved_images[0],
         })
-    print(f"  -> got {len(rows)} listings, {sum(len(r['image_paths'].split(';')) for r in rows)} images")
+    print(f"  -> got {len(rows)} listings, {sum(len(r['image_paths'].split(';')) for r in rows)} images "
+          f"[{_request_count} API calls used]")
     return rows
 
 
 def main():
     os.makedirs(config.RAW_IMAGE_DIR, exist_ok=True)
-    all_rows = []
+    done_facets = load_progress()
 
+    facets_to_run = []
     for category, facet in config.SEARCH_FACETS.items():
         for subtype in facet.get("subtypes", []):
-            all_rows.extend(scrape_facet(category, "subtype", subtype, config.TARGET_PER_SUBTYPE))
+            facets_to_run.append((category, "subtype", subtype, config.TARGET_PER_SUBTYPE))
         for color in facet.get("colors", []):
-            all_rows.extend(scrape_facet(category, "color", color, config.TARGET_PER_COLOR))
+            facets_to_run.append((category, "color", color, config.TARGET_PER_COLOR))
 
-    df = pd.DataFrame(all_rows)
-    df.drop_duplicates(subset="catalogue_id", inplace=True)
-    df.to_parquet(config.CATALOGUE_METADATA_PATH, index=False)
+    for category, facet_type, value, target in facets_to_run:
+        key = f"{category}|{facet_type}|{value}"
+        if key in done_facets:
+            continue
+        try:
+            rows = scrape_facet(category, facet_type, value, target)
+            append_partial(rows)
+            done_facets.add(key)
+            save_progress(done_facets)
+        except RuntimeError as e:
+            if str(e) == "DAILY_BUDGET_REACHED":
+                print(f"\n[stop] Daily request budget reached ({_request_count} calls used). "
+                      f"Progress saved — rerun this script tomorrow to resume where it left off.")
+                break
+            raise
 
-    print(f"\nTotal listings: {len(df)}")
-    print(f"Total images: {df['image_paths'].apply(lambda p: len(p.split(';'))).sum()}")
-    print("\nCategory distribution:")
-    print(df["category"].value_counts())
-    print("\nSubtype distribution:")
-    print(df["subtype"].value_counts())
-    print("\nColor-query distribution:")
-    print(df["color_query"].value_counts())
+    # Consolidate partial results into the final parquet
+    if os.path.exists(config.SCRAPE_PARTIAL_PATH):
+        rows = [json.loads(line) for line in open(config.SCRAPE_PARTIAL_PATH)]
+        df = pd.DataFrame(rows).drop_duplicates(subset="catalogue_id")
+        df.to_parquet(config.CATALOGUE_METADATA_PATH, index=False)
+        print(f"\nTotal listings so far: {len(df)}")
+        print(f"Total images: {df['image_paths'].apply(lambda p: len(p.split(';'))).sum()}")
+        print(f"Facets completed: {len(done_facets)} / {len(facets_to_run)}")
+        print("\nCategory distribution:")
+        print(df["category"].value_counts())
 
 
 if __name__ == "__main__":

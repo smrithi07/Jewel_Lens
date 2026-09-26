@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jewel Lens</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <h1>Jewel Lens ✨</h1>
+      <p>Upload a photo and find matching pieces from our catalogue.</p>
+    </header>
+
+    <div class="upload-card">
+      <input type="file" id="fileInput" accept="image/*">
+      <button onclick="upload()">Find Matches</button>
+    </div>
+
+    <div id="filterBar" class="filter-bar" style="display:none;">
+      <label>Sort</label>
+      <select id="sortBy" onchange="reFilter()">
+        <option value="relevance">Relevance</option>
+        <option value="price_low">Price: Low to High</option>
+        <option value="price_high">Price: High to Low</option>
+      </select>
+      <label>Min ₹</label>
+      <input type="number" id="minPrice" onchange="reFilter()">
+      <label>Max ₹</label>
+      <input type="number" id="maxPrice" onchange="reFilter()">
+    </div>
+
+    <div id="status"></div>
+    <div id="results"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
