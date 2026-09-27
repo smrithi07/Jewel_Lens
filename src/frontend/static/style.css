@@ -198,3 +198,16 @@ button:hover {
   border-radius: 8px;
   margin-bottom: 8px;
 }
+
+#queryPreviewContainer {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+#queryPreviewImg {
+  max-width: 280px;
+  max-height: 280px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  object-fit: contain;
+}

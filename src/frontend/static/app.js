@@ -7,6 +7,7 @@ async function upload() {
     return;
   }
   lastFile = input.files[0];
+  showQueryPreview(lastFile);
   await runPredict();
 }
 
@@ -51,6 +52,15 @@ async function runPredict() {
   } catch (e) {
     statusEl.innerText = "Something went wrong: " + e;
   }
+}
+
+function showQueryPreview(file) {
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    document.getElementById('queryPreviewImg').src = e.target.result;
+    document.getElementById('queryPreviewContainer').style.display = 'block';
+  };
+  reader.readAsDataURL(file);
 }
 
 function renderResults(items) {
