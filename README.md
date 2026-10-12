@@ -96,3 +96,54 @@ Reports Recall@1, Recall@5, MRR, Detection Recall, Category Accuracy, confused-p
 - Python 3.10+
 - ~2GB free disk for model checkpoints (downloaded automatically on first run)
 - No GPU required — everything runs on CPU
+---
+
+## v2 (2026-10): running, evaluating, reproducing
+
+### Run the app
+
+```bash
+source venv2/bin/activate
+PORT=5001 python src/api/app.py      # AirPlay often holds port 5000 on macOS; default is still 5000
+```
+
+Open http://localhost:5001. What's new in the UI and API:
+- Each detected item shows its crop, the fused category with confidence, and a status with the reason (out-of-scope, low similarity).
+- Results come in two tiers: **Closest matches** (score ≥ `HIGH_MATCH_THRESHOLD`) and **Similar items**.
+- Every card has **More like this**.
+- `POST /predict`: each item now also returns `crop_image`, `category_confidence`, `detector_category`, `status_reason`, `out_of_scope_probability`, `closest_matches` and `similar_items`. `results` is kept for compatibility.
+- `GET /similar/<catalogue_id>?min_price=&max_price=&sort_by=relevance|price_low|price_high`: "more like this" for a catalogue listing (404 for unknown ids).
+- `GET /catalogue-image/<path>` now only serves files under `data/raw/`.
+- Prices are converted to INR at load time (`SHOP_CURRENCY`, `CURRENCY_TO_INR` in `config.py`).
+
+### Configuration switches (`config.py`)
+
+| setting | value | meaning |
+|---|---|---|
+| `CATEGORY_MODE` | `"fused"` | `"legacy"` restores v1 category and re-rank |
+| `HIGH_MATCH_THRESHOLD` / `LOW_MATCH_THRESHOLD` / `MARGIN_THRESHOLD` | 0.74 / 0.475 / 0.0 | calibrated in Phase 8 (v1: 0.65 / 0.45 / 0.03) |
+| `OOS_THRESHOLD` | 0.813 | CLIP out-of-scope check |
+| `MMR_LAMBDA_PREDICT` / `MMR_LAMBDA_SIMILAR` | 1.0 / 0.7 | diversity re-rank off for photo search, on for "more like this" |
+
+v2 artifacts: `artifacts/category_v2/` (retrained classifier, fusion weights, CLIP prompts) and `artifacts/openset/` (out-of-scope prompts, calibration). Experiments that were not adopted are kept under `artifacts/` (`dinov2_ft`, `dinov2_ftaug`, `dinov2_nobg`, `clip_b32`). Backups of every replaced file are in `artifacts_backup/<timestamp>/`.
+
+### Evaluation (each script appends its tables to `results/LOG.md` and writes `results/<phase>.json`)
+
+```bash
+python src/eval/splits.py                      # fixed splits (already created; refuses to overwrite)
+python src/eval/retrieval_eval.py --split val  # catalogue same-listing protocol + augmentations + pipeline mode
+python src/eval/own_eval.py                    # own photos, holdout: counts, category, graded nDCG, negatives
+python src/eval/category_fusion.py             # Phase 4 category signals and fusion (tune -> holdout)
+python src/eval/detection_bench.py             # Phase 5 detectors / prompts / post-processing (needs detection caches)
+python src/eval/embedding_eval.py              # Phase 6 embedding variants (needs artifacts/eval_cache)
+python src/train/train_head.py                 # Phase 7 projection head (train split only)
+python src/eval/calibrate.py                   # Phase 8 open-set thresholds
+python src/eval/diversity.py                   # Phase 8 MMR lambda
+python src/eval/final_eval.py                  # Phase 10: v1 vs v2 on holdout + test, latency per stage
+```
+
+Manual-labelling helpers: `python src/eval/prepare_own_eval.py` (label and grade pages), `--topup <detections.json> --name <x>` (grade only new results) and `--pool a.json,b.json --half tune --name <x>` (blind pooled grading).
+
+Optional dependency for the background-removal experiment only: `pip install "rembg[cpu]"`. The production app does not need it.
+
+Results summary: see `writeup.md` (Part C) and `results/LOG.md`.

@@ -1,0 +1,83 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading detector: google/owlvit-base-patch32 ...
+Loading weights:   0%|          | 0/412 [00:00<?, ?it/s]Loading weights: 100%|██████████| 412/412 [00:00<00:00, 13709.05it/s]
+Loading embedder: facebook/dinov2-base ...
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 14390.80it/s]
+Loading FAISS index...
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 37262.73it/s]
+  [final] 11/142 (8%) | 2.2/s | ETA 1.0 min
+  [final] 24/142 (17%) | 2.4/s | ETA 0.8 min
+  [final] 35/142 (25%) | 2.2/s | ETA 0.8 min
+  [final] 45/142 (32%) | 2.2/s | ETA 0.8 min
+  [final] 57/142 (40%) | 2.2/s | ETA 0.6 min
+  [final] 68/142 (48%) | 2.2/s | ETA 0.6 min
+  [final] 79/142 (56%) | 2.2/s | ETA 0.5 min
+  [final] 89/142 (63%) | 2.1/s | ETA 0.4 min
+  [final] 100/142 (70%) | 2.1/s | ETA 0.3 min
+  [final] 113/142 (80%) | 2.2/s | ETA 0.2 min
+  [final] 125/142 (88%) | 2.2/s | ETA 0.1 min
+  [final] 138/142 (97%) | 2.2/s | ETA 0.0 min
+  [final] 142/142 (100%) | 2.2/s | ETA 0.0 min
+## Phase 10 — final evaluation (2026-10-12T13:14:15)
+
+Final config: `{'CATEGORY_MODE': 'fused', 'HIGH_MATCH_THRESHOLD': 0.74, 'LOW_MATCH_THRESHOLD': 0.475, 'MARGIN_THRESHOLD': 0.0, 'OOS_THRESHOLD': 0.813, 'MMR_LAMBDA_PREDICT': 1.0, 'MMR_LAMBDA_SIMILAR': 0.7, 'DETECTOR_MODEL': 'google/owlvit-base-patch32', 'EMBEDDER_MODEL': 'facebook/dinov2-base'}`.
+
+**A. Real phone photos (stumper holdout, 73 photos; 95% bootstrap CIs; never used to choose)**
+
+| metric | v1 baseline | v2 final |
+|---|---|---|
+| Detection recall | 0.984 [0.953, 1.000] | 0.984 [0.953, 1.000] |
+| Category accuracy (first item) | 0.589 [0.464, 0.732] | 0.946 [0.893, 1.000] |
+| Item-category F1 | 0.517 [0.413, 0.619] | 0.813 [0.745, 0.872] |
+| Count exact | 0.629 [0.484, 0.758] | 0.629 [0.484, 0.758] |
+| Graded nDCG@5 | 0.899 [0.841, 0.948] | 0.904 [0.837, 0.955] |
+| P@5 (grade ≥ 2) | 0.924 [0.864, 0.980] | 0.924 [0.856, 0.980] |
+| Success@1 | 0.880 [0.780, 0.960] | 0.960 [0.900, 1.000] |
+| judged@5 | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] |
+| False-reject rate (positive photos) | 0.000 [0.000, 0.000] | 0.063 [0.016, 0.127] |
+| False-accept rate (negative photos) | 0.556 [0.222, 0.889] | 0.333 [0.000, 0.667] |
+| … non-jewellery | 0.200 [0.000, 0.600] | 0.000 [0.000, 0.000] |
+| … out-of-scope jewellery | 1.000 [1.000, 1.000] | 0.750 [0.250, 1.000] |
+
+**B. Catalogue retrieval, test split (same-listing protocol)**
+
+| metric | v1 baseline (legacy re-rank, HNSW) | v2 final (fused re-rank) |
+|---|---|---|
+| R@1 | 0.314 | 0.318 |
+| R@5 | 0.438 | 0.440 |
+| R@10 | 0.497 | 0.497 |
+| MRR | 0.376 | 0.379 |
+| nDCG@5 | 0.383 | 0.386 |
+| category P@5 (non-set) | 0.957 | 0.971 |
+| graded nDCG@5 (trusted labels) | 0.000 | 0.730 |
+
+Per augmentation (test, R@1 / MRR):
+
+| aug | v1 baseline | v2 final |
+|---|---|---|
+| clean | 0.320 / 0.376 | 0.318 / 0.379 |
+| blur | 0.133 / 0.183 | 0.133 / 0.185 |
+| low_light | 0.300 / 0.355 | 0.300 / 0.355 |
+| bright_contrast | 0.280 / 0.343 | 0.280 / 0.344 |
+| rotate | 0.280 / 0.341 | 0.280 / 0.343 |
+| crop_zoom | 0.277 / 0.341 | 0.280 / 0.345 |
+| jpeg | 0.313 / 0.365 | 0.313 / 0.366 |
+| busy_bg | 0.083 / 0.129 | 0.087 / 0.134 |
+| perspective | 0.303 / 0.360 | 0.303 / 0.361 |
+| combined | 0.137 / 0.186 | 0.140 / 0.190 |
+
+**C. Latency per stage, final pipeline (CPU, one image at a time, per detected item unless noted)**
+
+| stage | p50 ms | p95 ms | n |
+|---|---|---|---|
+| preprocess | 13.5 | 22.9 | 142 |
+| detect | 261.1 | 272.6 | 142 |
+| crop | 0.2 | 0.5 | 196 |
+| embed (DINOv2) | 95.0 | 103.1 | 196 |
+| search (HNSW) | 0.2 | 0.3 | 196 |
+| category (kNN + CLIP + clf) | 33.5 | 36.9 | 196 |
+| out-of-scope check | 0.0 | 0.0 | 196 |
+| re-rank | 0.0 | 0.0 | 196 |
+| decide | 0.0 | 0.0 | 196 |
+| MMR + tiers | 0.0 | 0.0 | 196 |
+| TOTAL per photo | 410.1 | 681.8 | 142 |

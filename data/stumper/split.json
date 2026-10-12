@@ -1,0 +1,741 @@
+{
+  "meta": {
+    "seed": 42,
+    "stratify": "folder",
+    "rule": "existing assignments frozen; new photos go to the smaller half of their folder",
+    "summary": {
+      "bracelet": {
+        "tune": 11,
+        "holdout": 12
+      },
+      "earring": {
+        "tune": 33,
+        "holdout": 34
+      },
+      "mixed": {
+        "tune": 6,
+        "holdout": 7
+      },
+      "necklace": {
+        "tune": 11,
+        "holdout": 11
+      },
+      "negatives": {
+        "tune": 8,
+        "holdout": 9
+      }
+    }
+  },
+  "photos": {
+    "data/negatives/brooch.jpeg": {
+      "folder": "negatives",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/negatives/hairclip.jpeg": {
+      "folder": "negatives",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/negatives/keychain.jpeg": {
+      "folder": "negatives",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/negatives/perfume.jpeg": {
+      "folder": "negatives",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/negatives/sg.jpeg": {
+      "folder": "negatives",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/negatives/shoes.jpeg": {
+      "folder": "negatives",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b1.jpeg": {
+      "folder": "bracelet",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b10.jpeg": {
+      "folder": "bracelet",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b11.jpeg": {
+      "folder": "bracelet",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b12.jpeg": {
+      "folder": "bracelet",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b13.jpeg": {
+      "folder": "bracelet",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b14.jpeg": {
+      "folder": "bracelet",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b15.jpeg": {
+      "folder": "bracelet",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b16.jpeg": {
+      "folder": "bracelet",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b17.jpeg": {
+      "folder": "bracelet",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b18.jpeg": {
+      "folder": "bracelet",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b19.jpeg": {
+      "folder": "bracelet",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b2.jpeg": {
+      "folder": "bracelet",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b20.jpeg": {
+      "folder": "bracelet",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b21.jpeg": {
+      "folder": "bracelet",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b22.jpeg": {
+      "folder": "bracelet",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b23.jpeg": {
+      "folder": "bracelet",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b3.jpeg": {
+      "folder": "bracelet",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b4.jpeg": {
+      "folder": "bracelet",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b5.jpeg": {
+      "folder": "bracelet",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b6.jpeg": {
+      "folder": "bracelet",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b7.jpeg": {
+      "folder": "bracelet",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b8.jpeg": {
+      "folder": "bracelet",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/bracelet/b9.jpeg": {
+      "folder": "bracelet",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e1.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e10.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e11.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e12.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e13.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e14.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e15.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e16.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e17.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e18.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e19.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e2.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e20.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e21.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e22.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e23.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e24.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e25.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e26.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e27.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e28.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e29.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e3.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e30.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e31.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e32.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e33.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e34.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e35.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e36.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e37.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e38.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e39.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e4.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e40.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e41.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e42.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e43.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e44.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e45.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e46.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e47.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e48.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e49.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e5.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e50.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e51.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e52.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e53.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e54.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e55.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e56.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e57.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e58.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e59.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e6.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e60.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e67.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e68.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e69.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e7.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e70.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e71.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e72.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e73.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e8.jpeg": {
+      "folder": "earring",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/earring/e9.jpeg": {
+      "folder": "earring",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/mixed/call.jpeg": {
+      "folder": "mixed",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/mixed/m1.jpeg": {
+      "folder": "mixed",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/mixed/m10.jpeg": {
+      "folder": "mixed",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/mixed/m11.jpeg": {
+      "folder": "mixed",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/mixed/m12.jpeg": {
+      "folder": "mixed",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/mixed/m2.jpeg": {
+      "folder": "mixed",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/mixed/m3.jpeg": {
+      "folder": "mixed",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/mixed/m4.jpeg": {
+      "folder": "mixed",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/mixed/m5.jpeg": {
+      "folder": "mixed",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/mixed/m6.jpeg": {
+      "folder": "mixed",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/mixed/m7.jpeg": {
+      "folder": "mixed",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/mixed/m8.jpeg": {
+      "folder": "mixed",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/mixed/m9.jpeg": {
+      "folder": "mixed",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/Chain.jpeg": {
+      "folder": "necklace",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c1.jpeg": {
+      "folder": "necklace",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c10.jpeg": {
+      "folder": "necklace",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c11.jpeg": {
+      "folder": "necklace",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c12.jpeg": {
+      "folder": "necklace",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c13.jpeg": {
+      "folder": "necklace",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c14.jpeg": {
+      "folder": "necklace",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c15.jpeg": {
+      "folder": "necklace",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c17.jpeg": {
+      "folder": "necklace",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c18.jpeg": {
+      "folder": "necklace",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c19.jpeg": {
+      "folder": "necklace",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c2.jpeg": {
+      "folder": "necklace",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c20.jpeg": {
+      "folder": "necklace",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c21.jpeg": {
+      "folder": "necklace",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c3.jpeg": {
+      "folder": "necklace",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c4.jpeg": {
+      "folder": "necklace",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c5.jpeg": {
+      "folder": "necklace",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c6.jpeg": {
+      "folder": "necklace",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c7.jpeg": {
+      "folder": "necklace",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c8.jpeg": {
+      "folder": "necklace",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/c9.jpeg": {
+      "folder": "necklace",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/necklace/choker.jpeg": {
+      "folder": "necklace",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/negatives/anklet.jpeg": {
+      "folder": "negatives",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/negatives/carving.jpeg": {
+      "folder": "negatives",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/negatives/clip.jpeg": {
+      "folder": "negatives",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/negatives/dolls.jpeg": {
+      "folder": "negatives",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/negatives/glass.jpeg": {
+      "folder": "negatives",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/negatives/glasses.jpeg": {
+      "folder": "negatives",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/negatives/ring.jpeg": {
+      "folder": "negatives",
+      "half": "holdout",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/negatives/rings.jpeg": {
+      "folder": "negatives",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/negatives/scrunchie.jpeg": {
+      "folder": "negatives",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/negatives/scrunchie2.jpeg": {
+      "folder": "negatives",
+      "half": "tune",
+      "added": "2026-10-10"
+    },
+    "data/stumper/images/negatives/watch.jpeg": {
+      "folder": "negatives",
+      "half": "holdout",
+      "added": "2026-10-10"
+    }
+  }
+}

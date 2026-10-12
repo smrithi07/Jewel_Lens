@@ -1,0 +1,6581 @@
+{
+  "created": "2026-10-10T19:51:53",
+  "notes": {
+    "ground_truth": "folder name only; labels_draft.csv not used (circular)",
+    "mixed": "detection recall only until Phase 3 item labels",
+    "no_match_rate_neg": "v1 called this 'no-match precision'; it is the true-negative rate",
+    "headline": "holdout"
+  },
+  "latency_ms": {
+    "as_deployed": {
+      "p50": 409.4891875029134,
+      "p95": 638.6056163508327
+    },
+    "with_preprocess": {
+      "p50": 406.6266044974327,
+      "p95": 628.0478145472442
+    }
+  },
+  "records": {
+    "as_deployed": [
+      {
+        "photo": "data/negatives/brooch.jpeg",
+        "folder": "negatives",
+        "n_items": 3,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet",
+          "necklace",
+          "earring"
+        ],
+        "statuses": [
+          "no_match",
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.2653,
+          0.6391,
+          0.4678
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/negatives/hairclip.jpeg",
+        "folder": "negatives",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "no_match"
+        ],
+        "top1_sim": [
+          0.3138
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/negatives/keychain.jpeg",
+        "folder": "negatives",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5025,
+          0.6115
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/negatives/perfume.jpeg",
+        "folder": "negatives",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/negatives/sg.jpeg",
+        "folder": "negatives",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/negatives/shoes.jpeg",
+        "folder": "negatives",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b1.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.756
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b10.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7707
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b11.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.4764
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b12.jpeg",
+        "folder": "bracelet",
+        "n_items": 4,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "necklace",
+          "necklace",
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain",
+          "uncertain",
+          "no_match"
+        ],
+        "top1_sim": [
+          0.7283,
+          0.4514,
+          0.6404,
+          0.445
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b13.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5821
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b14.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5715
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b15.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6342
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b16.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5527
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b17.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.676
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b18.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7207
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b19.jpeg",
+        "folder": "bracelet",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b2.jpeg",
+        "folder": "bracelet",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet",
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6184,
+          0.5732
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b20.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5588
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b21.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6603
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b22.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.726
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b23.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5077
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b3.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "match"
+        ],
+        "top1_sim": [
+          0.7558
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b4.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6712
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b5.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7975
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b6.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6226
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b7.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6515
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b8.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6772
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b9.jpeg",
+        "folder": "bracelet",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet",
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6557,
+          0.6751
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e1.jpeg",
+        "folder": "earring",
+        "n_items": 4,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet",
+          "bracelet",
+          "bracelet",
+          "bracelet"
+        ],
+        "statuses": [
+          "match",
+          "uncertain",
+          "uncertain",
+          "match"
+        ],
+        "top1_sim": [
+          0.7026,
+          0.6642,
+          0.7489,
+          0.6888
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e10.jpeg",
+        "folder": "earring",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e11.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5537,
+          0.6064
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e12.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain",
+          "no_match"
+        ],
+        "top1_sim": [
+          0.5784,
+          0.4097
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e13.jpeg",
+        "folder": "earring",
+        "n_items": 4,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "no_match",
+          "uncertain",
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.3215,
+          0.751,
+          0.5863,
+          0.4919
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e14.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7017
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e15.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6806,
+          0.7402
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e16.jpeg",
+        "folder": "earring",
+        "n_items": 4,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain",
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6936,
+          0.6773,
+          0.6166,
+          0.7385
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e17.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "match"
+        ],
+        "top1_sim": [
+          0.7262,
+          0.6687
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e18.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "match",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6535,
+          0.6961
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e19.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7533,
+          0.756
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e2.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "no_match",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.4454,
+          0.5092
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e20.jpeg",
+        "folder": "earring",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e21.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7577
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e22.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "match"
+        ],
+        "top1_sim": [
+          0.6581,
+          0.683
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e23.jpeg",
+        "folder": "earring",
+        "n_items": 3,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring",
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5896,
+          0.7191,
+          0.5441
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e24.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7192
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e25.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "match",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7145,
+          0.7071
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e26.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6777
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e27.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "match"
+        ],
+        "top1_sim": [
+          0.657
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e28.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6557
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e29.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6299
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e3.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7311,
+          0.7102
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e30.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6809
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e31.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "no_match"
+        ],
+        "top1_sim": [
+          0.7502,
+          0.443
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e32.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5425
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e33.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "match"
+        ],
+        "top1_sim": [
+          0.6559
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e34.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "match"
+        ],
+        "top1_sim": [
+          0.8814
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e35.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5651,
+          0.6224
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e36.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6443
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e37.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6597
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e38.jpeg",
+        "folder": "earring",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e39.jpeg",
+        "folder": "earring",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e4.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.704,
+          0.7728
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e40.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6402
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e41.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "necklace",
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6127,
+          0.6096
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e42.jpeg",
+        "folder": "earring",
+        "n_items": 3,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7223,
+          0.6468,
+          0.6742
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e43.jpeg",
+        "folder": "earring",
+        "n_items": 3,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring",
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain",
+          "match"
+        ],
+        "top1_sim": [
+          0.5136,
+          0.5991,
+          0.6851
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e44.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7034,
+          0.6207
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e45.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "match",
+          "match"
+        ],
+        "top1_sim": [
+          0.7195,
+          0.6988
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e46.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6871
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e47.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6938
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e48.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "no_match"
+        ],
+        "top1_sim": [
+          0.4336
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e49.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "match",
+          "match"
+        ],
+        "top1_sim": [
+          0.7331,
+          0.7749
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e5.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6333,
+          0.6572
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e50.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.778,
+          0.6657
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e51.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.8302,
+          0.8173
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e52.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7607
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e53.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6614
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e54.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7506
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e55.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7145
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e56.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5533
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e57.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6739
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e58.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5759
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e59.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7741,
+          0.7385
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e6.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "match"
+        ],
+        "top1_sim": [
+          0.6119,
+          0.6553
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e60.jpeg",
+        "folder": "earring",
+        "n_items": 3,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6098,
+          0.6003,
+          0.6801
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e67.jpeg",
+        "folder": "earring",
+        "n_items": 3,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6538,
+          0.5432,
+          0.6588
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e68.jpeg",
+        "folder": "earring",
+        "n_items": 3,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain",
+          "no_match"
+        ],
+        "top1_sim": [
+          0.6313,
+          0.6178,
+          0.3515
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e69.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7309,
+          0.7207
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e7.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6785,
+          0.6585
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e70.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5347
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e71.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "match"
+        ],
+        "top1_sim": [
+          0.6941
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e72.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5173
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e73.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7356
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e8.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7989,
+          0.6523
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e9.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7334
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/mixed/call.jpeg",
+        "folder": "mixed",
+        "n_items": 4,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet",
+          "bracelet",
+          "bracelet",
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain",
+          "match",
+          "no_match",
+          "no_match"
+        ],
+        "top1_sim": [
+          0.6449,
+          0.7123,
+          0.167,
+          0.2496
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m1.jpeg",
+        "folder": "mixed",
+        "n_items": 3,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "necklace",
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "match",
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7247,
+          0.6485,
+          0.6349
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m10.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6016
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m11.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5937
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m12.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6086
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m2.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "match"
+        ],
+        "top1_sim": [
+          0.8354
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m3.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.8072
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m4.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.4859
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m5.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5524
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m6.jpeg",
+        "folder": "mixed",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "necklace",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7437,
+          0.6043
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m7.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6656
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m8.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6803
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m9.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.8305
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/Chain.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6046
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c1.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.8194
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c10.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.8888
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c11.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7405
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c12.jpeg",
+        "folder": "necklace",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "necklace",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.654,
+          0.6145
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c13.jpeg",
+        "folder": "necklace",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "necklace",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "match"
+        ],
+        "top1_sim": [
+          0.7757,
+          0.8023
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c14.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.8205
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c15.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "match"
+        ],
+        "top1_sim": [
+          0.7751
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c17.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "match"
+        ],
+        "top1_sim": [
+          0.6961
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c18.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.8448
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c19.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.8379
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c2.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7113
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c20.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7643
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c21.jpeg",
+        "folder": "necklace",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "necklace",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7724,
+          0.6146
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c3.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5747
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c4.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5658
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c5.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7346
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c6.jpeg",
+        "folder": "necklace",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "necklace",
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5047,
+          0.5653
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c7.jpeg",
+        "folder": "necklace",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "necklace",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7771,
+          0.7693
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c8.jpeg",
+        "folder": "necklace",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "no_match"
+        ],
+        "top1_sim": [
+          0.5527,
+          0.2821
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c9.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.588
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/choker.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5929
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/negatives/anklet.jpeg",
+        "folder": "negatives",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7773
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/negatives/carving.jpeg",
+        "folder": "negatives",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/negatives/clip.jpeg",
+        "folder": "negatives",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/negatives/dolls.jpeg",
+        "folder": "negatives",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/negatives/glass.jpeg",
+        "folder": "negatives",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "no_match"
+        ],
+        "top1_sim": [
+          0.3852
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/negatives/glasses.jpeg",
+        "folder": "negatives",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/negatives/ring.jpeg",
+        "folder": "negatives",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "match"
+        ],
+        "top1_sim": [
+          0.7244
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/negatives/rings.jpeg",
+        "folder": "negatives",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6442,
+          0.5444
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/negatives/scrunchie.jpeg",
+        "folder": "negatives",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/negatives/scrunchie2.jpeg",
+        "folder": "negatives",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "no_match"
+        ],
+        "top1_sim": [
+          0.3776
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/negatives/watch.jpeg",
+        "folder": "negatives",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.533
+        ],
+        "half": "holdout"
+      }
+    ],
+    "with_preprocess": [
+      {
+        "photo": "data/negatives/brooch.jpeg",
+        "folder": "negatives",
+        "n_items": 3,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet",
+          "necklace",
+          "earring"
+        ],
+        "statuses": [
+          "no_match",
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.2653,
+          0.6391,
+          0.4678
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/negatives/hairclip.jpeg",
+        "folder": "negatives",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "no_match"
+        ],
+        "top1_sim": [
+          0.3138
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/negatives/keychain.jpeg",
+        "folder": "negatives",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5025,
+          0.6115
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/negatives/perfume.jpeg",
+        "folder": "negatives",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/negatives/sg.jpeg",
+        "folder": "negatives",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/negatives/shoes.jpeg",
+        "folder": "negatives",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b1.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.756
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b10.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7707
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b11.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.4764
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b12.jpeg",
+        "folder": "bracelet",
+        "n_items": 4,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "necklace",
+          "necklace",
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain",
+          "uncertain",
+          "no_match"
+        ],
+        "top1_sim": [
+          0.7283,
+          0.4514,
+          0.6404,
+          0.445
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b13.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5821
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b14.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5715
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b15.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6342
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b16.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5527
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b17.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.676
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b18.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7207
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b19.jpeg",
+        "folder": "bracelet",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b2.jpeg",
+        "folder": "bracelet",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet",
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6184,
+          0.5732
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b20.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5588
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b21.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6603
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b22.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.726
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b23.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5077
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b3.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "match"
+        ],
+        "top1_sim": [
+          0.7558
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b4.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6712
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b5.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7975
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b6.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6226
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b7.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6515
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b8.jpeg",
+        "folder": "bracelet",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6772
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/bracelet/b9.jpeg",
+        "folder": "bracelet",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet",
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6557,
+          0.6751
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e1.jpeg",
+        "folder": "earring",
+        "n_items": 4,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet",
+          "bracelet",
+          "bracelet",
+          "bracelet"
+        ],
+        "statuses": [
+          "match",
+          "uncertain",
+          "uncertain",
+          "match"
+        ],
+        "top1_sim": [
+          0.7026,
+          0.6642,
+          0.7489,
+          0.6888
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e10.jpeg",
+        "folder": "earring",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e11.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5537,
+          0.6064
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e12.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain",
+          "no_match"
+        ],
+        "top1_sim": [
+          0.5784,
+          0.4097
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e13.jpeg",
+        "folder": "earring",
+        "n_items": 4,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "no_match",
+          "uncertain",
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.3215,
+          0.751,
+          0.5863,
+          0.4919
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e14.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7017
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e15.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6806,
+          0.7402
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e16.jpeg",
+        "folder": "earring",
+        "n_items": 4,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain",
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6936,
+          0.6773,
+          0.6166,
+          0.7385
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e17.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "match"
+        ],
+        "top1_sim": [
+          0.7262,
+          0.6687
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e18.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "match",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6535,
+          0.6961
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e19.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7533,
+          0.756
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e2.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "no_match",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.4454,
+          0.5092
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e20.jpeg",
+        "folder": "earring",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e21.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7577
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e22.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "match"
+        ],
+        "top1_sim": [
+          0.6581,
+          0.683
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e23.jpeg",
+        "folder": "earring",
+        "n_items": 3,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring",
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5896,
+          0.7191,
+          0.5441
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e24.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7192
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e25.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "match",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7145,
+          0.7071
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e26.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6777
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e27.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "match"
+        ],
+        "top1_sim": [
+          0.657
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e28.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6557
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e29.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6299
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e3.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7311,
+          0.7102
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e30.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6809
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e31.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "no_match"
+        ],
+        "top1_sim": [
+          0.7502,
+          0.443
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e32.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5425
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e33.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "match"
+        ],
+        "top1_sim": [
+          0.6559
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e34.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "match"
+        ],
+        "top1_sim": [
+          0.8814
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e35.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5651,
+          0.6224
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e36.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6443
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e37.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6597
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e38.jpeg",
+        "folder": "earring",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e39.jpeg",
+        "folder": "earring",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e4.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.704,
+          0.7728
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e40.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6402
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e41.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "necklace",
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6127,
+          0.6096
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e42.jpeg",
+        "folder": "earring",
+        "n_items": 3,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7223,
+          0.6468,
+          0.6742
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e43.jpeg",
+        "folder": "earring",
+        "n_items": 3,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring",
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain",
+          "match"
+        ],
+        "top1_sim": [
+          0.5136,
+          0.5991,
+          0.6851
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e44.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7034,
+          0.6207
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e45.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "match",
+          "match"
+        ],
+        "top1_sim": [
+          0.7195,
+          0.6988
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e46.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6871
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e47.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6938
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e48.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "no_match"
+        ],
+        "top1_sim": [
+          0.4336
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e49.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "match",
+          "match"
+        ],
+        "top1_sim": [
+          0.7331,
+          0.7749
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e5.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6333,
+          0.6572
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e50.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.778,
+          0.6657
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e51.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.8302,
+          0.8173
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e52.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7607
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e53.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6614
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e54.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7506
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e55.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7145
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e56.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5533
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e57.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6739
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e58.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5759
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e59.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7741,
+          0.7385
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e6.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "match"
+        ],
+        "top1_sim": [
+          0.6119,
+          0.6553
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e60.jpeg",
+        "folder": "earring",
+        "n_items": 3,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6098,
+          0.6003,
+          0.6801
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e67.jpeg",
+        "folder": "earring",
+        "n_items": 3,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6538,
+          0.5432,
+          0.6588
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e68.jpeg",
+        "folder": "earring",
+        "n_items": 3,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain",
+          "no_match"
+        ],
+        "top1_sim": [
+          0.6313,
+          0.6178,
+          0.3515
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e69.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7309,
+          0.7207
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/earring/e7.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6785,
+          0.6585
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e70.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5347
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e71.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "match"
+        ],
+        "top1_sim": [
+          0.6941
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e72.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5173
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e73.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7356
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e8.jpeg",
+        "folder": "earring",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7989,
+          0.6523
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/earring/e9.jpeg",
+        "folder": "earring",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7334
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/mixed/call.jpeg",
+        "folder": "mixed",
+        "n_items": 4,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet",
+          "bracelet",
+          "bracelet",
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain",
+          "match",
+          "no_match",
+          "no_match"
+        ],
+        "top1_sim": [
+          0.6449,
+          0.7123,
+          0.167,
+          0.2496
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m1.jpeg",
+        "folder": "mixed",
+        "n_items": 3,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring",
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "necklace",
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "match",
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7247,
+          0.6485,
+          0.6349
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m10.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6016
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m11.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5937
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m12.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6086
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m2.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "match"
+        ],
+        "top1_sim": [
+          0.8354
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m3.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.8072
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m4.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.4859
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m5.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5524
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m6.jpeg",
+        "folder": "mixed",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "necklace",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7437,
+          0.6043
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m7.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6656
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m8.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6803
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/mixed/m9.jpeg",
+        "folder": "mixed",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.8305
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/Chain.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6046
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c1.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.8194
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c10.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.8888
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c11.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7405
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c12.jpeg",
+        "folder": "necklace",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "necklace",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.654,
+          0.6145
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c13.jpeg",
+        "folder": "necklace",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "necklace",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "match"
+        ],
+        "top1_sim": [
+          0.7757,
+          0.8023
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c14.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.8205
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c15.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "match"
+        ],
+        "top1_sim": [
+          0.7751
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c17.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "match"
+        ],
+        "top1_sim": [
+          0.6961
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c18.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.8448
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c19.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.8379
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c2.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7113
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c20.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7643
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c21.jpeg",
+        "folder": "necklace",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "necklace",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7724,
+          0.6146
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c3.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5747
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c4.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5658
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c5.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7346
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c6.jpeg",
+        "folder": "necklace",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "necklace",
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5047,
+          0.5653
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c7.jpeg",
+        "folder": "necklace",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "necklace",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7771,
+          0.7693
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c8.jpeg",
+        "folder": "necklace",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "no_match"
+        ],
+        "top1_sim": [
+          0.5527,
+          0.2821
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/necklace/c9.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.588
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/necklace/choker.jpeg",
+        "folder": "necklace",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.5929
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/negatives/anklet.jpeg",
+        "folder": "negatives",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.7773
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/negatives/carving.jpeg",
+        "folder": "negatives",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/negatives/clip.jpeg",
+        "folder": "negatives",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/negatives/dolls.jpeg",
+        "folder": "negatives",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/negatives/glass.jpeg",
+        "folder": "negatives",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "necklace",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "necklace"
+        ],
+        "statuses": [
+          "no_match"
+        ],
+        "top1_sim": [
+          0.3852
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/negatives/glasses.jpeg",
+        "folder": "negatives",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/negatives/ring.jpeg",
+        "folder": "negatives",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "earring"
+        ],
+        "statuses": [
+          "match"
+        ],
+        "top1_sim": [
+          0.7244
+        ],
+        "half": "holdout"
+      },
+      {
+        "photo": "data/stumper/images/negatives/rings.jpeg",
+        "folder": "negatives",
+        "n_items": 2,
+        "first_classifier": "earring",
+        "first_detector": "earring",
+        "item_classifier": [
+          "earring",
+          "earring"
+        ],
+        "item_detector": [
+          "earring",
+          "earring"
+        ],
+        "statuses": [
+          "uncertain",
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.6442,
+          0.5444
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/negatives/scrunchie.jpeg",
+        "folder": "negatives",
+        "n_items": 0,
+        "first_classifier": null,
+        "first_detector": null,
+        "item_classifier": [],
+        "item_detector": [],
+        "statuses": [],
+        "top1_sim": [],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/negatives/scrunchie2.jpeg",
+        "folder": "negatives",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "no_match"
+        ],
+        "top1_sim": [
+          0.3776
+        ],
+        "half": "tune"
+      },
+      {
+        "photo": "data/stumper/images/negatives/watch.jpeg",
+        "folder": "negatives",
+        "n_items": 1,
+        "first_classifier": "earring",
+        "first_detector": "bracelet",
+        "item_classifier": [
+          "earring"
+        ],
+        "item_detector": [
+          "bracelet"
+        ],
+        "statuses": [
+          "uncertain"
+        ],
+        "top1_sim": [
+          0.533
+        ],
+        "half": "holdout"
+      }
+    ]
+  },
+  "as_deployed": {
+    "holdout": {
+      "n_photos": 73,
+      "n_positive": 64,
+      "n_single_detected": 56,
+      "n_negative": 9,
+      "detection_recall": {
+        "mean": 0.984375,
+        "lo": 0.953125,
+        "hi": 1.0,
+        "n": 64
+      },
+      "category_acc_v1": {
+        "mean": 0.5892857142857143,
+        "lo": 0.4642857142857143,
+        "hi": 0.7321428571428571,
+        "n": 56
+      },
+      "detector_label_acc": {
+        "mean": 0.8571428571428571,
+        "lo": 0.75,
+        "hi": 0.9290178571428568,
+        "n": 56
+      },
+      "item_category_acc": {
+        "mean": 0.5892857142857143,
+        "lo": 0.4642857142857143,
+        "hi": 0.7321428571428571,
+        "n": 56
+      },
+      "no_match_rate_neg": {
+        "mean": 0.4444444444444444,
+        "lo": 0.1111111111111111,
+        "hi": 0.7777777777777778,
+        "n": 9
+      },
+      "false_reject_pos": {
+        "mean": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "n": 64
+      },
+      "mean_items_per_positive": 1.53125,
+      "confusion_classifier": {
+        "earring": {
+          "earring": 33
+        },
+        "necklace": {
+          "earring": 11
+        },
+        "bracelet": {
+          "earring": 12
+        }
+      },
+      "confusion_detector": {
+        "earring": {
+          "bracelet": 1,
+          "earring": 30,
+          "necklace": 2
+        },
+        "necklace": {
+          "necklace": 11
+        },
+        "bracelet": {
+          "bracelet": 7,
+          "earring": 4,
+          "necklace": 1
+        }
+      },
+      "n_items_scored": 89,
+      "per_category_acc_v1": {
+        "earring": {
+          "mean": 1.0,
+          "lo": 1.0,
+          "hi": 1.0,
+          "n": 33
+        },
+        "necklace": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n": 11
+        },
+        "bracelet": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n": 12
+        }
+      }
+    },
+    "tune": {
+      "n_photos": 69,
+      "n_positive": 61,
+      "n_single_detected": 51,
+      "n_negative": 8,
+      "detection_recall": {
+        "mean": 0.9344262295081968,
+        "lo": 0.8688524590163934,
+        "hi": 0.9836065573770492,
+        "n": 61
+      },
+      "category_acc_v1": {
+        "mean": 0.5882352941176471,
+        "lo": 0.45098039215686275,
+        "hi": 0.7254901960784313,
+        "n": 51
+      },
+      "detector_label_acc": {
+        "mean": 0.7843137254901961,
+        "lo": 0.6666666666666666,
+        "hi": 0.9019607843137255,
+        "n": 51
+      },
+      "item_category_acc": {
+        "mean": 0.5882352941176471,
+        "lo": 0.45098039215686275,
+        "hi": 0.7254901960784313,
+        "n": 51
+      },
+      "no_match_rate_neg": {
+        "mean": 0.875,
+        "lo": 0.625,
+        "hi": 1.0,
+        "n": 8
+      },
+      "false_reject_pos": {
+        "mean": 0.01639344262295082,
+        "lo": 0.0,
+        "hi": 0.04918032786885246,
+        "n": 61
+      },
+      "mean_items_per_positive": 1.3934426229508197,
+      "confusion_classifier": {
+        "earring": {
+          "earring": 30
+        },
+        "necklace": {
+          "earring": 11
+        },
+        "bracelet": {
+          "earring": 10
+        }
+      },
+      "confusion_detector": {
+        "earring": {
+          "earring": 24,
+          "necklace": 5,
+          "bracelet": 1
+        },
+        "necklace": {
+          "necklace": 10,
+          "earring": 1
+        },
+        "bracelet": {
+          "bracelet": 6,
+          "necklace": 3,
+          "earring": 1
+        }
+      },
+      "n_items_scored": 75,
+      "per_category_acc_v1": {
+        "earring": {
+          "mean": 1.0,
+          "lo": 1.0,
+          "hi": 1.0,
+          "n": 30
+        },
+        "necklace": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n": 11
+        },
+        "bracelet": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n": 10
+        }
+      }
+    },
+    "all": {
+      "n_photos": 142,
+      "n_positive": 125,
+      "n_single_detected": 107,
+      "n_negative": 17,
+      "detection_recall": {
+        "mean": 0.96,
+        "lo": 0.92,
+        "hi": 0.992,
+        "n": 125
+      },
+      "category_acc_v1": {
+        "mean": 0.5887850467289719,
+        "lo": 0.49509345794392523,
+        "hi": 0.6822429906542056,
+        "n": 107
+      },
+      "detector_label_acc": {
+        "mean": 0.822429906542056,
+        "lo": 0.7476635514018691,
+        "hi": 0.897196261682243,
+        "n": 107
+      },
+      "item_category_acc": {
+        "mean": 0.5887850467289719,
+        "lo": 0.49509345794392523,
+        "hi": 0.6822429906542056,
+        "n": 107
+      },
+      "no_match_rate_neg": {
+        "mean": 0.6470588235294118,
+        "lo": 0.4117647058823529,
+        "hi": 0.8823529411764706,
+        "n": 17
+      },
+      "false_reject_pos": {
+        "mean": 0.008,
+        "lo": 0.0,
+        "hi": 0.024,
+        "n": 125
+      },
+      "mean_items_per_positive": 1.464,
+      "confusion_classifier": {
+        "earring": {
+          "earring": 63
+        },
+        "necklace": {
+          "earring": 22
+        },
+        "bracelet": {
+          "earring": 22
+        }
+      },
+      "confusion_detector": {
+        "earring": {
+          "bracelet": 2,
+          "earring": 54,
+          "necklace": 7
+        },
+        "necklace": {
+          "necklace": 21,
+          "earring": 1
+        },
+        "bracelet": {
+          "bracelet": 13,
+          "earring": 5,
+          "necklace": 4
+        }
+      },
+      "n_items_scored": 164,
+      "per_category_acc_v1": {
+        "earring": {
+          "mean": 1.0,
+          "lo": 1.0,
+          "hi": 1.0,
+          "n": 63
+        },
+        "necklace": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n": 22
+        },
+        "bracelet": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n": 22
+        }
+      }
+    }
+  },
+  "with_preprocess": {
+    "holdout": {
+      "n_photos": 73,
+      "n_positive": 64,
+      "n_single_detected": 56,
+      "n_negative": 9,
+      "detection_recall": {
+        "mean": 0.984375,
+        "lo": 0.953125,
+        "hi": 1.0,
+        "n": 64
+      },
+      "category_acc_v1": {
+        "mean": 0.5892857142857143,
+        "lo": 0.4642857142857143,
+        "hi": 0.7321428571428571,
+        "n": 56
+      },
+      "detector_label_acc": {
+        "mean": 0.8571428571428571,
+        "lo": 0.75,
+        "hi": 0.9290178571428568,
+        "n": 56
+      },
+      "item_category_acc": {
+        "mean": 0.5892857142857143,
+        "lo": 0.4642857142857143,
+        "hi": 0.7321428571428571,
+        "n": 56
+      },
+      "no_match_rate_neg": {
+        "mean": 0.4444444444444444,
+        "lo": 0.1111111111111111,
+        "hi": 0.7777777777777778,
+        "n": 9
+      },
+      "false_reject_pos": {
+        "mean": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "n": 64
+      },
+      "mean_items_per_positive": 1.53125,
+      "confusion_classifier": {
+        "earring": {
+          "earring": 33
+        },
+        "necklace": {
+          "earring": 11
+        },
+        "bracelet": {
+          "earring": 12
+        }
+      },
+      "confusion_detector": {
+        "earring": {
+          "bracelet": 1,
+          "earring": 30,
+          "necklace": 2
+        },
+        "necklace": {
+          "necklace": 11
+        },
+        "bracelet": {
+          "bracelet": 7,
+          "earring": 4,
+          "necklace": 1
+        }
+      },
+      "n_items_scored": 89,
+      "per_category_acc_v1": {
+        "earring": {
+          "mean": 1.0,
+          "lo": 1.0,
+          "hi": 1.0,
+          "n": 33
+        },
+        "necklace": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n": 11
+        },
+        "bracelet": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n": 12
+        }
+      }
+    },
+    "tune": {
+      "n_photos": 69,
+      "n_positive": 61,
+      "n_single_detected": 51,
+      "n_negative": 8,
+      "detection_recall": {
+        "mean": 0.9344262295081968,
+        "lo": 0.8688524590163934,
+        "hi": 0.9836065573770492,
+        "n": 61
+      },
+      "category_acc_v1": {
+        "mean": 0.5882352941176471,
+        "lo": 0.45098039215686275,
+        "hi": 0.7254901960784313,
+        "n": 51
+      },
+      "detector_label_acc": {
+        "mean": 0.7843137254901961,
+        "lo": 0.6666666666666666,
+        "hi": 0.9019607843137255,
+        "n": 51
+      },
+      "item_category_acc": {
+        "mean": 0.5882352941176471,
+        "lo": 0.45098039215686275,
+        "hi": 0.7254901960784313,
+        "n": 51
+      },
+      "no_match_rate_neg": {
+        "mean": 0.875,
+        "lo": 0.625,
+        "hi": 1.0,
+        "n": 8
+      },
+      "false_reject_pos": {
+        "mean": 0.01639344262295082,
+        "lo": 0.0,
+        "hi": 0.04918032786885246,
+        "n": 61
+      },
+      "mean_items_per_positive": 1.3934426229508197,
+      "confusion_classifier": {
+        "earring": {
+          "earring": 30
+        },
+        "necklace": {
+          "earring": 11
+        },
+        "bracelet": {
+          "earring": 10
+        }
+      },
+      "confusion_detector": {
+        "earring": {
+          "earring": 24,
+          "necklace": 5,
+          "bracelet": 1
+        },
+        "necklace": {
+          "necklace": 10,
+          "earring": 1
+        },
+        "bracelet": {
+          "bracelet": 6,
+          "necklace": 3,
+          "earring": 1
+        }
+      },
+      "n_items_scored": 75,
+      "per_category_acc_v1": {
+        "earring": {
+          "mean": 1.0,
+          "lo": 1.0,
+          "hi": 1.0,
+          "n": 30
+        },
+        "necklace": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n": 11
+        },
+        "bracelet": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n": 10
+        }
+      }
+    },
+    "all": {
+      "n_photos": 142,
+      "n_positive": 125,
+      "n_single_detected": 107,
+      "n_negative": 17,
+      "detection_recall": {
+        "mean": 0.96,
+        "lo": 0.92,
+        "hi": 0.992,
+        "n": 125
+      },
+      "category_acc_v1": {
+        "mean": 0.5887850467289719,
+        "lo": 0.49509345794392523,
+        "hi": 0.6822429906542056,
+        "n": 107
+      },
+      "detector_label_acc": {
+        "mean": 0.822429906542056,
+        "lo": 0.7476635514018691,
+        "hi": 0.897196261682243,
+        "n": 107
+      },
+      "item_category_acc": {
+        "mean": 0.5887850467289719,
+        "lo": 0.49509345794392523,
+        "hi": 0.6822429906542056,
+        "n": 107
+      },
+      "no_match_rate_neg": {
+        "mean": 0.6470588235294118,
+        "lo": 0.4117647058823529,
+        "hi": 0.8823529411764706,
+        "n": 17
+      },
+      "false_reject_pos": {
+        "mean": 0.008,
+        "lo": 0.0,
+        "hi": 0.024,
+        "n": 125
+      },
+      "mean_items_per_positive": 1.464,
+      "confusion_classifier": {
+        "earring": {
+          "earring": 63
+        },
+        "necklace": {
+          "earring": 22
+        },
+        "bracelet": {
+          "earring": 22
+        }
+      },
+      "confusion_detector": {
+        "earring": {
+          "bracelet": 2,
+          "earring": 54,
+          "necklace": 7
+        },
+        "necklace": {
+          "necklace": 21,
+          "earring": 1
+        },
+        "bracelet": {
+          "bracelet": 13,
+          "earring": 5,
+          "necklace": 4
+        }
+      },
+      "n_items_scored": 164,
+      "per_category_acc_v1": {
+        "earring": {
+          "mean": 1.0,
+          "lo": 1.0,
+          "hi": 1.0,
+          "n": 63
+        },
+        "necklace": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n": 22
+        },
+        "bracelet": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n": 22
+        }
+      }
+    }
+  }
+}

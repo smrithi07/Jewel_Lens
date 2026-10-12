@@ -8,11 +8,14 @@ harness and any future API/frontend layer.
 
 import sys
 sys.path.append(".")
+import config
 from src.pipeline.detect import detect, crop_with_padding, load_detector
-from src.pipeline.embed import embed_image, load_embedder
+from src.pipeline.embed import embed_image_with_raw, load_embedder
 from src.pipeline.retrieve import search, apply_rerank, load_index
 from src.pipeline.classify import classify, load_classifier
 from src.pipeline.decision import decide
+from src.pipeline.category import categorize, load_category_models
+from src.pipeline.recommend import mmr, split_tiers, out_of_scope_prob
 
 
 def load_all_models():
@@ -21,6 +24,8 @@ def load_all_models():
     load_embedder()
     load_index()
     load_classifier()
+    if config.CATEGORY_MODE == "fused":
+        load_category_models()
 
 
 def run_pipeline(image, top_k=5):
@@ -41,12 +46,21 @@ def run_pipeline(image, top_k=5):
 
     for i, d in enumerate(detections):
         crop = crop_with_padding(image, d["box"])
-        query_embedding = embed_image(crop)
+        query_embedding, raw_embedding = embed_image_with_raw(crop)
 
-        category_probs, predicted_category, confidence = classify(query_embedding)
         results = search(query_embedding, top_k=top_k)
+        p_oos = None
+        if config.CATEGORY_MODE == "fused":
+            fused = categorize(crop, query_embedding, raw_embedding, d["category"], results)
+            category_probs, predicted_category, confidence = fused["probs"], fused["category"], fused["confidence"]
+            if fused.get("clip_emb") is not None:
+                p_oos = out_of_scope_prob(fused["clip_emb"])
+        else:
+            category_probs, predicted_category, confidence = classify(query_embedding)
         results = apply_rerank(results, category_probs)
-        decision = decide(results)
+        decision = decide(results, p_oos=p_oos)            # decided on the relevance order, before diversity
+        results = mmr(results)
+        closest, similar = split_tiers(results)
 
         items.append({
             "item_index": i,
@@ -57,6 +71,8 @@ def run_pipeline(image, top_k=5):
             "classifier_category": predicted_category,
             "classifier_confidence": confidence,
             "results": results,
+            "closest_matches": closest,
+            "similar_items": similar,
             "decision": decision,
         })
 

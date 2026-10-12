@@ -1,0 +1,143 @@
+photo,folder,half,priority,detected_count,n_earring,n_necklace,n_bracelet,expected_item_count,failure_tags,negative_type,notes,verified
+data/stumper/images/mixed/call.jpeg,mixed,tune,core,4,1,0,4,5,overlap;hand_held,,in the hand there is a jhumka,1
+data/stumper/images/mixed/m1.jpeg,mixed,holdout,core,3,2,1,1,4,chain,,u left to detect bracelet,1
+data/stumper/images/mixed/m10.jpeg,mixed,tune,core,1,2,1,0,3,chain;overlap,,a chain and studs are in the middle,1
+data/stumper/images/mixed/m11.jpeg,mixed,holdout,core,1,0,2,0,2,chain;overlap;pendant,,,0
+data/stumper/images/mixed/m12.jpeg,mixed,holdout,core,1,1,1,1,3,chain;overlap,,"center there is a green jhumka, the round one is bangle and in the side we have pink chain",1
+data/stumper/images/mixed/m2.jpeg,mixed,holdout,core,1,1,1,0,2,chain;overlap,,small jhumka below,1
+data/stumper/images/mixed/m3.jpeg,mixed,holdout,core,1,1,1,0,2,overlap,,in the bottom there are earings,1
+data/stumper/images/mixed/m4.jpeg,mixed,tune,core,1,1,1,1,3,overlap,,"its an unorganised clutter, so we can just recommend all",1
+data/stumper/images/mixed/m5.jpeg,mixed,tune,core,1,2,1,0,3,overlap,,,1
+data/stumper/images/mixed/m6.jpeg,mixed,tune,core,2,2,1,0,3,overlap;pendant,,in the middle 2 earings are undetected,1
+data/stumper/images/mixed/m7.jpeg,mixed,tune,core,1,2,1,0,3,chain;overlap,,in the middle 2 earings are undetected,1
+data/stumper/images/mixed/m8.jpeg,mixed,holdout,core,1,2,1,0,3,chain;overlap,,in the middle 2 earings are undetected,1
+data/stumper/images/mixed/m9.jpeg,mixed,holdout,core,1,2,1,0,3,,,in the middle 2 earings are undetected,1
+data/stumper/images/earring/e11.jpeg,earring,holdout,core,2,2,0,0,2,,,,1
+data/stumper/images/earring/e13.jpeg,earring,holdout,core,4,4,0,0,4,,,,1
+data/stumper/images/earring/e21.jpeg,earring,holdout,core,1,1,0,0,1,,,,1
+data/stumper/images/earring/e3.jpeg,earring,holdout,core,2,2,0,0,2,,,,1
+data/stumper/images/earring/e30.jpeg,earring,holdout,core,1,2,0,0,2,,,,1
+data/stumper/images/earring/e36.jpeg,earring,holdout,core,1,2,0,0,2,,,,1
+data/stumper/images/earring/e39.jpeg,earring,holdout,core,0,0,0,0,0,blur;low_light,,,0
+data/stumper/images/earring/e40.jpeg,earring,holdout,core,1,1,0,0,1,,,,1
+data/stumper/images/earring/e49.jpeg,earring,holdout,core,2,2,0,0,2,,,,1
+data/stumper/images/earring/e52.jpeg,earring,holdout,core,1,2,0,0,2,,,,1
+data/stumper/images/earring/e56.jpeg,earring,holdout,core,1,2,0,0,2,,,,1
+data/stumper/images/earring/e67.jpeg,earring,holdout,core,3,3,0,0,3,,,,1
+data/stumper/images/earring/e69.jpeg,earring,holdout,core,2,2,0,0,2,,,,1
+data/stumper/images/necklace/c13.jpeg,necklace,holdout,core,2,0,2,0,2,overlap,,,1
+data/stumper/images/necklace/c18.jpeg,necklace,holdout,core,1,0,1,0,1,,,,1
+data/stumper/images/necklace/c21.jpeg,necklace,holdout,core,2,1,1,0,2,,,,1
+data/stumper/images/necklace/c4.jpeg,necklace,holdout,core,1,0,1,0,1,,,,1
+data/stumper/images/necklace/choker.jpeg,necklace,holdout,core,1,0,1,0,1,,,,1
+data/stumper/images/bracelet/b1.jpeg,bracelet,holdout,core,1,0,0,1,1,,,,1
+data/stumper/images/bracelet/b16.jpeg,bracelet,holdout,core,1,0,0,1,1,,,,1
+data/stumper/images/bracelet/b20.jpeg,bracelet,holdout,core,1,0,0,1,1,,,,1
+data/stumper/images/bracelet/b3.jpeg,bracelet,holdout,core,1,0,0,1,1,,,,1
+data/stumper/images/bracelet/b4.jpeg,bracelet,holdout,core,1,0,0,1,1,,,,1
+data/stumper/images/earring/e12.jpeg,earring,tune,core,2,2,0,0,2,overlap,,,1
+data/stumper/images/earring/e2.jpeg,earring,tune,core,2,2,0,0,2,,,,1
+data/stumper/images/earring/e23.jpeg,earring,tune,core,3,2,0,0,2,,,,1
+data/stumper/images/earring/e26.jpeg,earring,tune,core,1,2,0,0,2,overlap,,,1
+data/stumper/images/earring/e37.jpeg,earring,tune,core,1,1,0,0,1,,,,1
+data/stumper/images/earring/e38.jpeg,earring,tune,core,0,1,0,0,1,blur;low_light,,,1
+data/stumper/images/earring/e42.jpeg,earring,tune,core,3,2,0,0,2,,,,1
+data/stumper/images/earring/e47.jpeg,earring,tune,core,1,2,0,0,2,,,,1
+data/stumper/images/earring/e48.jpeg,earring,tune,core,1,1,0,0,1,blur,,,1
+data/stumper/images/earring/e53.jpeg,earring,tune,core,1,2,0,0,2,,,,1
+data/stumper/images/earring/e7.jpeg,earring,tune,core,2,2,0,0,2,,,,1
+data/stumper/images/earring/e71.jpeg,earring,tune,core,1,2,0,0,2,,,,1
+data/stumper/images/earring/e8.jpeg,earring,tune,core,2,1,0,0,1,,,,1
+data/stumper/images/necklace/c1.jpeg,necklace,tune,core,1,0,1,0,1,,,,1
+data/stumper/images/necklace/c12.jpeg,necklace,tune,core,2,0,2,0,2,,,,1
+data/stumper/images/necklace/c15.jpeg,necklace,tune,core,1,0,1,0,1,,,,1
+data/stumper/images/necklace/c19.jpeg,necklace,tune,core,1,0,1,0,1,,,,1
+data/stumper/images/necklace/c20.jpeg,necklace,tune,core,1,0,1,0,1,,,,1
+data/stumper/images/bracelet/b12.jpeg,bracelet,tune,core,4,0,0,1,1,,,,1
+data/stumper/images/bracelet/b15.jpeg,bracelet,tune,core,1,0,0,1,1,,,,1
+data/stumper/images/bracelet/b19.jpeg,bracelet,tune,core,0,0,0,1,1,,,,1
+data/stumper/images/bracelet/b21.jpeg,bracelet,tune,core,1,0,0,1,1,,,,1
+data/stumper/images/bracelet/b6.jpeg,bracelet,tune,core,1,0,0,1,1,,,,1
+data/stumper/images/bracelet/b9.jpeg,bracelet,tune,core,2,0,0,2,2,,,,1
+data/stumper/images/bracelet/b10.jpeg,bracelet,holdout,optional,1,0,0,1,1,,,,1
+data/stumper/images/bracelet/b11.jpeg,bracelet,tune,optional,1,0,0,3,3,overlap,,,1
+data/stumper/images/bracelet/b13.jpeg,bracelet,holdout,optional,1,0,0,1,1,,,,1
+data/stumper/images/bracelet/b14.jpeg,bracelet,tune,optional,1,0,0,1,1,,,,1
+data/stumper/images/bracelet/b17.jpeg,bracelet,holdout,optional,1,0,0,1,1,,,,1
+data/stumper/images/bracelet/b18.jpeg,bracelet,holdout,optional,1,0,0,1,1,,,,1
+data/stumper/images/bracelet/b2.jpeg,bracelet,holdout,optional,2,0,0,2,2,,,,1
+data/stumper/images/bracelet/b22.jpeg,bracelet,tune,optional,1,0,0,1,1,,,,1
+data/stumper/images/bracelet/b23.jpeg,bracelet,tune,optional,1,0,0,1,1,,,,1
+data/stumper/images/bracelet/b5.jpeg,bracelet,holdout,optional,1,0,0,1,1,,,,1
+data/stumper/images/bracelet/b7.jpeg,bracelet,tune,optional,1,0,0,2,2,overlap,,,1
+data/stumper/images/bracelet/b8.jpeg,bracelet,holdout,optional,1,0,0,1,1,,,,1
+data/stumper/images/earring/e1.jpeg,earring,holdout,optional,4,2,0,0,2,overlap,,,1
+data/stumper/images/earring/e10.jpeg,earring,tune,optional,0,2,0,0,2,overlap,,,1
+data/stumper/images/earring/e14.jpeg,earring,tune,optional,1,2,0,0,2,,,,1
+data/stumper/images/earring/e15.jpeg,earring,holdout,optional,2,2,0,0,2,,,,1
+data/stumper/images/earring/e16.jpeg,earring,holdout,optional,4,4,0,0,4,,,,1
+data/stumper/images/earring/e17.jpeg,earring,tune,optional,2,2,0,0,2,,,,1
+data/stumper/images/earring/e18.jpeg,earring,holdout,optional,2,2,0,0,2,,,,1
+data/stumper/images/earring/e19.jpeg,earring,tune,optional,2,2,0,0,2,,,,1
+data/stumper/images/earring/e20.jpeg,earring,tune,optional,0,2,0,0,2,,,small stud,1
+data/stumper/images/earring/e22.jpeg,earring,holdout,optional,2,2,0,0,2,,,,1
+data/stumper/images/earring/e24.jpeg,earring,tune,optional,1,2,0,0,2,overlap,,,1
+data/stumper/images/earring/e25.jpeg,earring,tune,optional,2,2,0,0,2,,,,1
+data/stumper/images/earring/e27.jpeg,earring,holdout,optional,1,2,0,0,2,overlap,,,1
+data/stumper/images/earring/e28.jpeg,earring,tune,optional,1,2,0,0,2,overlap;blur,,,1
+data/stumper/images/earring/e29.jpeg,earring,holdout,optional,1,2,0,0,2,,,,1
+data/stumper/images/earring/e31.jpeg,earring,holdout,optional,2,2,0,0,2,,,,1
+data/stumper/images/earring/e32.jpeg,earring,holdout,optional,1,2,0,0,2,overlap;blur,,,1
+data/stumper/images/earring/e33.jpeg,earring,tune,optional,1,2,0,0,2,overlap,,,1
+data/stumper/images/earring/e34.jpeg,earring,tune,optional,1,2,0,0,2,,,,1
+data/stumper/images/earring/e35.jpeg,earring,holdout,optional,2,2,0,0,2,,,,1
+data/stumper/images/earring/e4.jpeg,earring,tune,optional,2,2,0,0,2,,,,1
+data/stumper/images/earring/e41.jpeg,earring,holdout,optional,2,1,0,0,1,,,,1
+data/stumper/images/earring/e43.jpeg,earring,tune,optional,3,2,0,0,2,,,,1
+data/stumper/images/earring/e44.jpeg,earring,tune,optional,2,2,0,0,2,,,,1
+data/stumper/images/earring/e45.jpeg,earring,holdout,optional,2,2,0,0,2,,,,1
+data/stumper/images/earring/e46.jpeg,earring,tune,optional,1,2,0,0,2,,,,1
+data/stumper/images/earring/e5.jpeg,earring,holdout,optional,2,2,0,0,2,,,,1
+data/stumper/images/earring/e50.jpeg,earring,tune,optional,2,2,0,0,2,,,,1
+data/stumper/images/earring/e51.jpeg,earring,holdout,optional,2,2,0,0,2,,,,1
+data/stumper/images/earring/e54.jpeg,earring,holdout,optional,1,2,0,0,2,,,,1
+data/stumper/images/earring/e55.jpeg,earring,tune,optional,1,2,0,0,2,,,,1
+data/stumper/images/earring/e57.jpeg,earring,holdout,optional,1,2,0,0,2,overlap,,,1
+data/stumper/images/earring/e58.jpeg,earring,holdout,optional,1,2,0,0,2,,,,1
+data/stumper/images/earring/e59.jpeg,earring,tune,optional,2,2,0,0,2,,,,1
+data/stumper/images/earring/e6.jpeg,earring,holdout,optional,2,2,0,0,2,,,,1
+data/stumper/images/earring/e60.jpeg,earring,holdout,optional,3,6,0,0,6,overlap,,,1
+data/stumper/images/earring/e68.jpeg,earring,holdout,optional,3,2,0,0,2,,,,1
+data/stumper/images/earring/e70.jpeg,earring,tune,optional,1,2,0,0,2,,,,1
+data/stumper/images/earring/e72.jpeg,earring,tune,optional,1,1,0,0,1,blur,,,1
+data/stumper/images/earring/e73.jpeg,earring,tune,optional,1,2,0,0,2,,,,1
+data/stumper/images/earring/e9.jpeg,earring,holdout,optional,1,2,0,0,2,overlap,,,1
+data/stumper/images/necklace/Chain.jpeg,necklace,holdout,optional,1,0,1,0,1,,,,1
+data/stumper/images/necklace/c10.jpeg,necklace,holdout,optional,1,0,1,0,1,,,,1
+data/stumper/images/necklace/c11.jpeg,necklace,holdout,optional,1,0,1,0,1,,,,1
+data/stumper/images/necklace/c14.jpeg,necklace,tune,optional,1,0,1,0,1,,,,1
+data/stumper/images/necklace/c17.jpeg,necklace,tune,optional,1,0,1,0,1,,,,1
+data/stumper/images/necklace/c2.jpeg,necklace,tune,optional,1,0,1,0,1,,,,1
+data/stumper/images/necklace/c3.jpeg,necklace,holdout,optional,1,0,2,0,2,hand_held,,,1
+data/stumper/images/necklace/c5.jpeg,necklace,tune,optional,1,0,1,0,1,,,,1
+data/stumper/images/necklace/c6.jpeg,necklace,holdout,optional,2,0,1,0,1,,,,1
+data/stumper/images/necklace/c7.jpeg,necklace,tune,optional,2,0,1,0,1,,,,1
+data/stumper/images/necklace/c8.jpeg,necklace,tune,optional,2,0,1,0,1,,,,1
+data/stumper/images/necklace/c9.jpeg,necklace,holdout,optional,1,0,1,0,1,,,,1
+data/negatives/brooch.jpeg,negatives,holdout,negative,3,0,0,0,0,,out_of_scope_jewellery,,1
+data/negatives/hairclip.jpeg,negatives,holdout,negative,1,0,0,0,0,,non_jewellery,hair clip must be detected,1
+data/negatives/keychain.jpeg,negatives,holdout,negative,2,0,0,0,0,,non_jewellery,,1
+data/negatives/perfume.jpeg,negatives,tune,negative,0,0,0,0,0,,non_jewellery,,1
+data/negatives/sg.jpeg,negatives,holdout,negative,0,0,0,0,0,,non_jewellery,,1
+data/negatives/shoes.jpeg,negatives,tune,negative,0,0,0,0,0,,non_jewellery,,1
+data/stumper/images/negatives/anklet.jpeg,negatives,holdout,negative,1,0,0,0,0,,out_of_scope_jewellery,,1
+data/stumper/images/negatives/carving.jpeg,negatives,tune,negative,0,0,0,0,0,,non_jewellery,,1
+data/stumper/images/negatives/clip.jpeg,negatives,tune,negative,0,0,0,0,0,,non_jewellery,,1
+data/stumper/images/negatives/dolls.jpeg,negatives,tune,negative,0,0,0,0,0,,non_jewellery,,1
+data/stumper/images/negatives/glass.jpeg,negatives,holdout,negative,1,0,0,0,0,,non_jewellery,,1
+data/stumper/images/negatives/glasses.jpeg,negatives,holdout,negative,0,0,0,0,0,,non_jewellery,,1
+data/stumper/images/negatives/ring.jpeg,negatives,holdout,negative,1,0,0,0,0,,out_of_scope_jewellery,,1
+data/stumper/images/negatives/rings.jpeg,negatives,tune,negative,2,0,0,0,0,,out_of_scope_jewellery,,1
+data/stumper/images/negatives/scrunchie.jpeg,negatives,tune,negative,0,0,0,0,0,,non_jewellery,,1
+data/stumper/images/negatives/scrunchie2.jpeg,negatives,tune,negative,1,0,0,0,0,,non_jewellery,,1
+data/stumper/images/negatives/watch.jpeg,negatives,holdout,negative,1,0,0,0,0,,out_of_scope_jewellery,,1

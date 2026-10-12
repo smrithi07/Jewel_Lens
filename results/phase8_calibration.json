@@ -1,0 +1,3209 @@
+{
+  "created": "2026-10-12T12:16:20",
+  "calibrated": {
+    "LOW_MATCH_THRESHOLD": 0.475,
+    "OOS_THRESHOLD": 0.813,
+    "HIGH_MATCH_THRESHOLD": 0.74,
+    "MARGIN_THRESHOLD": 0.0,
+    "FRR_BUDGET": 0.05
+  },
+  "table": {
+    "v1 (LOW=0.45, no OOS check)": {
+      "tune": {
+        "frr": {
+          "mean": 0.017543859649122806,
+          "lo": 0.0,
+          "hi": 0.05263157894736842,
+          "n": 57
+        },
+        "far": {
+          "mean": 0.125,
+          "lo": 0.0,
+          "hi": 0.375,
+          "n": 8
+        },
+        "far_by_type": {
+          "non_jewellery": {
+            "mean": 0.0,
+            "lo": 0.0,
+            "hi": 0.0,
+            "n": 7
+          },
+          "out_of_scope_jewellery": {
+            "mean": 1.0,
+            "lo": 1.0,
+            "hi": 1.0,
+            "n": 1
+          }
+        },
+        "n_pos": 57,
+        "n_neg": 8
+      },
+      "holdout": {
+        "frr": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n": 63
+        },
+        "far": {
+          "mean": 0.5555555555555556,
+          "lo": 0.2222222222222222,
+          "hi": 0.8888888888888888,
+          "n": 9
+        },
+        "far_by_type": {
+          "non_jewellery": {
+            "mean": 0.2,
+            "lo": 0.0,
+            "hi": 0.6,
+            "n": 5
+          },
+          "out_of_scope_jewellery": {
+            "mean": 1.0,
+            "lo": 1.0,
+            "hi": 1.0,
+            "n": 4
+          }
+        },
+        "n_pos": 63,
+        "n_neg": 9
+      }
+    },
+    "similarity only (calibrated T_low)": {
+      "tune": {
+        "frr": {
+          "mean": 0.03508771929824561,
+          "lo": 0.0,
+          "hi": 0.08771929824561403,
+          "n": 57
+        },
+        "far": {
+          "mean": 0.125,
+          "lo": 0.0,
+          "hi": 0.375,
+          "n": 8
+        },
+        "far_by_type": {
+          "non_jewellery": {
+            "mean": 0.0,
+            "lo": 0.0,
+            "hi": 0.0,
+            "n": 7
+          },
+          "out_of_scope_jewellery": {
+            "mean": 1.0,
+            "lo": 1.0,
+            "hi": 1.0,
+            "n": 1
+          }
+        },
+        "n_pos": 57,
+        "n_neg": 8
+      },
+      "holdout": {
+        "frr": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n": 63
+        },
+        "far": {
+          "mean": 0.5555555555555556,
+          "lo": 0.2222222222222222,
+          "hi": 0.8888888888888888,
+          "n": 9
+        },
+        "far_by_type": {
+          "non_jewellery": {
+            "mean": 0.2,
+            "lo": 0.0,
+            "hi": 0.6,
+            "n": 5
+          },
+          "out_of_scope_jewellery": {
+            "mean": 1.0,
+            "lo": 1.0,
+            "hi": 1.0,
+            "n": 4
+          }
+        },
+        "n_pos": 63,
+        "n_neg": 9
+      }
+    },
+    "OOS check only (calibrated tau)": {
+      "tune": {
+        "frr": {
+          "mean": 0.03508771929824561,
+          "lo": 0.0,
+          "hi": 0.08771929824561403,
+          "n": 57
+        },
+        "far": {
+          "mean": 0.25,
+          "lo": 0.0,
+          "hi": 0.5,
+          "n": 8
+        },
+        "far_by_type": {
+          "non_jewellery": {
+            "mean": 0.14285714285714285,
+            "lo": 0.0,
+            "hi": 0.42857142857142855,
+            "n": 7
+          },
+          "out_of_scope_jewellery": {
+            "mean": 1.0,
+            "lo": 1.0,
+            "hi": 1.0,
+            "n": 1
+          }
+        },
+        "n_pos": 57,
+        "n_neg": 8
+      },
+      "holdout": {
+        "frr": {
+          "mean": 0.06349206349206349,
+          "lo": 0.015873015873015872,
+          "hi": 0.12698412698412698,
+          "n": 63
+        },
+        "far": {
+          "mean": 0.3333333333333333,
+          "lo": 0.0,
+          "hi": 0.6666666666666666,
+          "n": 9
+        },
+        "far_by_type": {
+          "non_jewellery": {
+            "mean": 0.0,
+            "lo": 0.0,
+            "hi": 0.0,
+            "n": 5
+          },
+          "out_of_scope_jewellery": {
+            "mean": 0.75,
+            "lo": 0.25,
+            "hi": 1.0,
+            "n": 4
+          }
+        },
+        "n_pos": 63,
+        "n_neg": 9
+      }
+    },
+    "calibrated T_low + OOS check": {
+      "tune": {
+        "frr": {
+          "mean": 0.05263157894736842,
+          "lo": 0.0,
+          "hi": 0.12280701754385964,
+          "n": 57
+        },
+        "far": {
+          "mean": 0.125,
+          "lo": 0.0,
+          "hi": 0.375,
+          "n": 8
+        },
+        "far_by_type": {
+          "non_jewellery": {
+            "mean": 0.0,
+            "lo": 0.0,
+            "hi": 0.0,
+            "n": 7
+          },
+          "out_of_scope_jewellery": {
+            "mean": 1.0,
+            "lo": 1.0,
+            "hi": 1.0,
+            "n": 1
+          }
+        },
+        "n_pos": 57,
+        "n_neg": 8
+      },
+      "holdout": {
+        "frr": {
+          "mean": 0.06349206349206349,
+          "lo": 0.015873015873015872,
+          "hi": 0.12698412698412698,
+          "n": 63
+        },
+        "far": {
+          "mean": 0.3333333333333333,
+          "lo": 0.0,
+          "hi": 0.6666666666666666,
+          "n": 9
+        },
+        "far_by_type": {
+          "non_jewellery": {
+            "mean": 0.0,
+            "lo": 0.0,
+            "hi": 0.0,
+            "n": 5
+          },
+          "out_of_scope_jewellery": {
+            "mean": 0.75,
+            "lo": 0.25,
+            "hi": 1.0,
+            "n": 4
+          }
+        },
+        "n_pos": 63,
+        "n_neg": 9
+      }
+    }
+  },
+  "curve": [
+    {
+      "t_low": 0.3,
+      "tune_frr": 0.03508771929824561,
+      "tune_far": 0.25,
+      "holdout_frr": 0.06349206349206349,
+      "holdout_far": 0.3333333333333333,
+      "tune_far_simonly": 0.25,
+      "holdout_far_simonly": 0.6666666666666666
+    },
+    {
+      "t_low": 0.32,
+      "tune_frr": 0.03508771929824561,
+      "tune_far": 0.25,
+      "holdout_frr": 0.06349206349206349,
+      "holdout_far": 0.3333333333333333,
+      "tune_far_simonly": 0.25,
+      "holdout_far_simonly": 0.6666666666666666
+    },
+    {
+      "t_low": 0.34,
+      "tune_frr": 0.03508771929824561,
+      "tune_far": 0.25,
+      "holdout_frr": 0.06349206349206349,
+      "holdout_far": 0.3333333333333333,
+      "tune_far_simonly": 0.25,
+      "holdout_far_simonly": 0.6666666666666666
+    },
+    {
+      "t_low": 0.36,
+      "tune_frr": 0.03508771929824561,
+      "tune_far": 0.25,
+      "holdout_frr": 0.06349206349206349,
+      "holdout_far": 0.3333333333333333,
+      "tune_far_simonly": 0.25,
+      "holdout_far_simonly": 0.6666666666666666
+    },
+    {
+      "t_low": 0.38,
+      "tune_frr": 0.03508771929824561,
+      "tune_far": 0.25,
+      "holdout_frr": 0.06349206349206349,
+      "holdout_far": 0.3333333333333333,
+      "tune_far_simonly": 0.25,
+      "holdout_far_simonly": 0.6666666666666666
+    },
+    {
+      "t_low": 0.4,
+      "tune_frr": 0.03508771929824561,
+      "tune_far": 0.25,
+      "holdout_frr": 0.06349206349206349,
+      "holdout_far": 0.3333333333333333,
+      "tune_far_simonly": 0.25,
+      "holdout_far_simonly": 0.6666666666666666
+    },
+    {
+      "t_low": 0.42,
+      "tune_frr": 0.03508771929824561,
+      "tune_far": 0.25,
+      "holdout_frr": 0.06349206349206349,
+      "holdout_far": 0.3333333333333333,
+      "tune_far_simonly": 0.25,
+      "holdout_far_simonly": 0.6666666666666666
+    },
+    {
+      "t_low": 0.44,
+      "tune_frr": 0.05263157894736842,
+      "tune_far": 0.25,
+      "holdout_frr": 0.06349206349206349,
+      "holdout_far": 0.3333333333333333,
+      "tune_far_simonly": 0.25,
+      "holdout_far_simonly": 0.5555555555555556
+    },
+    {
+      "t_low": 0.46,
+      "tune_frr": 0.05263157894736842,
+      "tune_far": 0.125,
+      "holdout_frr": 0.06349206349206349,
+      "holdout_far": 0.3333333333333333,
+      "tune_far_simonly": 0.125,
+      "holdout_far_simonly": 0.5555555555555556
+    },
+    {
+      "t_low": 0.48,
+      "tune_frr": 0.05263157894736842,
+      "tune_far": 0.125,
+      "holdout_frr": 0.06349206349206349,
+      "holdout_far": 0.3333333333333333,
+      "tune_far_simonly": 0.125,
+      "holdout_far_simonly": 0.5555555555555556
+    },
+    {
+      "t_low": 0.5,
+      "tune_frr": 0.07017543859649122,
+      "tune_far": 0.125,
+      "holdout_frr": 0.06349206349206349,
+      "holdout_far": 0.3333333333333333,
+      "tune_far_simonly": 0.125,
+      "holdout_far_simonly": 0.5555555555555556
+    },
+    {
+      "t_low": 0.52,
+      "tune_frr": 0.07017543859649122,
+      "tune_far": 0.125,
+      "holdout_frr": 0.06349206349206349,
+      "holdout_far": 0.3333333333333333,
+      "tune_far_simonly": 0.125,
+      "holdout_far_simonly": 0.5555555555555556
+    },
+    {
+      "t_low": 0.54,
+      "tune_frr": 0.08771929824561403,
+      "tune_far": 0.125,
+      "holdout_frr": 0.07936507936507936,
+      "holdout_far": 0.3333333333333333,
+      "tune_far_simonly": 0.125,
+      "holdout_far_simonly": 0.5555555555555556
+    },
+    {
+      "t_low": 0.56,
+      "tune_frr": 0.14035087719298245,
+      "tune_far": 0.125,
+      "holdout_frr": 0.1111111111111111,
+      "holdout_far": 0.3333333333333333,
+      "tune_far_simonly": 0.125,
+      "holdout_far_simonly": 0.5555555555555556
+    },
+    {
+      "t_low": 0.58,
+      "tune_frr": 0.15789473684210525,
+      "tune_far": 0.125,
+      "holdout_frr": 0.12698412698412698,
+      "holdout_far": 0.3333333333333333,
+      "tune_far_simonly": 0.125,
+      "holdout_far_simonly": 0.5555555555555556
+    },
+    {
+      "t_low": 0.6,
+      "tune_frr": 0.19298245614035087,
+      "tune_far": 0.125,
+      "holdout_frr": 0.15873015873015872,
+      "holdout_far": 0.3333333333333333,
+      "tune_far_simonly": 0.125,
+      "holdout_far_simonly": 0.3333333333333333
+    },
+    {
+      "t_low": 0.62,
+      "tune_frr": 0.22807017543859648,
+      "tune_far": 0.125,
+      "holdout_frr": 0.20634920634920634,
+      "holdout_far": 0.3333333333333333,
+      "tune_far_simonly": 0.125,
+      "holdout_far_simonly": 0.3333333333333333
+    },
+    {
+      "t_low": 0.64,
+      "tune_frr": 0.24561403508771928,
+      "tune_far": 0.125,
+      "holdout_frr": 0.30158730158730157,
+      "holdout_far": 0.2222222222222222,
+      "tune_far_simonly": 0.125,
+      "holdout_far_simonly": 0.2222222222222222
+    },
+    {
+      "t_low": 0.66,
+      "tune_frr": 0.24561403508771928,
+      "tune_far": 0.125,
+      "holdout_frr": 0.3968253968253968,
+      "holdout_far": 0.2222222222222222,
+      "tune_far_simonly": 0.125,
+      "holdout_far_simonly": 0.2222222222222222
+    },
+    {
+      "t_low": 0.68,
+      "tune_frr": 0.3333333333333333,
+      "tune_far": 0.125,
+      "holdout_frr": 0.47619047619047616,
+      "holdout_far": 0.2222222222222222,
+      "tune_far_simonly": 0.125,
+      "holdout_far_simonly": 0.2222222222222222
+    },
+    {
+      "t_low": 0.7,
+      "tune_frr": 0.42105263157894735,
+      "tune_far": 0.0,
+      "holdout_frr": 0.5238095238095238,
+      "holdout_far": 0.2222222222222222,
+      "tune_far_simonly": 0.0,
+      "holdout_far_simonly": 0.2222222222222222
+    },
+    {
+      "t_low": 0.72,
+      "tune_frr": 0.5263157894736842,
+      "tune_far": 0.0,
+      "holdout_frr": 0.5714285714285714,
+      "holdout_far": 0.1111111111111111,
+      "tune_far_simonly": 0.0,
+      "holdout_far_simonly": 0.1111111111111111
+    },
+    {
+      "t_low": 0.74,
+      "tune_frr": 0.6842105263157895,
+      "tune_far": 0.0,
+      "holdout_frr": 0.6825396825396826,
+      "holdout_far": 0.1111111111111111,
+      "tune_far_simonly": 0.0,
+      "holdout_far_simonly": 0.1111111111111111
+    },
+    {
+      "t_low": 0.76,
+      "tune_frr": 0.7543859649122807,
+      "tune_far": 0.0,
+      "holdout_frr": 0.7619047619047619,
+      "holdout_far": 0.1111111111111111,
+      "tune_far_simonly": 0.0,
+      "holdout_far_simonly": 0.1111111111111111
+    },
+    {
+      "t_low": 0.78,
+      "tune_frr": 0.8070175438596491,
+      "tune_far": 0.0,
+      "holdout_frr": 0.7936507936507936,
+      "holdout_far": 0.1111111111111111,
+      "tune_far_simonly": 0.0,
+      "holdout_far_simonly": 0.1111111111111111
+    },
+    {
+      "t_low": 0.8,
+      "tune_frr": 0.8596491228070176,
+      "tune_far": 0.0,
+      "holdout_frr": 0.7936507936507936,
+      "holdout_far": 0.1111111111111111,
+      "tune_far_simonly": 0.0,
+      "holdout_far_simonly": 0.1111111111111111
+    },
+    {
+      "t_low": 0.82,
+      "tune_frr": 0.8947368421052632,
+      "tune_far": 0.0,
+      "holdout_frr": 0.8095238095238095,
+      "holdout_far": 0.0,
+      "tune_far_simonly": 0.0,
+      "holdout_far_simonly": 0.0
+    },
+    {
+      "t_low": 0.84,
+      "tune_frr": 0.9298245614035088,
+      "tune_far": 0.0,
+      "holdout_frr": 0.8888888888888888,
+      "holdout_far": 0.0,
+      "tune_far_simonly": 0.0,
+      "holdout_far_simonly": 0.0
+    },
+    {
+      "t_low": 0.86,
+      "tune_frr": 0.9298245614035088,
+      "tune_far": 0.0,
+      "holdout_frr": 0.9047619047619048,
+      "holdout_far": 0.0,
+      "tune_far_simonly": 0.0,
+      "holdout_far_simonly": 0.0
+    }
+  ],
+  "closest_tier": {
+    "T_high": 0.74,
+    "margin": 0.0,
+    "criterion": "P(grade >= 2) >= target, per graded result",
+    "target": 0.9,
+    "tune_curve": {
+      "0.45": [
+        0.7592592592592593,
+        162
+      ],
+      "0.46": [
+        0.759493670886076,
+        158
+      ],
+      "0.47": [
+        0.7579617834394905,
+        157
+      ],
+      "0.48": [
+        0.7628205128205128,
+        156
+      ],
+      "0.49": [
+        0.7628205128205128,
+        156
+      ],
+      "0.5": [
+        0.7628205128205128,
+        156
+      ],
+      "0.51": [
+        0.7631578947368421,
+        152
+      ],
+      "0.52": [
+        0.7583892617449665,
+        149
+      ],
+      "0.53": [
+        0.7551020408163265,
+        147
+      ],
+      "0.54": [
+        0.7551020408163265,
+        147
+      ],
+      "0.55": [
+        0.75,
+        144
+      ],
+      "0.56": [
+        0.75,
+        144
+      ],
+      "0.57": [
+        0.7552447552447552,
+        143
+      ],
+      "0.58": [
+        0.75,
+        140
+      ],
+      "0.59": [
+        0.7482014388489209,
+        139
+      ],
+      "0.6": [
+        0.7686567164179104,
+        134
+      ],
+      "0.61": [
+        0.7633587786259542,
+        131
+      ],
+      "0.62": [
+        0.7642276422764228,
+        123
+      ],
+      "0.63": [
+        0.7711864406779662,
+        118
+      ],
+      "0.64": [
+        0.7610619469026548,
+        113
+      ],
+      "0.65": [
+        0.7549019607843137,
+        102
+      ],
+      "0.66": [
+        0.7446808510638298,
+        94
+      ],
+      "0.67": [
+        0.7790697674418605,
+        86
+      ],
+      "0.68": [
+        0.759493670886076,
+        79
+      ],
+      "0.69": [
+        0.7866666666666666,
+        75
+      ],
+      "0.7": [
+        0.7878787878787878,
+        66
+      ],
+      "0.71": [
+        0.8035714285714286,
+        56
+      ],
+      "0.72": [
+        0.8372093023255814,
+        43
+      ],
+      "0.73": [
+        0.8611111111111112,
+        36
+      ],
+      "0.74": [
+        0.90625,
+        32
+      ],
+      "0.75": [
+        0.9615384615384616,
+        26
+      ],
+      "0.76": [
+        0.9583333333333334,
+        24
+      ],
+      "0.77": [
+        0.9565217391304348,
+        23
+      ],
+      "0.78": [
+        0.95,
+        20
+      ],
+      "0.79": [
+        0.9444444444444444,
+        18
+      ],
+      "0.8": [
+        0.9230769230769231,
+        13
+      ],
+      "0.81": [
+        0.9166666666666666,
+        12
+      ],
+      "0.82": [
+        0.9090909090909091,
+        11
+      ],
+      "0.83": [
+        0.9,
+        10
+      ]
+    },
+    "holdout_check": [
+      1.0,
+      64
+    ],
+    "holdout_curve": {
+      "0.45": [
+        0.924,
+        250
+      ],
+      "0.46": [
+        0.924,
+        250
+      ],
+      "0.47": [
+        0.924,
+        250
+      ],
+      "0.48": [
+        0.924,
+        250
+      ],
+      "0.49": [
+        0.924,
+        250
+      ],
+      "0.5": [
+        0.924,
+        250
+      ],
+      "0.51": [
+        0.9233870967741935,
+        248
+      ],
+      "0.52": [
+        0.9230769230769231,
+        247
+      ],
+      "0.53": [
+        0.9240506329113924,
+        237
+      ],
+      "0.54": [
+        0.9217391304347826,
+        230
+      ],
+      "0.55": [
+        0.9237668161434978,
+        223
+      ],
+      "0.56": [
+        0.9216589861751152,
+        217
+      ],
+      "0.57": [
+        0.919431279620853,
+        211
+      ],
+      "0.58": [
+        0.9230769230769231,
+        208
+      ],
+      "0.59": [
+        0.9207920792079208,
+        202
+      ],
+      "0.6": [
+        0.9238578680203046,
+        197
+      ],
+      "0.61": [
+        0.9301075268817204,
+        186
+      ],
+      "0.62": [
+        0.9375,
+        176
+      ],
+      "0.63": [
+        0.9404761904761905,
+        168
+      ],
+      "0.64": [
+        0.9411764705882353,
+        153
+      ],
+      "0.65": [
+        0.9379310344827586,
+        145
+      ],
+      "0.66": [
+        0.9343065693430657,
+        137
+      ],
+      "0.67": [
+        0.9523809523809523,
+        126
+      ],
+      "0.68": [
+        0.9568965517241379,
+        116
+      ],
+      "0.69": [
+        0.9727272727272728,
+        110
+      ],
+      "0.7": [
+        0.9900990099009901,
+        101
+      ],
+      "0.71": [
+        1.0,
+        89
+      ],
+      "0.72": [
+        1.0,
+        81
+      ],
+      "0.73": [
+        1.0,
+        74
+      ],
+      "0.74": [
+        1.0,
+        64
+      ],
+      "0.75": [
+        1.0,
+        62
+      ],
+      "0.76": [
+        1.0,
+        58
+      ],
+      "0.77": [
+        1.0,
+        54
+      ],
+      "0.78": [
+        1.0,
+        52
+      ],
+      "0.79": [
+        1.0,
+        46
+      ],
+      "0.8": [
+        1.0,
+        43
+      ],
+      "0.81": [
+        1.0,
+        35
+      ],
+      "0.82": [
+        1.0,
+        35
+      ],
+      "0.83": [
+        1.0,
+        31
+      ],
+      "0.84": [
+        1.0,
+        27
+      ],
+      "0.85": [
+        1.0,
+        22
+      ],
+      "0.86": [
+        1.0,
+        16
+      ],
+      "0.87": [
+        1.0,
+        13
+      ],
+      "0.88": [
+        1.0,
+        12
+      ],
+      "0.89": [
+        1.0,
+        10
+      ]
+    },
+    "n_tune_results": 173,
+    "n_holdout_results": 250,
+    "v1_0.65": {
+      "tune": [
+        0.7549019607843137,
+        102
+      ],
+      "holdout": [
+        0.9379310344827586,
+        145
+      ]
+    }
+  },
+  "oos_prompts": [
+    "a ring",
+    "a finger ring",
+    "a ring worn on a finger",
+    "a wristwatch",
+    "a watch",
+    "an anklet",
+    "an anklet worn on the ankle",
+    "a brooch",
+    "a nose pin",
+    "a nose ring",
+    "a hair clip",
+    "a hair band",
+    "a scrunchie",
+    "a keychain",
+    "a pair of glasses",
+    "a bottle",
+    "a shoe",
+    "a toy",
+    "a cup",
+    "a piece of fabric",
+    "an everyday object"
+  ],
+  "records": [
+    {
+      "photo": "data/negatives/brooch.jpeg",
+      "folder": "negatives",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.2953908578236236,
+          "margin": 0.0038849711418151855,
+          "top1_id": "shopify_jokerandwitch.com_4674791931974",
+          "p_oos": 0.8829811811447144
+        },
+        {
+          "top1": 0.6256080555131445,
+          "margin": 0.031594693660736084,
+          "top1_id": "shopify_giva.co_7307931549858",
+          "p_oos": 0.6192131638526917
+        },
+        {
+          "top1": 0.4755054455619355,
+          "margin": 0.002699345350265503,
+          "top1_id": "shopify_giva.co_8742758973602",
+          "p_oos": 0.9650137424468994
+        }
+      ],
+      "negative_type": "out_of_scope_jewellery"
+    },
+    {
+      "photo": "data/negatives/hairclip.jpeg",
+      "folder": "negatives",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.2769132399255766,
+          "margin": 0.06723597645759583,
+          "top1_id": "shopify_giva.co_8723669352610",
+          "p_oos": 0.8864642381668091
+        }
+      ],
+      "negative_type": "non_jewellery"
+    },
+    {
+      "photo": "data/negatives/keychain.jpeg",
+      "folder": "negatives",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.5342760233217555,
+          "margin": 0.0038993656635284424,
+          "top1_id": "shopify_missoma.com_15405611155843",
+          "p_oos": 0.97603839635849
+        },
+        {
+          "top1": 0.5813196625194317,
+          "margin": 0.11642060320169673,
+          "top1_id": "shopify_rubans.in_8660764917934",
+          "p_oos": 0.9994217753410339
+        }
+      ],
+      "negative_type": "non_jewellery"
+    },
+    {
+      "photo": "data/negatives/perfume.jpeg",
+      "folder": "negatives",
+      "half": "tune",
+      "items": [],
+      "negative_type": "non_jewellery"
+    },
+    {
+      "photo": "data/negatives/sg.jpeg",
+      "folder": "negatives",
+      "half": "holdout",
+      "items": [],
+      "negative_type": "non_jewellery"
+    },
+    {
+      "photo": "data/negatives/shoes.jpeg",
+      "folder": "negatives",
+      "half": "tune",
+      "items": [],
+      "negative_type": "non_jewellery"
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b1.jpeg",
+      "folder": "bracelet",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.8269759008335423,
+          "margin": 0.025863349437713623,
+          "top1_id": "shopify_evryjewels.com_7712244727885",
+          "p_oos": 0.21961072087287903
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b10.jpeg",
+      "folder": "bracelet",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.8387205729775962,
+          "margin": 0.01581740379333496,
+          "top1_id": "shopify_voylla.com_15216571777190",
+          "p_oos": 0.11543567478656769
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b11.jpeg",
+      "folder": "bracelet",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.5227689164435083,
+          "margin": 0.06548851728439331,
+          "top1_id": "shopify_jokerandwitch.com_7842031370429",
+          "p_oos": 0.23576566576957703
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b12.jpeg",
+      "folder": "bracelet",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7251821624836242,
+          "margin": 0.015018045902252197,
+          "top1_id": "shopify_voylla.com_15449062310054",
+          "p_oos": 0.7591723799705505
+        },
+        {
+          "top1": 0.48352936043601386,
+          "margin": 0.027638167142868042,
+          "top1_id": "shopify_missoma.com_15300171006339",
+          "p_oos": 0.6334445476531982
+        },
+        {
+          "top1": 0.638351400451838,
+          "margin": 0.0035443902015686035,
+          "top1_id": "shopify_rubans.in_9065597108398",
+          "p_oos": 0.7835444808006287
+        },
+        {
+          "top1": 0.4389247680499605,
+          "margin": 0.015494823455810547,
+          "top1_id": "shopify_giva.co_9290289447074",
+          "p_oos": 0.8098003268241882
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b13.jpeg",
+      "folder": "bracelet",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6047740488572413,
+          "margin": 0.009214937686920166,
+          "top1_id": "shopify_evryjewels.com_7584960905293",
+          "p_oos": 0.31741952896118164
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b14.jpeg",
+      "folder": "bracelet",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.597665352485548,
+          "margin": 0.023401498794555664,
+          "top1_id": "shopify_evryjewels.com_7866346143821",
+          "p_oos": 0.13550150394439697
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b15.jpeg",
+      "folder": "bracelet",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.699518119123526,
+          "margin": 0.036470770835876465,
+          "top1_id": "shopify_voylla.com_8178883035302",
+          "p_oos": 0.1373315155506134
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b16.jpeg",
+      "folder": "bracelet",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.5322558314722118,
+          "margin": 0.014722853899002075,
+          "top1_id": "shopify_jokerandwitch.com_7902713643197",
+          "p_oos": 0.5514186024665833
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b17.jpeg",
+      "folder": "bracelet",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.7323899562511336,
+          "margin": 0.005228400230407715,
+          "top1_id": "shopify_evryjewels.com_7766281125965",
+          "p_oos": 0.37276047468185425
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b18.jpeg",
+      "folder": "bracelet",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.7756408906549789,
+          "margin": 0.009595692157745361,
+          "top1_id": "shopify_evryjewels.com_7703808966733",
+          "p_oos": 0.23783011734485626
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b19.jpeg",
+      "folder": "bracelet",
+      "half": "tune",
+      "items": [],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b2.jpeg",
+      "folder": "bracelet",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6648378259429585,
+          "margin": 0.016097724437713623,
+          "top1_id": "shopify_evryjewels.com_7712244727885",
+          "p_oos": 0.5324086546897888
+        },
+        {
+          "top1": 0.643678187147822,
+          "margin": 0.0001488327980041504,
+          "top1_id": "shopify_evryjewels.com_7766281224269",
+          "p_oos": 0.0853661596775055
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b20.jpeg",
+      "folder": "bracelet",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6294858229141036,
+          "margin": 0.015357792377471924,
+          "top1_id": "shopify_evryjewels.com_7712244793421",
+          "p_oos": 0.3334849774837494
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b21.jpeg",
+      "folder": "bracelet",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7281998564083367,
+          "margin": 0.01576334238052368,
+          "top1_id": "shopify_evryjewels.com_7703808966733",
+          "p_oos": 0.24384595453739166
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b22.jpeg",
+      "folder": "bracelet",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7964677004861772,
+          "margin": 0.01756596565246582,
+          "top1_id": "shopify_evryjewels.com_7764187021389",
+          "p_oos": 0.050814323127269745
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b23.jpeg",
+      "folder": "bracelet",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.5765641120503211,
+          "margin": 0.036939769983291626,
+          "top1_id": "shopify_sangeetaboochra.com_8951234920610",
+          "p_oos": 0.011436142027378082
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b3.jpeg",
+      "folder": "bracelet",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.8261908468131626,
+          "margin": 0.030819833278656006,
+          "top1_id": "shopify_evryjewels.com_6772691042381",
+          "p_oos": 0.2755313217639923
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b4.jpeg",
+      "folder": "bracelet",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.7297728363534386,
+          "margin": 0.0025257468223571777,
+          "top1_id": "shopify_jokerandwitch.com_7902677631165",
+          "p_oos": 0.04112502932548523
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b5.jpeg",
+      "folder": "bracelet",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.8678598653453272,
+          "margin": 0.007880210876464844,
+          "top1_id": "shopify_evryjewels.com_7643965653069",
+          "p_oos": 0.05472332611680031
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b6.jpeg",
+      "folder": "bracelet",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.6829822582720131,
+          "margin": 0.02436351776123047,
+          "top1_id": "shopify_sangeetaboochra.com_8951233511586",
+          "p_oos": 0.4148482382297516
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b7.jpeg",
+      "folder": "bracelet",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7218289945229637,
+          "margin": 0.0022929906845092773,
+          "top1_id": "shopify_sangeetaboochra.com_9091196747938",
+          "p_oos": 0.3259219527244568
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b8.jpeg",
+      "folder": "bracelet",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.7446046760688628,
+          "margin": 0.0015131831169128418,
+          "top1_id": "shopify_voylla.com_15374076510374",
+          "p_oos": 0.586047351360321
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/bracelet/b9.jpeg",
+      "folder": "bracelet",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7121723129324176,
+          "margin": 0.019660234451293945,
+          "top1_id": "shopify_voylla.com_15449061785766",
+          "p_oos": 0.5232300162315369
+        },
+        {
+          "top1": 0.7423077119251181,
+          "margin": 0.023768901824951172,
+          "top1_id": "shopify_voylla.com_15449061785766",
+          "p_oos": 0.32288870215415955
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e1.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6759240966516261,
+          "margin": 0.00232241351598772,
+          "top1_id": "shopify_rubans.in_9213114122414",
+          "p_oos": 0.11216088384389877
+        },
+        {
+          "top1": 0.648192327583611,
+          "margin": 0.013000547885894775,
+          "top1_id": "shopify_voylla.com_15399583547558",
+          "p_oos": 0.3398924171924591
+        },
+        {
+          "top1": 0.7395989230519382,
+          "margin": 0.012523949146270752,
+          "top1_id": "shopify_sangeetaboochra.com_9077164802210",
+          "p_oos": 0.30733269453048706
+        },
+        {
+          "top1": 0.6685493933704465,
+          "margin": 0.03487741947174072,
+          "top1_id": "shopify_voylla.com_15399583547558",
+          "p_oos": 0.19978122413158417
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e10.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e11.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.5405776489242008,
+          "margin": 0.01393839716911316,
+          "top1_id": "shopify_sangeetaboochra.com_9242038141090",
+          "p_oos": 0.577271580696106
+        },
+        {
+          "top1": 0.6014603618491521,
+          "margin": 0.0394323468208313,
+          "top1_id": "shopify_voylla.com_15399582826662",
+          "p_oos": 0.797081708908081
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e12.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.580066367861487,
+          "margin": 0.016497135162353516,
+          "top1_id": "shopify_rubans.in_9213110681774",
+          "p_oos": 0.14576855301856995
+        },
+        {
+          "top1": 0.4087968042634174,
+          "margin": 0.02245242444393203,
+          "top1_id": "shopify_rubans.in_8680056422574",
+          "p_oos": 0.8763519525527954
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e13.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.31499795337391023,
+          "margin": 0.023554503917694092,
+          "top1_id": "shopify_giva.co_8723669352610",
+          "p_oos": 0.8694047927856445
+        },
+        {
+          "top1": 0.7402316679953889,
+          "margin": 0.0021777749061584473,
+          "top1_id": "shopify_evryjewels.com_7587757293645",
+          "p_oos": 0.1752956211566925
+        },
+        {
+          "top1": 0.622194348686212,
+          "margin": 0.007583439350128174,
+          "top1_id": "shopify_rubans.in_9210919911598",
+          "p_oos": 0.4960634112358093
+        },
+        {
+          "top1": 0.4821684442402472,
+          "margin": 0.04811364412307739,
+          "top1_id": "shopify_giva.co_9242777780386",
+          "p_oos": 0.7182872891426086
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e14.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.6884648386257939,
+          "margin": 0.02227652072906494,
+          "top1_id": "shopify_giva.co_9261813825698",
+          "p_oos": 0.5725569128990173
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e15.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6809199473445156,
+          "margin": 0.006033718585968018,
+          "top1_id": "shopify_rubans.in_9210912440494",
+          "p_oos": 0.5300158858299255
+        },
+        {
+          "top1": 0.7286643830617029,
+          "margin": 0.002528071403503418,
+          "top1_id": "shopify_rubans.in_9210912440494",
+          "p_oos": 0.32798847556114197
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e16.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6912419195426412,
+          "margin": 0.007223248481750488,
+          "top1_id": "shopify_rubans.in_9065598550190",
+          "p_oos": 0.33264240622520447
+        },
+        {
+          "top1": 0.6816091728583102,
+          "margin": 0.01518559455871582,
+          "top1_id": "shopify_giva.co_7526593921186",
+          "p_oos": 0.4225858449935913
+        },
+        {
+          "top1": 0.6214580235183094,
+          "margin": 0.0067452192306518555,
+          "top1_id": "shopify_voylla.com_15228242264230",
+          "p_oos": 0.2958027422428131
+        },
+        {
+          "top1": 0.740715549731817,
+          "margin": 0.009736478328704834,
+          "top1_id": "shopify_rubans.in_9065597337774",
+          "p_oos": 0.6351513862609863
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e17.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7158745365018558,
+          "margin": 0.010748982429504395,
+          "top1_id": "shopify_voylla.com_15340788646054",
+          "p_oos": 0.4679981768131256
+        },
+        {
+          "top1": 0.6760931931589581,
+          "margin": 0.031086385250091553,
+          "top1_id": "shopify_giva.co_8222283661474",
+          "p_oos": 0.8622970581054688
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e18.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6566248806125226,
+          "margin": 0.037049949169158936,
+          "top1_id": "shopify_giva.co_7526593921186",
+          "p_oos": 0.6163939833641052
+        },
+        {
+          "top1": 0.6967764210811301,
+          "margin": 0.010432302951812744,
+          "top1_id": "shopify_voylla.com_15360011632806",
+          "p_oos": 0.366431325674057
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e19.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7492725059474717,
+          "margin": 0.008958160877227783,
+          "top1_id": "shopify_voylla.com_15399583219878",
+          "p_oos": 0.2483411580324173
+        },
+        {
+          "top1": 0.7580052815563909,
+          "margin": 0.009370803833007812,
+          "top1_id": "shopify_voylla.com_15210987880614",
+          "p_oos": 0.1108052134513855
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e2.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.4542593637551151,
+          "margin": 0.037139318140644084,
+          "top1_id": "shopify_jokerandwitch.com_4716427083846",
+          "p_oos": 0.8184170722961426
+        },
+        {
+          "top1": 0.4861951523254266,
+          "margin": 0.03613815873055126,
+          "top1_id": "shopify_voylla.com_15340788908198",
+          "p_oos": 0.3101781904697418
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e20.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e21.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.7671157339597667,
+          "margin": 0.006853282451629639,
+          "top1_id": "shopify_missoma.com_15383674847619",
+          "p_oos": 0.8925825357437134
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e22.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6534894989061509,
+          "margin": 0.023043394088745117,
+          "top1_id": "shopify_voylla.com_15399582957734",
+          "p_oos": 0.22980229556560516
+        },
+        {
+          "top1": 0.6861474515598946,
+          "margin": 0.060622990131378174,
+          "top1_id": "shopify_voylla.com_15399582957734",
+          "p_oos": 0.26622119545936584
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e23.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.5860235346165013,
+          "margin": 0.027069300413131714,
+          "top1_id": "shopify_jokerandwitch.com_7110533415101",
+          "p_oos": 0.5466528534889221
+        },
+        {
+          "top1": 0.7082055772317514,
+          "margin": 0.012225210666656494,
+          "top1_id": "shopify_sangeetaboochra.com_9242090406050",
+          "p_oos": 0.21869026124477386
+        },
+        {
+          "top1": 0.5545972339363078,
+          "margin": 0.017134875059127808,
+          "top1_id": "shopify_rubans.in_9210909229230",
+          "p_oos": 0.12443161755800247
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e24.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7108707075432659,
+          "margin": 0.004923462867736816,
+          "top1_id": "shopify_rubans.in_8211624296622",
+          "p_oos": 0.36784785985946655
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e25.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.6958346084844744,
+          "margin": 0.03033006191253662,
+          "top1_id": "shopify_sangeetaboochra.com_9237888139426",
+          "p_oos": 0.39414483308792114
+        },
+        {
+          "top1": 0.6969880574057798,
+          "margin": 0.023652374744415283,
+          "top1_id": "shopify_sangeetaboochra.com_9237888139426",
+          "p_oos": 0.3643604815006256
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e26.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7364172171591533,
+          "margin": 0.004916131496429443,
+          "top1_id": "shopify_evryjewels.com_7712244105293",
+          "p_oos": 0.17575938999652863
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e27.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6496638049609974,
+          "margin": 0.03932833671569824,
+          "top1_id": "shopify_sangeetaboochra.com_9237886632098",
+          "p_oos": 0.43874332308769226
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e28.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.6681515516379951,
+          "margin": 0.0010886788368225098,
+          "top1_id": "shopify_rubans.in_9260238536878",
+          "p_oos": 0.705437183380127
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e29.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6434611721743849,
+          "margin": 0.01088947057723999,
+          "top1_id": "shopify_rubans.in_9065598320814",
+          "p_oos": 0.02514883317053318
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e3.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.7249836738834026,
+          "margin": 0.018781602382659912,
+          "top1_id": "shopify_rubans.in_9213114253486",
+          "p_oos": 0.32282137870788574
+        },
+        {
+          "top1": 0.7097738543420726,
+          "margin": 0.029534339904785156,
+          "top1_id": "shopify_sangeetaboochra.com_9253715443874",
+          "p_oos": 0.3842315673828125
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e30.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6942674071337294,
+          "margin": 0.003777444362640381,
+          "top1_id": "shopify_giva.co_5855892734114",
+          "p_oos": 0.057215530425310135
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e31.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.7590679515945538,
+          "margin": 0.02567833662033081,
+          "top1_id": "shopify_giva.co_5855892734114",
+          "p_oos": 0.19785751402378082
+        },
+        {
+          "top1": 0.4537724740336303,
+          "margin": 0.007171183824539185,
+          "top1_id": "shopify_missoma.com_16338650759555",
+          "p_oos": 0.724814772605896
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e32.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.5559759060437371,
+          "margin": 0.01829954981803894,
+          "top1_id": "shopify_voylla.com_15210142892198",
+          "p_oos": 0.08401110768318176
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e33.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.6680400930332272,
+          "margin": 0.040489017963409424,
+          "top1_id": "shopify_sangeetaboochra.com_9232288546978",
+          "p_oos": 0.007474044803529978
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e34.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.8946904705802325,
+          "margin": 0.03562277555465698,
+          "top1_id": "shopify_sangeetaboochra.com_9243268415650",
+          "p_oos": 0.04594283923506737
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e35.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.5596178589264837,
+          "margin": 0.0008657574653625488,
+          "top1_id": "shopify_giva.co_8335009841314",
+          "p_oos": 0.8845175504684448
+        },
+        {
+          "top1": 0.6210509477243564,
+          "margin": 0.015323638916015625,
+          "top1_id": "shopify_evryjewels.com_7668584448077",
+          "p_oos": 0.8075727820396423
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e36.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6454446404606595,
+          "margin": 0.0041342973709106445,
+          "top1_id": "shopify_giva.co_9258514120866",
+          "p_oos": 0.30499956011772156
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e37.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.6485497832154089,
+          "margin": 0.012796103954315186,
+          "top1_id": "shopify_voylla.com_15701970288806",
+          "p_oos": 0.8348425626754761
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e38.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e39.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e4.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.6796609183737276,
+          "margin": 0.014115512371063232,
+          "top1_id": "shopify_rubans.in_9213114253486",
+          "p_oos": 0.18823759257793427
+        },
+        {
+          "top1": 0.759477614341862,
+          "margin": 0.011560380458831787,
+          "top1_id": "shopify_sangeetaboochra.com_9237888139426",
+          "p_oos": 0.14747478067874908
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e40.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.632604619319114,
+          "margin": 0.025132954120635986,
+          "top1_id": "shopify_voylla.com_15210987913382",
+          "p_oos": 0.8007954955101013
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e41.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6209203665875888,
+          "margin": 0.007971107959747314,
+          "top1_id": "shopify_sangeetaboochra.com_9271449452706",
+          "p_oos": 0.124060720205307
+        },
+        {
+          "top1": 0.5999190496045135,
+          "margin": 0.012157440185546875,
+          "top1_id": "shopify_rubans.in_9209786433710",
+          "p_oos": 0.9595499038696289
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e42.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7222099434399657,
+          "margin": 0.008684933185577393,
+          "top1_id": "shopify_rubans.in_8673019887790",
+          "p_oos": 0.6531326770782471
+        },
+        {
+          "top1": 0.640763515198283,
+          "margin": 0.023925065994262695,
+          "top1_id": "shopify_rubans.in_8673019887790",
+          "p_oos": 0.7611070275306702
+        },
+        {
+          "top1": 0.6764273718028684,
+          "margin": 0.0010945796966552734,
+          "top1_id": "shopify_giva.co_7326981947554",
+          "p_oos": 0.47649213671684265
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e43.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.5009423410738206,
+          "margin": 0.021822601556777954,
+          "top1_id": "shopify_jokerandwitch.com_4674638020678",
+          "p_oos": 0.40176665782928467
+        },
+        {
+          "top1": 0.5912335510892155,
+          "margin": 0.02796882390975952,
+          "top1_id": "shopify_evryjewels.com_7558921388109",
+          "p_oos": 0.884099543094635
+        },
+        {
+          "top1": 0.6977801717281529,
+          "margin": 0.03934073448181152,
+          "top1_id": "shopify_missoma.com_6963978043495",
+          "p_oos": 0.0061591612175107
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e44.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7014951386689209,
+          "margin": 0.010956525802612305,
+          "top1_id": "shopify_jokerandwitch.com_6679201087677",
+          "p_oos": 0.8462647795677185
+        },
+        {
+          "top1": 0.6091392431701482,
+          "margin": 0.005394399166107178,
+          "top1_id": "shopify_voylla.com_15455972851878",
+          "p_oos": 0.7530264854431152
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e45.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.7265651848351423,
+          "margin": 0.03954946994781494,
+          "top1_id": "shopify_giva.co_7936677773474",
+          "p_oos": 0.9345622062683105
+        },
+        {
+          "top1": 0.7029605442685496,
+          "margin": 0.0749584436416626,
+          "top1_id": "shopify_giva.co_7936677773474",
+          "p_oos": 0.957331657409668
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e46.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.6777676283783692,
+          "margin": 0.004006147384643555,
+          "top1_id": "shopify_sangeetaboochra.com_9253909725346",
+          "p_oos": 0.17291489243507385
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e47.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7032710362369914,
+          "margin": 0.021845579147338867,
+          "top1_id": "shopify_sangeetaboochra.com_9264419012770",
+          "p_oos": 0.027489732950925827
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e48.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.4259062465380013,
+          "margin": 0.015697956085205078,
+          "top1_id": "shopify_rubans.in_9065597075630",
+          "p_oos": 0.7802757024765015
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e49.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.704749281037033,
+          "margin": 0.03712630271911621,
+          "top1_id": "shopify_rubans.in_8066967437486",
+          "p_oos": 0.2398017793893814
+        },
+        {
+          "top1": 0.7461627371135846,
+          "margin": 0.03367173671722412,
+          "top1_id": "shopify_rubans.in_8066967437486",
+          "p_oos": 0.5083401203155518
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e5.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6236259182004903,
+          "margin": 0.01869034767150879,
+          "top1_id": "shopify_sangeetaboochra.com_9237889810594",
+          "p_oos": 0.9070161581039429
+        },
+        {
+          "top1": 0.6344918785588466,
+          "margin": 0.005260825157165527,
+          "top1_id": "shopify_rubans.in_9210914013358",
+          "p_oos": 0.33446210622787476
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e50.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7753619637419057,
+          "margin": 0.003473997116088867,
+          "top1_id": "shopify_rubans.in_9209786990766",
+          "p_oos": 0.18208295106887817
+        },
+        {
+          "top1": 0.6512821679961833,
+          "margin": 0.00010311603546142578,
+          "top1_id": "shopify_voylla.com_15360011534502",
+          "p_oos": 0.40184885263442993
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e51.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.8208125388739661,
+          "margin": 0.005823373794555664,
+          "top1_id": "shopify_rubans.in_2427615150160",
+          "p_oos": 0.18689969182014465
+        },
+        {
+          "top1": 0.8214906521328051,
+          "margin": 0.010335862636566162,
+          "top1_id": "shopify_rubans.in_2427615150160",
+          "p_oos": 0.0648912638425827
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e52.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.7673485316529757,
+          "margin": 0.01380014419555664,
+          "top1_id": "shopify_sangeetaboochra.com_9222052184226",
+          "p_oos": 0.3180907666683197
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e53.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.6664361570905961,
+          "margin": 0.0018117427825927734,
+          "top1_id": "shopify_rubans.in_9213114253486",
+          "p_oos": 0.08990585058927536
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e54.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.7355555227665393,
+          "margin": 0.0023627281188964844,
+          "top1_id": "shopify_missoma.com_16215407067523",
+          "p_oos": 0.8766369223594666
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e55.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7247316953608441,
+          "margin": 0.01000523567199707,
+          "top1_id": "shopify_sangeetaboochra.com_9291405295778",
+          "p_oos": 0.20639902353286743
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e56.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.567064927252715,
+          "margin": 0.00810474157333374,
+          "top1_id": "shopify_sangeetaboochra.com_9271450697890",
+          "p_oos": 0.06690017133951187
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e57.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6731226771174013,
+          "margin": 0.0019353032112121582,
+          "top1_id": "shopify_missoma.com_6742461513831",
+          "p_oos": 0.7463939785957336
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e58.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.5647119063879837,
+          "margin": 0.009914040565490723,
+          "top1_id": "shopify_sangeetaboochra.com_9232647553186",
+          "p_oos": 0.9235901832580566
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e59.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7845713265206201,
+          "margin": 0.027775287628173828,
+          "top1_id": "shopify_missoma.com_15383668752771",
+          "p_oos": 0.6231695413589478
+        },
+        {
+          "top1": 0.7215065008579128,
+          "margin": 0.003052234649658203,
+          "top1_id": "shopify_missoma.com_15354963558787",
+          "p_oos": 0.9595134854316711
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e6.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6347288545814158,
+          "margin": 0.014718056977504057,
+          "top1_id": "shopify_voylla.com_15701972254886",
+          "p_oos": 0.16609352827072144
+        },
+        {
+          "top1": 0.7008403588629037,
+          "margin": 0.04205739498138428,
+          "top1_id": "shopify_missoma.com_15768022483331",
+          "p_oos": 0.19556069374084473
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e60.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6115023676825715,
+          "margin": 0.011223793029785156,
+          "top1_id": "shopify_voylla.com_15701970354342",
+          "p_oos": 0.7899284958839417
+        },
+        {
+          "top1": 0.6086319282264041,
+          "margin": 0.0029421448707580566,
+          "top1_id": "shopify_rubans.in_9065599926446",
+          "p_oos": 0.5667251348495483
+        },
+        {
+          "top1": 0.6755553115588194,
+          "margin": 0.02022939920425415,
+          "top1_id": "shopify_rubans.in_9065598714030",
+          "p_oos": 0.6274611353874207
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e67.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6522911312007424,
+          "margin": 0.013768315315246582,
+          "top1_id": "shopify_voylla.com_15340788547750",
+          "p_oos": 0.13432426750659943
+        },
+        {
+          "top1": 0.5420235866478967,
+          "margin": 0.010268241167068481,
+          "top1_id": "shopify_sangeetaboochra.com_9223454621858",
+          "p_oos": 0.4369022250175476
+        },
+        {
+          "top1": 0.6614742575506096,
+          "margin": 0.0009306073188781738,
+          "top1_id": "shopify_rubans.in_9209787187374",
+          "p_oos": 0.6103495359420776
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e68.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6431263376879023,
+          "margin": 0.02062976360321045,
+          "top1_id": "shopify_sangeetaboochra.com_9253909725346",
+          "p_oos": 0.3427969515323639
+        },
+        {
+          "top1": 0.6251787714173208,
+          "margin": 0.019200444221496582,
+          "top1_id": "shopify_sangeetaboochra.com_9253952553122",
+          "p_oos": 0.43400856852531433
+        },
+        {
+          "top1": 0.36100809420264623,
+          "margin": 4.246830940246582e-05,
+          "top1_id": "shopify_rubans.in_9213109207214",
+          "p_oos": 0.20700474083423615
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e69.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.729164602850046,
+          "margin": 0.004875540733337402,
+          "top1_id": "shopify_voylla.com_15454212194470",
+          "p_oos": 0.5575281381607056
+        },
+        {
+          "top1": 0.714065520737441,
+          "margin": 0.004619240760803223,
+          "top1_id": "shopify_sangeetaboochra.com_9291394941090",
+          "p_oos": 0.9244479537010193
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e7.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7182760359418247,
+          "margin": 0.00540006160736084,
+          "top1_id": "shopify_giva.co_8726231744674",
+          "p_oos": 0.04561953246593475
+        },
+        {
+          "top1": 0.714669626037197,
+          "margin": 0.012366056442260742,
+          "top1_id": "shopify_jokerandwitch.com_7902677631165",
+          "p_oos": 0.12727618217468262
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e70.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.5478086192140343,
+          "margin": 0.005976289510726929,
+          "top1_id": "shopify_giva.co_8160864239778",
+          "p_oos": 0.208657369017601
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e71.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.6755875058019849,
+          "margin": 0.051066458225250244,
+          "top1_id": "shopify_sangeetaboochra.com_9232288546978",
+          "p_oos": 0.6498997211456299
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e72.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.5408347387144523,
+          "margin": 0.05302885174751282,
+          "top1_id": "shopify_evryjewels.com_7703809097805",
+          "p_oos": 0.5011866688728333
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e73.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7350901619409542,
+          "margin": 0.011659085750579834,
+          "top1_id": "shopify_rubans.in_9213114253486",
+          "p_oos": 0.1195012554526329
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e8.jpeg",
+      "folder": "earring",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.8083605694250345,
+          "margin": 0.011815130710601807,
+          "top1_id": "shopify_voylla.com_15360011534502",
+          "p_oos": 0.07261652499437332
+        },
+        {
+          "top1": 0.657500704850882,
+          "margin": 0.024218618869781494,
+          "top1_id": "shopify_voylla.com_15360011468966",
+          "p_oos": 0.4566103219985962
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/earring/e9.jpeg",
+      "folder": "earring",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.7394991794749396,
+          "margin": 0.0007763504981994629,
+          "top1_id": "shopify_missoma.com_15383673995651",
+          "p_oos": 0.7936542630195618
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/mixed/call.jpeg",
+      "folder": "mixed",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7113011218337405,
+          "margin": 0.015622198581695557,
+          "top1_id": "shopify_rubans.in_8612485660846",
+          "p_oos": 0.033836763352155685
+        },
+        {
+          "top1": 0.70776728676006,
+          "margin": 0.05331766605377197,
+          "top1_id": "shopify_sangeetaboochra.com_9266304614562",
+          "p_oos": 0.7805660367012024
+        },
+        {
+          "top1": 0.15801847863345386,
+          "margin": 0.007980458438396454,
+          "top1_id": "shopify_rubans.in_9213109371054",
+          "p_oos": 0.8096392154693604
+        },
+        {
+          "top1": 0.310785874473816,
+          "margin": 0.00186900794506073,
+          "top1_id": "shopify_evryjewels.com_7703809097805",
+          "p_oos": 0.9338627457618713
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/mixed/m1.jpeg",
+      "folder": "mixed",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.7079315061341974,
+          "margin": 0.013879477977752686,
+          "top1_id": "shopify_sangeetaboochra.com_9264440508578",
+          "p_oos": 0.013521181419491768
+        },
+        {
+          "top1": 0.6509358260609169,
+          "margin": 0.00247800350189209,
+          "top1_id": "shopify_voylla.com_15360011042982",
+          "p_oos": 0.9130198359489441
+        },
+        {
+          "top1": 0.641488590908696,
+          "margin": 0.007646679878234863,
+          "top1_id": "shopify_voylla.com_15210987913382",
+          "p_oos": 0.9079713225364685
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/mixed/m10.jpeg",
+      "folder": "mixed",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.6296216020331085,
+          "margin": 0.006592988967895508,
+          "top1_id": "shopify_rubans.in_8693633024174",
+          "p_oos": 0.17347371578216553
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/mixed/m11.jpeg",
+      "folder": "mixed",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.5451151676615476,
+          "margin": 0.009300251680306015,
+          "top1_id": "shopify_voylla.com_15266254880934",
+          "p_oos": 0.0679478645324707
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/mixed/m12.jpeg",
+      "folder": "mixed",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.5882014957569314,
+          "margin": 0.0017521977424621582,
+          "top1_id": "shopify_giva.co_8934775521442",
+          "p_oos": 0.03729759156703949
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/mixed/m2.jpeg",
+      "folder": "mixed",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.9017412893380456,
+          "margin": 0.03763711452484131,
+          "top1_id": "shopify_rubans.in_9213065691310",
+          "p_oos": 0.0006048784125596285
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/mixed/m3.jpeg",
+      "folder": "mixed",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.8705087338897837,
+          "margin": 0.022228121757507324,
+          "top1_id": "shopify_rubans.in_9213071687854",
+          "p_oos": 0.009153067134320736
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/mixed/m4.jpeg",
+      "folder": "mixed",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.4674540473280324,
+          "margin": 0.00697752833366394,
+          "top1_id": "shopify_rubans.in_9209787187374",
+          "p_oos": 0.9281082153320312
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/mixed/m5.jpeg",
+      "folder": "mixed",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.6130026896210443,
+          "margin": 0.009036540985107422,
+          "top1_id": "shopify_voylla.com_15449062899878",
+          "p_oos": 0.08031027764081955
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/mixed/m6.jpeg",
+      "folder": "mixed",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7421551305848384,
+          "margin": 0.013464927673339844,
+          "top1_id": "shopify_sangeetaboochra.com_9237889253538",
+          "p_oos": 0.02050071768462658
+        },
+        {
+          "top1": 0.6452595312864634,
+          "margin": 0.029034018516540527,
+          "top1_id": "shopify_giva.co_9260318949538",
+          "p_oos": 0.23475360870361328
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/mixed/m7.jpeg",
+      "folder": "mixed",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7344040031483882,
+          "margin": 0.01812136173248291,
+          "top1_id": "shopify_sangeetaboochra.com_9264440508578",
+          "p_oos": 0.005928257014602423
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/mixed/m8.jpeg",
+      "folder": "mixed",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.7189691842904828,
+          "margin": 0.011089324951171875,
+          "top1_id": "shopify_rubans.in_9219995795630",
+          "p_oos": 0.018643759191036224
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/mixed/m9.jpeg",
+      "folder": "mixed",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.8980266573873873,
+          "margin": 0.029650092124938965,
+          "top1_id": "shopify_rubans.in_7940092559534",
+          "p_oos": 0.4163288474082947
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/Chain.jpeg",
+      "folder": "necklace",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6685762258419943,
+          "margin": 0.005800962448120117,
+          "top1_id": "shopify_jokerandwitch.com_6675008225469",
+          "p_oos": 0.10800472646951675
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c1.jpeg",
+      "folder": "necklace",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.8829169012921161,
+          "margin": 0.012788712978363037,
+          "top1_id": "shopify_sangeetaboochra.com_9264442376354",
+          "p_oos": 0.01830623485147953
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c10.jpeg",
+      "folder": "necklace",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.9576983774064112,
+          "margin": 0.013828158378601074,
+          "top1_id": "shopify_rubans.in_7940097048750",
+          "p_oos": 0.4633995592594147
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c11.jpeg",
+      "folder": "necklace",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.8034422700437721,
+          "margin": 0.009185731410980225,
+          "top1_id": "shopify_rubans.in_8662257631406",
+          "p_oos": 0.4943411946296692
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c12.jpeg",
+      "folder": "necklace",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.723622156637935,
+          "margin": 0.006223499774932861,
+          "top1_id": "shopify_missoma.com_15571387842947",
+          "p_oos": 0.09698174893856049
+        },
+        {
+          "top1": 0.6073627695927787,
+          "margin": 0.004052547586868571,
+          "top1_id": "shopify_missoma.com_16296737636739",
+          "p_oos": 0.36915963888168335
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c13.jpeg",
+      "folder": "necklace",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.8307938952741586,
+          "margin": 0.02319544553756714,
+          "top1_id": "shopify_rubans.in_9219996778670",
+          "p_oos": 0.15188433229923248
+        },
+        {
+          "top1": 0.8592259404185437,
+          "margin": 0.05549347400665283,
+          "top1_id": "shopify_rubans.in_9219996778670",
+          "p_oos": 0.043259549885988235
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c14.jpeg",
+      "folder": "necklace",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.8845135819557991,
+          "margin": 0.011092782020568848,
+          "top1_id": "shopify_giva.co_8678567280802",
+          "p_oos": 0.014597867615520954
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c15.jpeg",
+      "folder": "necklace",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.8389243491612604,
+          "margin": 0.03228944540023804,
+          "top1_id": "shopify_rubans.in_9209788891310",
+          "p_oos": 0.03302159160375595
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c17.jpeg",
+      "folder": "necklace",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7611089661158106,
+          "margin": 0.03313356637954712,
+          "top1_id": "shopify_sangeetaboochra.com_9264440508578",
+          "p_oos": 0.006995633710175753
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c18.jpeg",
+      "folder": "necklace",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.9099988118549266,
+          "margin": 0.005244851112365723,
+          "top1_id": "shopify_rubans.in_7940092559534",
+          "p_oos": 0.1184263825416565
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c19.jpeg",
+      "folder": "necklace",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.8738271006714884,
+          "margin": 0.0033534765243530273,
+          "top1_id": "shopify_missoma.com_15873297711491",
+          "p_oos": 0.11391615867614746
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c2.jpeg",
+      "folder": "necklace",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7606448332582427,
+          "margin": 0.009283363819122314,
+          "top1_id": "shopify_rubans.in_9211679211694",
+          "p_oos": 0.06635963916778564
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c20.jpeg",
+      "folder": "necklace",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.8268484858851062,
+          "margin": 0.026058673858642578,
+          "top1_id": "shopify_rubans.in_7940097048750",
+          "p_oos": 0.057049427181482315
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c21.jpeg",
+      "folder": "necklace",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.8358160107530579,
+          "margin": 0.017912983894348145,
+          "top1_id": "shopify_rubans.in_8693633024174",
+          "p_oos": 0.0773196741938591
+        },
+        {
+          "top1": 0.5906944872819732,
+          "margin": 0.015162885189056396,
+          "top1_id": "shopify_rubans.in_8896018055342",
+          "p_oos": 0.5973995923995972
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c3.jpeg",
+      "folder": "necklace",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6417958777204641,
+          "margin": 0.008569061756134033,
+          "top1_id": "shopify_voylla.com_15701973205158",
+          "p_oos": 0.073382169008255
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c4.jpeg",
+      "folder": "necklace",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6331910215861931,
+          "margin": 0.021162033081054688,
+          "top1_id": "shopify_jokerandwitch.com_8272453075133",
+          "p_oos": 0.006088519003242254
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c5.jpeg",
+      "folder": "necklace",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.7807974073602522,
+          "margin": 0.0035184621810913086,
+          "top1_id": "shopify_rubans.in_9213447635118",
+          "p_oos": 0.35496675968170166
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c6.jpeg",
+      "folder": "necklace",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.5690077424895523,
+          "margin": 0.030886948108673096,
+          "top1_id": "shopify_rubans.in_8669885104302",
+          "p_oos": 0.16062654554843903
+        },
+        {
+          "top1": 0.6087111822846144,
+          "margin": 0.034179627895355225,
+          "top1_id": "shopify_rubans.in_9065647702190",
+          "p_oos": 0.654420793056488
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c7.jpeg",
+      "folder": "necklace",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.8136270900095672,
+          "margin": 0.017032265663146973,
+          "top1_id": "shopify_voylla.com_15228242690214",
+          "p_oos": 0.01202273741364479
+        },
+        {
+          "top1": 0.7594109469388293,
+          "margin": 0.01948779821395874,
+          "top1_id": "shopify_rubans.in_9209786728622",
+          "p_oos": 0.3140544295310974
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c8.jpeg",
+      "folder": "necklace",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.5405482409459902,
+          "margin": 0.010697692632675171,
+          "top1_id": "shopify_missoma.com_15761560469891",
+          "p_oos": 0.5805738568305969
+        },
+        {
+          "top1": 0.34651570097525736,
+          "margin": 0.007200688123703003,
+          "top1_id": "shopify_evryjewels.com_7637792325709",
+          "p_oos": 0.8947834968566895
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/c9.jpeg",
+      "folder": "necklace",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.6561842815156651,
+          "margin": 0.00037491321563720703,
+          "top1_id": "shopify_missoma.com_15317772829059",
+          "p_oos": 0.13835611939430237
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/necklace/choker.jpeg",
+      "folder": "necklace",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.580622335856052,
+          "margin": 0.03214871883392334,
+          "top1_id": "shopify_voylla.com_15449062473894",
+          "p_oos": 0.2264440655708313
+        }
+      ],
+      "negative_type": null
+    },
+    {
+      "photo": "data/stumper/images/negatives/anklet.jpeg",
+      "folder": "negatives",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.817127561279191,
+          "margin": 0.008819520473480225,
+          "top1_id": "shopify_rubans.in_9065648717998",
+          "p_oos": 0.6278383135795593
+        }
+      ],
+      "negative_type": "out_of_scope_jewellery"
+    },
+    {
+      "photo": "data/stumper/images/negatives/carving.jpeg",
+      "folder": "negatives",
+      "half": "tune",
+      "items": [],
+      "negative_type": "non_jewellery"
+    },
+    {
+      "photo": "data/stumper/images/negatives/clip.jpeg",
+      "folder": "negatives",
+      "half": "tune",
+      "items": [],
+      "negative_type": "non_jewellery"
+    },
+    {
+      "photo": "data/stumper/images/negatives/dolls.jpeg",
+      "folder": "negatives",
+      "half": "tune",
+      "items": [],
+      "negative_type": "non_jewellery"
+    },
+    {
+      "photo": "data/stumper/images/negatives/glass.jpeg",
+      "folder": "negatives",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.4206470419258744,
+          "margin": 0.0270330822763315,
+          "top1_id": "shopify_voylla.com_15234744516774",
+          "p_oos": 0.950152575969696
+        }
+      ],
+      "negative_type": "non_jewellery"
+    },
+    {
+      "photo": "data/stumper/images/negatives/glasses.jpeg",
+      "folder": "negatives",
+      "half": "holdout",
+      "items": [],
+      "negative_type": "non_jewellery"
+    },
+    {
+      "photo": "data/stumper/images/negatives/ring.jpeg",
+      "folder": "negatives",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.7013246994884149,
+          "margin": 0.07581806182861328,
+          "top1_id": "shopify_voylla.com_15210987880614",
+          "p_oos": 0.7655567526817322
+        }
+      ],
+      "negative_type": "out_of_scope_jewellery"
+    },
+    {
+      "photo": "data/stumper/images/negatives/rings.jpeg",
+      "folder": "negatives",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.6870428461990038,
+          "margin": 0.02625364065170288,
+          "top1_id": "shopify_evryjewels.com_7866346143821",
+          "p_oos": 0.3658127784729004
+        },
+        {
+          "top1": 0.5786970625533502,
+          "margin": 0.00028890371322631836,
+          "top1_id": "shopify_evryjewels.com_7637792325709",
+          "p_oos": 0.4916457533836365
+        }
+      ],
+      "negative_type": "out_of_scope_jewellery"
+    },
+    {
+      "photo": "data/stumper/images/negatives/scrunchie.jpeg",
+      "folder": "negatives",
+      "half": "tune",
+      "items": [],
+      "negative_type": "non_jewellery"
+    },
+    {
+      "photo": "data/stumper/images/negatives/scrunchie2.jpeg",
+      "folder": "negatives",
+      "half": "tune",
+      "items": [
+        {
+          "top1": 0.4439781709340437,
+          "margin": 0.0042806267738342285,
+          "top1_id": "shopify_missoma.com_15776706855299",
+          "p_oos": 0.6914530992507935
+        }
+      ],
+      "negative_type": "non_jewellery"
+    },
+    {
+      "photo": "data/stumper/images/negatives/watch.jpeg",
+      "folder": "negatives",
+      "half": "holdout",
+      "items": [
+        {
+          "top1": 0.5997523949440936,
+          "margin": 0.036584436893463135,
+          "top1_id": "shopify_evryjewels.com_7643965587533",
+          "p_oos": 0.9167049527168274
+        }
+      ],
+      "negative_type": "out_of_scope_jewellery"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 42850.66it/s]
+  [bench:owlvit] 5/5 (100%) | 40.2/s | ETA 0.0 min
+  owlvit  thr=0.08 nms=0.5 F1=0.719 count=0.475 recall=0.934 lat=0.32s
+  [bench:owlv2] 5/5 (100%) | 22.7/s | ETA 0.0 min
+  owlv2   thr=0.12 nms=0.3 F1=0.616 count=0.279 recall=0.918 lat=3.55s
+  [bench:gdino] 5/5 (100%) | 16.0/s | ETA 0.0 min
+  gdino   thr=0.3 nms=0.3 F1=0.732 count=0.443 recall=0.967 lat=5.33s
+  [prompts:ensemble/max] 5/5 (100%) | 34.8/s | ETA 0.0 min
+  [prompts:ensemble/mean] 5/5 (100%) | 33.6/s | ETA 0.0 min
+  [prompts:ensemble/max/+jewellery] 5/5 (100%) | 38.3/s | ETA 0.0 min
+  [prompts:ensemble/mean/+jewellery] 5/5 (100%) | 34.5/s | ETA 0.0 min
+## Phase 5 — detection and multi-item (2026-10-11T20:10:09)
+
+Category of every box = Phase 4 fused category. Chosen on **tune**; holdout reported once. Objective: item-category F1 vs labelled counts, then count exact, then latency; detection recall must stay within 0.02 of baseline.
+
+**1. Detector benchmark (tune, v1 prompts, threshold/NMS tuned per detector)**
+
+| detector | thr / NMS IoU | det. recall | count exact | count MAE | item-cat F1 | under / over | latency p50 / p95 (s) |
+|---|---|---|---|---|---|---|---|
+| owlvit v1 config (baseline) | 0.1 / 0.3 | 0.934 | 0.475 | 0.67 | 0.708 | 0.41 / 0.11 | 0.32 / 0.38 |
+| owlvit **(chosen)** | 0.1 / 0.3 | 0.934 | 0.475 | 0.67 | 0.708 | 0.41 / 0.11 | 0.32 / 0.38 |
+| owlv2 | 0.12 / 0.3 | 0.918 | 0.279 | 1.87 | 0.616 | 0.23 / 0.49 | 3.55 / 3.82 |
+| gdino | 0.3 / 0.3 | 0.967 | 0.443 | 0.64 | 0.732 | 0.26 / 0.30 | 5.33 / 6.20 |
+| owlvit tuned (rejected: < margin) | 0.08 / 0.5 | 0.934 | 0.475 | 0.84 | 0.719 | 0.26 / 0.26 | 0.32 / 0.38 |
+
+**2. Prompt ensembling on owlvit (tune)**
+
+| prompts | thr / NMS | count exact | item-cat F1 | det. recall |
+|---|---|---|---|---|
+| current/max **(chosen)** | 0.1 / 0.3 | 0.475 | 0.708 | 0.934 |
+| ensemble/max | 0.08 / 0.3 | 0.426 | 0.702 | 0.967 |
+| ensemble/mean | 0.08 / 0.3 | 0.492 | 0.697 | 0.934 |
+| ensemble/max/+jewellery | 0.12 / 0.3 | 0.443 | 0.707 | 1.000 |
+| ensemble/mean/+jewellery | 0.2 / 0.3 | 0.443 | 0.712 | 0.967 |
+
+**3. Post-processing rule ablation (tune)**
+
+| config | count exact | count MAE | item-cat F1 | under / over | overlap count exact | chain count exact |
+|---|---|---|---|---|---|---|
+| (none) | 0.475 | 0.67 | 0.708 | 0.41 / 0.11 | 0.07 (n=14) | 0.00 (n=2) |
+| +pair_protect | 0.475 | 0.67 | 0.708 | 0.41 / 0.11 | 0.07 (n=14) | 0.00 (n=2) |
+| +group_drop | 0.508 | 0.62 | 0.715 | 0.41 / 0.08 | 0.07 (n=14) | 0.00 (n=2) |
+| +chain_merge | 0.475 | 0.67 | 0.708 | 0.41 / 0.11 | 0.07 (n=14) | 0.00 (n=2) |
+| +min_box | 0.475 | 0.67 | 0.708 | 0.41 / 0.11 | 0.07 (n=14) | 0.00 (n=2) |
+| +nms_per_class | 0.475 | 0.67 | 0.713 | 0.38 / 0.15 | 0.14 (n=14) | 0.00 (n=2) |
+| +tiles | 0.459 | 0.74 | 0.700 | 0.34 / 0.20 | 0.14 (n=14) | 0.00 (n=2) |
+| +tiles(thr 0.15) | 0.459 | 0.70 | 0.703 | 0.39 / 0.15 | 0.07 (n=14) | 0.00 (n=2) |
+| +tiles(thr 0.2) | 0.443 | 0.70 | 0.702 | 0.41 / 0.15 | 0.00 (n=14) | 0.00 (n=2) |
+| +verify(0.45) | 0.459 | 0.69 | 0.696 | 0.44 / 0.10 | 0.00 (n=14) | 0.00 (n=2) |
+| +verify(0.55) | 0.492 | 0.66 | 0.702 | 0.44 / 0.07 | 0.00 (n=14) | 0.00 (n=2) |
+| grid group_drop=True | 0.508 | 0.62 | 0.715 | 0.41 / 0.08 | 0.07 (n=14) | 0.00 (n=2) |
+| grid verify_sim=0.45 | 0.459 | 0.69 | 0.696 | 0.44 / 0.10 | 0.00 (n=14) | 0.00 (n=2) |
+| grid verify_sim=0.45, group_drop=True | 0.492 | 0.66 | 0.702 | 0.44 / 0.07 | 0.00 (n=14) | 0.00 (n=2) |
+| grid verify_sim=0.55 | 0.492 | 0.66 | 0.702 | 0.44 / 0.07 | 0.00 (n=14) | 0.00 (n=2) |
+| grid verify_sim=0.55, group_drop=True | 0.475 | 0.67 | 0.697 | 0.46 / 0.07 | 0.00 (n=14) | 0.00 (n=2) |
+| grid tiles=True | 0.459 | 0.74 | 0.700 | 0.34 / 0.20 | 0.14 (n=14) | 0.00 (n=2) |
+| grid tiles=True, group_drop=True | 0.492 | 0.67 | 0.708 | 0.36 / 0.15 | 0.07 (n=14) | 0.00 (n=2) |
+| grid tiles=True, verify_sim=0.45 | 0.459 | 0.72 | 0.697 | 0.39 / 0.15 | 0.14 (n=14) | 0.00 (n=2) |
+| grid tiles=True, verify_sim=0.45, group_drop=True | 0.475 | 0.69 | 0.702 | 0.41 / 0.11 | 0.07 (n=14) | 0.00 (n=2) |
+| grid tiles=True, verify_sim=0.55 | 0.492 | 0.69 | 0.699 | 0.41 / 0.10 | 0.07 (n=14) | 0.00 (n=2) |
+| grid tiles=True, verify_sim=0.55, group_drop=True | 0.459 | 0.70 | 0.691 | 0.44 / 0.10 | 0.00 (n=14) | 0.00 (n=2) |
+| grid tiles=True, tile_score_thr=0.15 | 0.459 | 0.70 | 0.703 | 0.39 / 0.15 | 0.07 (n=14) | 0.00 (n=2) |
+| grid tiles=True, tile_score_thr=0.15, group_drop=True | 0.475 | 0.67 | 0.706 | 0.41 / 0.11 | 0.00 (n=14) | 0.00 (n=2) |
+| grid tiles=True, tile_score_thr=0.15, verify_sim=0.45 | 0.475 | 0.69 | 0.699 | 0.41 / 0.11 | 0.14 (n=14) | 0.00 (n=2) |
+| grid tiles=True, tile_score_thr=0.15, verify_sim=0.45, group_drop=True | 0.492 | 0.67 | 0.702 | 0.43 / 0.08 | 0.07 (n=14) | 0.00 (n=2) |
+| grid tiles=True, tile_score_thr=0.15, verify_sim=0.55 | 0.492 | 0.67 | 0.700 | 0.43 / 0.08 | 0.07 (n=14) | 0.00 (n=2) |
+| grid tiles=True, tile_score_thr=0.15, verify_sim=0.55, group_drop=True | 0.459 | 0.70 | 0.691 | 0.46 / 0.08 | 0.00 (n=14) | 0.00 (n=2) |
+| grid tiles=True, tile_score_thr=0.2 | 0.443 | 0.70 | 0.702 | 0.41 / 0.15 | 0.00 (n=14) | 0.00 (n=2) |
+| grid tiles=True, tile_score_thr=0.2, group_drop=True | 0.475 | 0.66 | 0.708 | 0.41 / 0.11 | 0.00 (n=14) | 0.00 (n=2) |
+| grid tiles=True, tile_score_thr=0.2, verify_sim=0.45 | 0.459 | 0.69 | 0.698 | 0.43 / 0.11 | 0.07 (n=14) | 0.00 (n=2) |
+| grid tiles=True, tile_score_thr=0.2, verify_sim=0.45, group_drop=True | 0.492 | 0.66 | 0.704 | 0.43 / 0.08 | 0.07 (n=14) | 0.00 (n=2) |
+| grid tiles=True, tile_score_thr=0.2, verify_sim=0.55 | 0.475 | 0.67 | 0.699 | 0.44 / 0.08 | 0.00 (n=14) | 0.00 (n=2) |
+| grid tiles=True, tile_score_thr=0.2, verify_sim=0.55, group_drop=True | 0.459 | 0.69 | 0.694 | 0.46 / 0.08 | 0.00 (n=14) | 0.00 (n=2) |
+| FINAL (base, no rule beat the margin) | 0.475 | 0.67 | 0.708 | 0.41 / 0.11 | 0.07 (n=14) | 0.00 (n=2) |
+
+Final config: `{'detector': 'owlvit', 'query_set': 'current', 'agg': 'max', 'agnostic_queries': False, 'nms_per_class': False, 'score_thr': 0.1, 'tiles': False, 'tile_score_thr': None, 'verify_sim': None, 'min_area_frac': 0.0, 'nms_iou': 0.3, 'pair_protect': False, 'group_drop': False, 'chain_merge': False}`
+
+**4. Holdout: baseline (v1 detector) vs final — both with the Phase 4 fused category**
+
+| metric | baseline | final |
+|---|---|---|
+| Detection recall | 0.984 [0.953, 1.000] | 0.984 [0.953, 1.000] |
+| Count exact | 0.629 [0.484, 0.758] | 0.629 [0.484, 0.758] |
+| Item-category F1 | 0.813 [0.745, 0.872] | 0.813 [0.745, 0.872] |
+| Category acc (first item) | 0.946 [0.893, 1.000] | 0.946 [0.893, 1.000] |
+| Count MAE / under / over | 0.47 / 0.31 / 0.06 | 0.47 / 0.31 / 0.06 |
+| Graded nDCG@5 | 0.894 [0.825, 0.950] | 0.894 [0.825, 0.950] |
+| P@5 | 0.924 [0.856, 0.980] | 0.924 [0.856, 0.980] |
+| Success@1 | 0.960 [0.900, 1.000] | 0.960 [0.900, 1.000] |
+| judged@5 | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] |
+| Graded items unmatched (no box IoU ≥ 0.5) | 0 | 0 |
+| Negatives rejected | 0.444 [0.111, 0.778] | 0.444 [0.111, 0.778] |
+| Latency p50 / p95 (detect + post-process, s) | 0.32 / 0.38 | 0.32 / 0.38 |
+
+Per-tag holdout (count exact / item-category F1):
+
+| tag | n | baseline | final |
+|---|---|---|---|
+| chain | 4 | 0.00 / 0.63 | 0.00 / 0.63 |
+| overlap | 11 | 0.09 / 0.67 | 0.09 / 0.67 |
+| hand_held | 1 | 0.00 / 0.67 | 0.00 / 0.67 |
+| multi_item | 40 | 0.47 / 0.75 | 0.47 / 0.75 |
+| no_tag | 22 | 0.91 / 0.92 | 0.91 / 0.92 |

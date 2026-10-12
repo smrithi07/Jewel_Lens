@@ -1,0 +1,243 @@
+{
+  "created": "2026-10-12T11:53:23",
+  "detections": "data/eval_own/baseline_detections.json",
+  "half": "holdout",
+  "category_field": "classifier_category",
+  "n_photos": 73,
+  "detection_recall": {
+    "mean": 0.984375,
+    "lo": 0.953125,
+    "hi": 1.0,
+    "n": 64
+  },
+  "category_acc_first": {
+    "mean": 0.5892857142857143,
+    "lo": 0.4642857142857143,
+    "hi": 0.7321428571428571,
+    "n": 56
+  },
+  "category_acc_first_by_folder": {
+    "earring": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n": 33
+    },
+    "necklace": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 11
+    },
+    "bracelet": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 12
+    }
+  },
+  "n_labelled_positive": 62,
+  "count_exact": {
+    "mean": 0.6290322580645161,
+    "lo": 0.4838709677419355,
+    "hi": 0.7580645161290323,
+    "n": 62
+  },
+  "count_mae": {
+    "mean": 0.46774193548387094,
+    "lo": 0.3064516129032258,
+    "hi": 0.6612903225806451,
+    "n": 62
+  },
+  "over_count_rate": 0.06451612903225806,
+  "under_count_rate": 0.3064516129032258,
+  "item_category_f1": {
+    "mean": 0.5167434715821813,
+    "lo": 0.41289170506912437,
+    "hi": 0.619456605222734,
+    "n": 62
+  },
+  "negatives_rejected": {
+    "mean": 0.4444444444444444,
+    "lo": 0.1111111111111111,
+    "hi": 0.7777777777777778,
+    "n": 9
+  },
+  "negatives_rejected_by_type": {
+    "non_jewellery": {
+      "mean": 0.8,
+      "lo": 0.4,
+      "hi": 1.0,
+      "n": 5
+    },
+    "out_of_scope_jewellery": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 4
+    }
+  },
+  "by_tag": {
+    "chain": {
+      "n": 4,
+      "count_exact": {
+        "mean": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "n": 4
+      },
+      "item_category_f1": {
+        "mean": 0.5595238095238095,
+        "lo": 0.5,
+        "hi": 0.625,
+        "n": 4
+      },
+      "category_acc_first": {
+        "mean": null,
+        "lo": null,
+        "hi": null,
+        "n": 0
+      }
+    },
+    "overlap": {
+      "n": 11,
+      "count_exact": {
+        "mean": 0.09090909090909091,
+        "lo": 0.0,
+        "hi": 0.2727272727272727,
+        "n": 11
+      },
+      "item_category_f1": {
+        "mean": 0.5757575757575757,
+        "lo": 0.4393939393939394,
+        "hi": 0.6666666666666667,
+        "n": 11
+      },
+      "category_acc_first": {
+        "mean": 0.8571428571428571,
+        "lo": 0.5714285714285714,
+        "hi": 1.0,
+        "n": 7
+      }
+    },
+    "hand_held": {
+      "n": 1,
+      "count_exact": {
+        "mean": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "n": 1
+      },
+      "item_category_f1": {
+        "mean": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "n": 1
+      },
+      "category_acc_first": {
+        "mean": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "n": 1
+      }
+    },
+    "blur": {
+      "n": 1,
+      "count_exact": {
+        "mean": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "n": 1
+      },
+      "item_category_f1": {
+        "mean": 0.6666666666666666,
+        "lo": 0.6666666666666666,
+        "hi": 0.6666666666666666,
+        "n": 1
+      },
+      "category_acc_first": {
+        "mean": 1.0,
+        "lo": 1.0,
+        "hi": 1.0,
+        "n": 1
+      }
+    },
+    "multi_item": {
+      "n": 40,
+      "count_exact": {
+        "mean": 0.475,
+        "lo": 0.325,
+        "hi": 0.625,
+        "n": 40
+      },
+      "item_category_f1": {
+        "mean": 0.7342857142857142,
+        "lo": 0.6434404761904762,
+        "hi": 0.8143035714285713,
+        "n": 40
+      },
+      "category_acc_first": {
+        "mean": 0.8823529411764706,
+        "lo": 0.7647058823529411,
+        "hi": 0.9705882352941176,
+        "n": 34
+      }
+    },
+    "no_tag": {
+      "n": 22,
+      "count_exact": {
+        "mean": 0.9090909090909091,
+        "lo": 0.7727272727272727,
+        "hi": 1.0,
+        "n": 22
+      },
+      "item_category_f1": {
+        "mean": 0.1212121212121212,
+        "lo": 0.0,
+        "hi": 0.2727272727272727,
+        "n": 22
+      },
+      "category_acc_first": {
+        "mean": 0.13636363636363635,
+        "lo": 0.0,
+        "hi": 0.3181818181818182,
+        "n": 22
+      }
+    }
+  },
+  "graded": {
+    "n_items": 50,
+    "n_bad_crop": 0,
+    "n_unmatched": 0,
+    "ndcg5": {
+      "mean": 0.8741101682073027,
+      "lo": 0.8194467852135641,
+      "hi": 0.927743040770361,
+      "n": 50
+    },
+    "p5": {
+      "mean": 0.9159999999999999,
+      "lo": 0.86,
+      "hi": 0.968,
+      "n": 50
+    },
+    "s1": {
+      "mean": 0.88,
+      "lo": 0.78,
+      "hi": 0.96,
+      "n": 50
+    },
+    "mean_grade": {
+      "mean": 2.648,
+      "lo": 2.492,
+      "hi": 2.796,
+      "n": 50
+    },
+    "judged": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n": 50
+    }
+  }
+}

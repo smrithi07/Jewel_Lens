@@ -112,3 +112,92 @@ Exact-match retrieval metrics (Recall@1/5, MRR) were descoped: the stumper photo
 9. Lightweight feedback capture (thumbs up/down per result) to build a real labelled dataset over time for retraining the classifier and calibrating thresholds, rather than relying on our small hand-built test sets.
 10. Revisit the dress→jewellery cross-domain recommendation idea we deliberately cut early — a genuinely different, higher-effort feature, better suited to a longer build.
 11. Merge same-class adjacent boxes for elongated objects (chains) and reconsider NMS's overlap-only merge logic so it stops conflating "two segments of one object" with "two distinct overlapping objects" — the two review-set failures documented above are opposite symptoms of that same fix.
+---
+
+# v2 decisions (2026-10, Phases 0–10)
+
+Each entry lists what was decided, the alternatives tested and the measured evidence. "Tune" and "holdout" are the two halves of the stumper set, split by photo and stratified by folder; choices were made on tune (or catalogue val) and reported on holdout. Full tables are in `results/LOG.md`.
+
+## Evaluation design
+- **Decision:** two complementary benchmarks.
+  - The **same-listing protocol** on a fixed listing-level catalogue split (query = one image of a listing; relevant = the same listing; query image excluded).
+  - **Graded own-photo evaluation** (0–3 grades on real phone photos).
+- **Alternative rejected:** v1's CLIP auto-labelling of stumper ground truth. It is circular, because it picked the "correct" item from inside the top-5.
+- **Evidence it mattered:** Phase 7 improved same-listing test R@1 from 0.316 to 0.434 while lowering own-photo graded nDCG@5 from 0.90 to 0.64. Either benchmark alone would have given the wrong decision.
+- **Anti-overfitting rules:** tune/holdout split by folder; bootstrap CIs; a margin rule (a change must beat the current choice by more than 0.02 tune F1). Without that rule, Phase 5's tune-best detector config lowered holdout count accuracy from 0.629 to 0.548.
+
+## Category classifier: the root cause of the earring bias
+- **Finding:** the classifier was trained on raw DINOv2 CLS vectors (norm ≈ 46) and fed L2-normalised ones (norm 1). In production it predicted "earring" for 13,352/13,352 catalogue images. The intercepts were a symptom, not the cause.
+- **Decision:** a fused category (`src/pipeline/category.py`, `CATEGORY_MODE="fused"`), the equal-weight average of:
+  - a kNN vote over retrieved neighbours;
+  - CLIP zero-shot on the crop (prompts chosen on train catalogue images);
+  - a classifier retrained on normalised clean, augmented and detector-crop views (balanced weights, temperature-scaled, val ECE 0.007).
+- **Alternatives tested:** each signal alone, every equal-weight subset, a weighted grid, and logistic-regression stacking (leave-one-photo-out tune accuracy 0.773, not adopted). The detector label gets weight 0.
+- **Evidence:** holdout category accuracy 0.589 → 0.946; item-category F1 0.517 → 0.813; Success@1 0.88 → 0.96. Cost: +28 ms per item.
+
+## Metadata backfill
+- **Decision:**
+  1. Map the 33 Shopify colour strings to the palette.
+  2. Apply category-aware title rules.
+  3. Fill remaining blanks with a linear probe on CLIP+DINOv2 listing features, trained on train-split known labels, with a calibrated threshold and per-class gating.
+- **Alternative rejected:** CLIP zero-shot (39% subtype top-1 accuracy; 3% coverage at usable precision).
+- **Evidence:** user spot-check 42/44 subtype and 53/55 colour correct.
+- **Guard:** the "trusted" metrics use only title/variant labels, so image-model labels cannot flatter image-model retrievers.
+
+## Detection (no change adopted)
+- **Tested on tune:** OWLv2, Grounding DINO-tiny, prompt ensembles (max/mean, plus generic "jewellery"), class-agnostic vs per-class NMS, pair protection, group-box drop, chain merge, minimum box size, SAHI-style tiling, retrieval verification.
+- **Evidence:**
+  - Grounding DINO: best tune F1 (0.732 vs 0.708) but about 16× slower and below the margin. Kept in reserve.
+  - Diagnosis: 20 of 25 undercounted photos have no box above threshold even before NMS. The real failure is recall on small items inside larger ones, which the NMS rules cannot fix.
+  - Tiling cut undercounting (0.41 → 0.34) but added overcounting (0.11 → 0.20).
+- **YOLO on pseudo-labels:** skipped (user decision). Pseudo-labels from the same detector would inherit its misses.
+
+## Embedding (no change adopted)
+- **Tested on val:** DINOv2 alone, DINOv2 on background-removed images (rembg/u2net), CLIP B/32, DINOv2+CLIP score fusion (weight grid), and listing scoring by mean / max+mean of images.
+- **Evidence (primary = mean MRR of clean and combined-aug queries):**
+
+  | variant | primary |
+  |---|---|
+  | DINOv2 | **0.264** |
+  | background removed | 0.233 |
+  | CLIP | 0.163 |
+  | best fusion | 0.263 |
+  | mean aggregation | 0.090 |
+
+  Background removal helps busy backgrounds (MRR +0.028) but hurts blur (−0.118) and is 3.6× slower.
+
+## Contrastive fine-tuning (not adopted)
+- **Tested:** a linear or residual-MLP projection head on frozen DINOv2 (identity initialised, InfoNCE, in-batch and hard negatives, early stopping on val), with listing positives and, separately, augmentation-only positives.
+- **Evidence:**
+  - Listing-positive head: test R@1 0.316 → 0.434, but own-photo holdout graded nDCG@5 0.90 → 0.64 (paired CI −0.33 to −0.19); wrong-category share of top-5 8% → 20%.
+  - Augmentation-only head: tune nDCG@5 0.635 → 0.538, failing the rule set in advance, so it never reached holdout.
+- **Reason:** instance discrimination on catalogue photos learns shop or listing style rather than design similarity.
+
+## Open-set decision and tiers
+- **Decision:**
+  - LOW 0.475 (2.5% false-reject budget on tune positives);
+  - a CLIP out-of-scope check (fixed prompts, threshold 0.813, the other 2.5%);
+  - HIGH 0.74 = "Closest matches" (P(grade ≥ 2) ≥ 0.9 on tune);
+  - margin 0, because it did not improve precision.
+- **Why not fit on negatives:** there were only 8 tune negatives, so thresholds control the false-reject rate on positives instead.
+- **Why grade ≥ 2 for the tier:** grade 3 was not predictable from similarity and drifted between grading sessions.
+- **Evidence (holdout):** false-accept 0.556 → 0.333 (non-jewellery 0.20 → 0.00); false-reject 0 → 0.063, all of them earrings read as rings.
+
+## Diversity (MMR)
+- **Decision:** λ = 0.7 for "more like this"; off for photo search.
+- **Evidence:** catalogue val nDCG@5 +0.016 and near-duplicate pairs 13.9% → 8.4%. Own-photo holdout nDCG@5 −0.093 (tune −0.039), because real-photo look-alikes are often near-duplicates of each other.
+
+## API / data fixes
+- `/predict` now preprocesses uploads (EXIF rotation).
+- `/catalogue-image` is restricted to `data/raw/`; it previously served `.env` and `config.py`.
+- Prices are converted to INR per shop (evryjewels USD, missoma GBP).
+- The API port is configurable through `PORT`.
+
+## Status of v1's "With two more weeks" list
+1. Classifier bias: fixed (it was the input bug; see above).
+2. Calibrated open-set threshold: done, but the negative set is still small (9 holdout).
+3. Metadata backfill: done (probe, not a VLM).
+4. Contrastive fine-tune: done as a head on frozen features. It helps catalogue metrics and hurts real-photo recommendations, so it was not adopted.
+8. "Find similar to this result": done (`/similar/<id>`, "More like this").
+11. Chain merge and NMS logic: implemented and ablated. It did not help, because those failures are mostly missing boxes, not merges.
+- Not done: 5 (automated stumper generation), 6 (100k-scale latency), 7 (colour and subtype filters in the UI; the metadata now supports them), 9 (feedback capture), 10 (dress → jewellery).

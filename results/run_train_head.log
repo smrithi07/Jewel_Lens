@@ -1,0 +1,10 @@
+views (45544, 768) | train listings 2459 | frozen val primary 0.2636
+  linear tau=0.05  hard=False best val primary 0.3791 (step 3000, 26s)
+  linear tau=0.05  hard=True  best val primary 0.3749 (step 800, 13s)
+  linear tau=0.1   hard=False best val primary 0.3804 (step 2700, 26s)
+  linear tau=0.1   hard=True  best val primary 0.3830 (step 2700, 27s)
+  mlp    tau=0.05  hard=False best val primary 0.3663 (step 2100, 39s)
+  mlp    tau=0.05  hard=True  best val primary 0.3594 (step 700, 19s)
+  mlp    tau=0.1   hard=False best val primary 0.3728 (step 1800, 35s)
+  mlp    tau=0.1   hard=True  best val primary 0.3578 (step 2800, 45s)
+chosen: linear tau=0.1 hard=True val primary 0.2636 -> 0.3830

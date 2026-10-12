@@ -1,0 +1,13 @@
+train (19619, 768) {np.str_('aug'): np.int64(8328), np.str_('clean'): np.int64(8328), np.str_('detcrop'): np.int64(2963)} | val (4303, 768)
+  clean              C=10.0  cv=0.969 val={np.str_('aug'): 0.949435180204411, np.str_('clean'): 0.9736417428725122, np.str_('detcrop'): 0.852991452991453} hard=0.926 (2s)
+  clean+aug          C=3.0   cv=0.953 val={np.str_('aug'): 0.9585798816568047, np.str_('clean'): 0.9714900484131254, np.str_('detcrop'): 0.8478632478632478} hard=0.932 (7s)
+  clean+aug+detcrop  C=3.0   cv=0.942 val={np.str_('aug'): 0.958041958041958, np.str_('clean'): 0.9747175901022055, np.str_('detcrop'): 0.8871794871794871} hard=0.941 (8s)
+{
+ "source_set": "clean+aug+detcrop",
+ "C": 3.0,
+ "temperature": 0.9,
+ "val_ece_before": 0.010334618121226312,
+ "val_ece_after": 0.007203770222676068,
+ "val_acc_all": 0.9556123634673483
+}
+{'v1_legacy_normalised_input': {'val_acc': 0.5363699744364397, 'val_ece': 0.38570644770725754}, 'v1_v1_raw_input': {'val_acc': 0.9500348594004183, 'val_ece': 0.0064701158072874914}}

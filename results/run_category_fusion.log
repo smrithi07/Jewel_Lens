@@ -1,0 +1,53 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 48400.49it/s]
+## Phase 4 — category identification (2026-10-11T18:20:46)
+
+Same OWL-ViT boxes as the baseline. Items: tune 85, holdout 98 (item truth = folder for single-category photos; mixed photos count via F1 against labelled counts). Chosen on **tune**, reported on **holdout** (95% bootstrap CIs). kNN k=20, T=1.0 (chosen on tune). CLIP prompts `names+subtypes|plain` (chosen offline on train catalogue images). LR stacking leave-one-photo-out acc on tune: 0.773.
+
+| signal(s) | tune item acc | holdout item acc | tune photo acc | holdout photo acc (first item) | tune item-cat F1 | holdout item-cat F1 |
+|---|---|---|---|---|---|---|
+| legacy | 0.627 | 0.697 [0.596, 0.787] | 0.588 | 0.589 [0.464, 0.732] | 0.455 | 0.517 [0.413, 0.619] |
+| det | 0.720 | 0.843 [0.775, 0.921] | 0.784 | 0.857 [0.750, 0.929] | 0.627 | 0.753 [0.666, 0.830] |
+| knn | 0.813 | 0.899 [0.831, 0.955] | 0.863 | 0.893 [0.804, 0.964] | 0.675 | 0.786 [0.712, 0.852] |
+| clip | 0.573 | 0.685 [0.584, 0.787] | 0.608 | 0.768 [0.643, 0.875] | 0.523 | 0.652 [0.563, 0.741] |
+| clf_v1 | 0.760 | 0.831 [0.753, 0.899] | 0.804 | 0.839 [0.750, 0.929] | 0.629 | 0.740 [0.661, 0.812] |
+| clf_v2 | 0.813 | 0.955 [0.910, 0.989] | 0.882 | 0.964 [0.911, 1.000] | 0.681 | 0.829 [0.769, 0.880] |
+| fused_grid | 0.853 | 0.933 [0.876, 0.978] | 0.902 | 0.929 [0.857, 0.982] | 0.715 | 0.821 [0.758, 0.876] |
+| det+knn+clip+clf_v1 | 0.827 | 0.899 [0.831, 0.955] | 0.882 | 0.911 [0.839, 0.982] | 0.692 | 0.796 [0.723, 0.856] |
+| det+knn+clf_v1+clf_v2 | 0.827 | 0.944 [0.888, 0.989] | 0.882 | 0.929 [0.857, 0.982] | 0.692 | 0.817 [0.750, 0.874] |
+| det+clip+clf_v1+clf_v2 | 0.827 | 0.899 [0.831, 0.955] | 0.882 | 0.911 [0.839, 0.982] | 0.692 | 0.804 [0.734, 0.863] |
+| knn+clip+clf_v1+clf_v2 | 0.827 | 0.933 [0.876, 0.978] | 0.863 | 0.929 [0.857, 0.982] | 0.690 | 0.821 [0.758, 0.876] |
+| det+knn+clip+clf_v1+clf_v2 | 0.827 | 0.933 [0.876, 0.978] | 0.882 | 0.929 [0.857, 0.982] | 0.692 | 0.817 [0.750, 0.874] |
+| knn+clip+clf_v2 **(winner)** | 0.840 | 0.933 [0.876, 0.978] | 0.902 | 0.946 [0.893, 1.000] | 0.708 | 0.813 [0.745, 0.872] |
+| stack_lr | 0.893 | 0.865 [0.787, 0.944] | 0.941 | 0.857 [0.767, 0.946] | 0.729 | 0.755 [0.674, 0.825] |
+
+Winner weights: `{'knn': 1.0, 'clip': 1.0, 'clf_v2': 1.0}`
+
+ECE on stumper items (lower = better calibrated): legacy 0.276, knn 0.046, clip 0.116, clf_v1 0.075, clf_v2 0.069
+
+Holdout confusion, legacy (rows = true; cols = earring / necklace / bracelet):
+
+| true | earring | necklace | bracelet |
+|---|---|---|---|
+| earring | 62 | 0 | 0 |
+| necklace | 14 | 0 | 0 |
+| bracelet | 13 | 0 | 0 |
+
+Holdout confusion, knn+clip+clf_v2 (rows = true; cols = earring / necklace / bracelet):
+
+| true | earring | necklace | bracelet |
+|---|---|---|---|
+| earring | 57 | 3 | 2 |
+| necklace | 1 | 13 | 0 |
+| bracelet | 0 | 0 | 13 |
+
+Per-tag holdout (item-category F1 / first-item acc):
+
+| tag | n | legacy | det | winner |
+|---|---|---|---|---|
+| chain | 4 | 0.56 / 0.00 | 0.63 / 0.00 | 0.63 / 0.00 |
+| overlap | 11 | 0.58 / 0.86 | 0.56 / 0.86 | 0.67 / 1.00 |
+| hand_held | 1 | 0.00 / 0.00 | 0.67 / 1.00 | 0.67 / 1.00 |
+| blur | 1 | 0.67 / 1.00 | 0.67 / 1.00 | 0.67 / 1.00 |
+| multi_item | 40 | 0.73 / 0.88 | 0.77 / 0.94 | 0.75 / 0.94 |
+| no_tag | 22 | 0.12 / 0.14 | 0.71 / 0.73 | 0.92 / 0.95 |

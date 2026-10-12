@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "jewel-lens-api",
+      "runtimeExecutable": "/usr/bin/env",
+      "runtimeArgs": ["PORT=5001", "venv2/bin/python", "src/api/app.py"],
+      "port": 5001
+    }
+  ]
+}

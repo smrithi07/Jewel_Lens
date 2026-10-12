@@ -17,8 +17,18 @@ def load_metadata():
     global _metadata_cache
     if _metadata_cache is None:
         df = pd.read_parquet(config.CATALOGUE_METADATA_PATH)
+        df["price"] = [to_inr(p, c) for p, c in zip(df["price"], df["catalogue_id"])]
         _metadata_cache = df.set_index("catalogue_id")[["price", "title", "listing_url"]].to_dict("index")
     return _metadata_cache
+
+
+def to_inr(price, catalogue_id):
+    """Store price -> INR (config.SHOP_CURRENCY / CURRENCY_TO_INR); missing or <= 0 -> None."""
+    if price is None or pd.isna(price) or float(price) <= 0:
+        return None
+    shop = catalogue_id.split("_")[1] if catalogue_id.startswith("shopify_") else ""
+    rate = config.CURRENCY_TO_INR[config.SHOP_CURRENCY.get(shop, "INR")]
+    return round(float(price) * rate)
 
 
 def enrich_with_metadata(results):

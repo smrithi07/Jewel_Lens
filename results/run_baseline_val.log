@@ -1,0 +1,179 @@
+Split=val: 502 eligible queries (47 sets), subset=300
+
+[retrieval/clean] 502 queries (stored embeddings)
+  [clean] 502/502 (100%) | 1094.1/s | ETA 0.0 min
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  clean prod: R@1=0.293 R@5=0.424 MRR=0.349 nDCG@5=0.360 catP@5(non-set)=0.953
+
+[retrieval/augmented] 10 conditions × 300 queries
+Loading embedder: facebook/dinov2-base ...
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 12908.22it/s]
+  [aug:clean] 32/300 (11%) | 5.6/s | ETA 0.8 min
+  [aug:clean] 80/300 (27%) | 7.2/s | ETA 0.5 min
+  [aug:clean] 128/300 (43%) | 7.7/s | ETA 0.4 min
+  [aug:clean] 176/300 (59%) | 7.9/s | ETA 0.3 min
+  [aug:clean] 224/300 (75%) | 7.9/s | ETA 0.2 min
+  [aug:clean] 272/300 (91%) | 8.0/s | ETA 0.1 min
+  [aug:clean] 300/300 (100%) | 8.1/s | ETA 0.0 min
+    clean            prod R@1=0.307 R@5=0.450 MRR=0.365
+  [aug:blur] 48/300 (16%) | 7.3/s | ETA 0.6 min
+  [aug:blur] 96/300 (32%) | 7.2/s | ETA 0.5 min
+  [aug:blur] 144/300 (48%) | 7.4/s | ETA 0.4 min
+  [aug:blur] 192/300 (64%) | 7.3/s | ETA 0.2 min
+  [aug:blur] 240/300 (80%) | 7.3/s | ETA 0.1 min
+  [aug:blur] 288/300 (96%) | 7.4/s | ETA 0.0 min
+  [aug:blur] 300/300 (100%) | 7.4/s | ETA 0.0 min
+    blur             prod R@1=0.137 R@5=0.230 MRR=0.179
+  [aug:low_light] 32/300 (11%) | 6.3/s | ETA 0.7 min
+  [aug:low_light] 80/300 (27%) | 6.2/s | ETA 0.6 min
+  [aug:low_light] 112/300 (37%) | 6.2/s | ETA 0.5 min
+  [aug:low_light] 160/300 (53%) | 6.3/s | ETA 0.4 min
+  [aug:low_light] 192/300 (64%) | 6.2/s | ETA 0.3 min
+  [aug:low_light] 224/300 (75%) | 6.1/s | ETA 0.2 min
+  [aug:low_light] 256/300 (85%) | 6.1/s | ETA 0.1 min
+  [aug:low_light] 300/300 (100%) | 6.1/s | ETA 0.0 min
+    low_light        prod R@1=0.280 R@5=0.420 MRR=0.338
+  [aug:bright_contrast] 48/300 (16%) | 8.4/s | ETA 0.5 min
+  [aug:bright_contrast] 96/300 (32%) | 8.3/s | ETA 0.4 min
+  [aug:bright_contrast] 144/300 (48%) | 8.4/s | ETA 0.3 min
+  [aug:bright_contrast] 192/300 (64%) | 8.1/s | ETA 0.2 min
+  [aug:bright_contrast] 240/300 (80%) | 8.0/s | ETA 0.1 min
+  [aug:bright_contrast] 288/300 (96%) | 8.0/s | ETA 0.0 min
+  [aug:bright_contrast] 300/300 (100%) | 8.0/s | ETA 0.0 min
+    bright_contrast  prod R@1=0.287 R@5=0.410 MRR=0.343
+  [aug:rotate] 32/300 (11%) | 6.1/s | ETA 0.7 min
+  [aug:rotate] 64/300 (21%) | 5.9/s | ETA 0.7 min
+  [aug:rotate] 96/300 (32%) | 6.0/s | ETA 0.6 min
+  [aug:rotate] 128/300 (43%) | 6.0/s | ETA 0.5 min
+  [aug:rotate] 160/300 (53%) | 6.0/s | ETA 0.4 min
+  [aug:rotate] 192/300 (64%) | 6.0/s | ETA 0.3 min
+  [aug:rotate] 224/300 (75%) | 5.9/s | ETA 0.2 min
+  [aug:rotate] 256/300 (85%) | 6.0/s | ETA 0.1 min
+  [aug:rotate] 300/300 (100%) | 6.0/s | ETA 0.0 min
+    rotate           prod R@1=0.253 R@5=0.377 MRR=0.315
+  [aug:crop_zoom] 48/300 (16%) | 7.3/s | ETA 0.6 min
+  [aug:crop_zoom] 96/300 (32%) | 7.4/s | ETA 0.5 min
+  [aug:crop_zoom] 144/300 (48%) | 7.6/s | ETA 0.3 min
+  [aug:crop_zoom] 192/300 (64%) | 7.5/s | ETA 0.2 min
+  [aug:crop_zoom] 240/300 (80%) | 7.5/s | ETA 0.1 min
+  [aug:crop_zoom] 288/300 (96%) | 7.5/s | ETA 0.0 min
+  [aug:crop_zoom] 300/300 (100%) | 7.5/s | ETA 0.0 min
+    crop_zoom        prod R@1=0.273 R@5=0.400 MRR=0.329
+  [aug:jpeg] 48/300 (16%) | 7.6/s | ETA 0.6 min
+  [aug:jpeg] 96/300 (32%) | 7.7/s | ETA 0.4 min
+  [aug:jpeg] 144/300 (48%) | 7.8/s | ETA 0.3 min
+  [aug:jpeg] 192/300 (64%) | 7.7/s | ETA 0.2 min
+  [aug:jpeg] 240/300 (80%) | 7.7/s | ETA 0.1 min
+  [aug:jpeg] 288/300 (96%) | 7.8/s | ETA 0.0 min
+  [aug:jpeg] 300/300 (100%) | 7.8/s | ETA 0.0 min
+    jpeg             prod R@1=0.317 R@5=0.433 MRR=0.367
+  [aug:busy_bg] 32/300 (11%) | 3.3/s | ETA 1.4 min
+  [aug:busy_bg] 64/300 (21%) | 3.2/s | ETA 1.2 min
+  [aug:busy_bg] 80/300 (27%) | 3.1/s | ETA 1.2 min
+  [aug:busy_bg] 112/300 (37%) | 3.3/s | ETA 1.0 min
+  [aug:busy_bg] 144/300 (48%) | 3.3/s | ETA 0.8 min
+  [aug:busy_bg] 176/300 (59%) | 3.3/s | ETA 0.6 min
+  [aug:busy_bg] 208/300 (69%) | 3.3/s | ETA 0.5 min
+  [aug:busy_bg] 224/300 (75%) | 3.3/s | ETA 0.4 min
+  [aug:busy_bg] 256/300 (85%) | 3.3/s | ETA 0.2 min
+  [aug:busy_bg] 288/300 (96%) | 3.3/s | ETA 0.1 min
+  [aug:busy_bg] 300/300 (100%) | 3.3/s | ETA 0.0 min
+    busy_bg          prod R@1=0.080 R@5=0.143 MRR=0.115
+  [aug:perspective] 48/300 (16%) | 7.6/s | ETA 0.6 min
+  [aug:perspective] 96/300 (32%) | 7.5/s | ETA 0.5 min
+  [aug:perspective] 144/300 (48%) | 7.4/s | ETA 0.3 min
+  [aug:perspective] 192/300 (64%) | 7.3/s | ETA 0.2 min
+  [aug:perspective] 240/300 (80%) | 7.3/s | ETA 0.1 min
+  [aug:perspective] 288/300 (96%) | 7.3/s | ETA 0.0 min
+  [aug:perspective] 300/300 (100%) | 7.2/s | ETA 0.0 min
+    perspective      prod R@1=0.270 R@5=0.417 MRR=0.339
+  [aug:combined] 32/300 (11%) | 4.0/s | ETA 1.1 min
+  [aug:combined] 64/300 (21%) | 4.1/s | ETA 1.0 min
+  [aug:combined] 96/300 (32%) | 4.1/s | ETA 0.8 min
+  [aug:combined] 128/300 (43%) | 4.0/s | ETA 0.7 min
+  [aug:combined] 160/300 (53%) | 3.9/s | ETA 0.6 min
+  [aug:combined] 192/300 (64%) | 3.9/s | ETA 0.5 min
+  [aug:combined] 208/300 (69%) | 3.8/s | ETA 0.4 min
+  [aug:combined] 240/300 (80%) | 3.8/s | ETA 0.3 min
+  [aug:combined] 272/300 (91%) | 3.8/s | ETA 0.1 min
+  [aug:combined] 300/300 (100%) | 3.7/s | ETA 0.0 min
+    combined         prod R@1=0.140 R@5=0.210 MRR=0.171
+
+[pipeline] clean + combined × 300 queries
+Loading detector: google/owlvit-base-patch32 ...
+Loading weights:   0%|          | 0/412 [00:00<?, ?it/s]Loading weights: 100%|██████████| 412/412 [00:00<00:00, 6957.13it/s]
+  [pipeline:clean] 7/300 (2%) | 1.3/s | ETA 3.7 min
+  [pipeline:clean] 17/300 (6%) | 1.6/s | ETA 2.9 min
+  [pipeline:clean] 25/300 (8%) | 1.6/s | ETA 2.8 min
+  [pipeline:clean] 35/300 (12%) | 1.7/s | ETA 2.6 min
+  [pipeline:clean] 44/300 (15%) | 1.7/s | ETA 2.5 min
+  [pipeline:clean] 55/300 (18%) | 1.8/s | ETA 2.3 min
+  [pipeline:clean] 64/300 (21%) | 1.8/s | ETA 2.2 min
+  [pipeline:clean] 72/300 (24%) | 1.7/s | ETA 2.2 min
+  [pipeline:clean] 78/300 (26%) | 1.7/s | ETA 2.2 min
+  [pipeline:clean] 88/300 (29%) | 1.7/s | ETA 2.1 min
+  [pipeline:clean] 98/300 (33%) | 1.7/s | ETA 2.0 min
+  [pipeline:clean] 108/300 (36%) | 1.7/s | ETA 1.9 min
+  [pipeline:clean] 117/300 (39%) | 1.7/s | ETA 1.8 min
+  [pipeline:clean] 124/300 (41%) | 1.7/s | ETA 1.7 min
+  [pipeline:clean] 133/300 (44%) | 1.7/s | ETA 1.6 min
+  [pipeline:clean] 142/300 (47%) | 1.7/s | ETA 1.5 min
+  [pipeline:clean] 152/300 (51%) | 1.7/s | ETA 1.4 min
+  [pipeline:clean] 161/300 (54%) | 1.7/s | ETA 1.4 min
+  [pipeline:clean] 168/300 (56%) | 1.7/s | ETA 1.3 min
+  [pipeline:clean] 177/300 (59%) | 1.7/s | ETA 1.2 min
+  [pipeline:clean] 185/300 (62%) | 1.7/s | ETA 1.1 min
+  [pipeline:clean] 195/300 (65%) | 1.7/s | ETA 1.0 min
+  [pipeline:clean] 206/300 (69%) | 1.7/s | ETA 0.9 min
+  [pipeline:clean] 217/300 (72%) | 1.7/s | ETA 0.8 min
+  [pipeline:clean] 225/300 (75%) | 1.7/s | ETA 0.7 min
+  [pipeline:clean] 235/300 (78%) | 1.7/s | ETA 0.6 min
+  [pipeline:clean] 247/300 (82%) | 1.7/s | ETA 0.5 min
+  [pipeline:clean] 255/300 (85%) | 1.7/s | ETA 0.4 min
+  [pipeline:clean] 267/300 (89%) | 1.7/s | ETA 0.3 min
+  [pipeline:clean] 277/300 (92%) | 1.7/s | ETA 0.2 min
+  [pipeline:clean] 288/300 (96%) | 1.8/s | ETA 0.1 min
+  [pipeline:clean] 298/300 (99%) | 1.8/s | ETA 0.0 min
+  [pipeline:clean] 300/300 (100%) | 1.8/s | ETA 0.0 min
+    pipeline clean      prod R@1=0.283 R@5=0.427 det_rate=0.977
+  [pipeline:combined] 9/300 (3%) | 1.7/s | ETA 2.9 min
+  [pipeline:combined] 18/300 (6%) | 1.7/s | ETA 2.8 min
+  [pipeline:combined] 27/300 (9%) | 1.7/s | ETA 2.7 min
+  [pipeline:combined] 35/300 (12%) | 1.6/s | ETA 2.7 min
+  [pipeline:combined] 43/300 (14%) | 1.6/s | ETA 2.6 min
+  [pipeline:combined] 52/300 (17%) | 1.6/s | ETA 2.5 min
+  [pipeline:combined] 61/300 (20%) | 1.6/s | ETA 2.4 min
+  [pipeline:combined] 70/300 (23%) | 1.6/s | ETA 2.4 min
+  [pipeline:combined] 77/300 (26%) | 1.6/s | ETA 2.3 min
+  [pipeline:combined] 86/300 (29%) | 1.6/s | ETA 2.2 min
+  [pipeline:combined] 97/300 (32%) | 1.6/s | ETA 2.1 min
+  [pipeline:combined] 104/300 (35%) | 1.6/s | ETA 2.0 min
+  [pipeline:combined] 113/300 (38%) | 1.6/s | ETA 1.9 min
+  [pipeline:combined] 121/300 (40%) | 1.6/s | ETA 1.8 min
+  [pipeline:combined] 128/300 (43%) | 1.6/s | ETA 1.8 min
+  [pipeline:combined] 136/300 (45%) | 1.6/s | ETA 1.7 min
+  [pipeline:combined] 144/300 (48%) | 1.6/s | ETA 1.6 min
+  [pipeline:combined] 150/300 (50%) | 1.6/s | ETA 1.6 min
+  [pipeline:combined] 158/300 (53%) | 1.6/s | ETA 1.5 min
+  [pipeline:combined] 166/300 (55%) | 1.6/s | ETA 1.4 min
+  [pipeline:combined] 171/300 (57%) | 1.5/s | ETA 1.4 min
+  [pipeline:combined] 179/300 (60%) | 1.5/s | ETA 1.3 min
+  [pipeline:combined] 184/300 (61%) | 1.5/s | ETA 1.3 min
+  [pipeline:combined] 193/300 (64%) | 1.5/s | ETA 1.2 min
+  [pipeline:combined] 200/300 (67%) | 1.5/s | ETA 1.1 min
+  [pipeline:combined] 207/300 (69%) | 1.5/s | ETA 1.0 min
+  [pipeline:combined] 214/300 (71%) | 1.5/s | ETA 1.0 min
+  [pipeline:combined] 223/300 (74%) | 1.5/s | ETA 0.9 min
+  [pipeline:combined] 230/300 (77%) | 1.5/s | ETA 0.8 min
+  [pipeline:combined] 239/300 (80%) | 1.5/s | ETA 0.7 min
+  [pipeline:combined] 247/300 (82%) | 1.5/s | ETA 0.6 min
+  [pipeline:combined] 255/300 (85%) | 1.5/s | ETA 0.5 min
+  [pipeline:combined] 263/300 (88%) | 1.5/s | ETA 0.4 min
+  [pipeline:combined] 270/300 (90%) | 1.5/s | ETA 0.3 min
+  [pipeline:combined] 279/300 (93%) | 1.5/s | ETA 0.2 min
+  [pipeline:combined] 286/300 (95%) | 1.5/s | ETA 0.2 min
+  [pipeline:combined] 292/300 (97%) | 1.5/s | ETA 0.1 min
+  [pipeline:combined] 300/300 (100%) | 1.5/s | ETA 0.0 min
+    pipeline combined   prod R@1=0.133 R@5=0.217 det_rate=0.623
+
+Wrote results/baseline.json, results/baseline_report.html, appended results/LOG.md in 14.7 min

@@ -1,0 +1,42 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 38155.31it/s]
+## Phase 7 — contrastive projection head [ftaug] (2026-10-12T11:52:50)
+
+Head: linear, tau=0.05, hard negatives=True, best step 1200 (chosen on val). Trained on train-split listings only. Projection adds 0.08 ms per query; index 41 MB, dim 768.
+
+**Catalogue val (exact search, same-listing protocol)**
+
+| variant | primary | primary (fused) | R@1 | R@5 | R@10 | MRR | nDCG@5 | graded nDCG@5 (trusted) | cat P@5 (non-set) | colour P@5 (trusted) | subtype P@5 (trusted) |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| A frozen | 0.2636 | 0.2636 | 0.297 [0.257, 0.335] | 0.424 | 0.472 | 0.351 [0.311, 0.387] | 0.362 | 0.710 | 0.959 | 0.470 | 0.522 |
+| FT | 0.3079 | 0.3088 | 0.321 [0.279, 0.361] | 0.450 | 0.508 | 0.381 [0.341, 0.419] | 0.389 | 0.696 | 0.923 | 0.508 | 0.507 |
+
+Per augmentation (val, R@1 / MRR, no re-rank):
+
+| aug | A frozen | FT |
+|---|---|---|
+| clean | 0.297 / 0.351 | 0.321 / 0.381 |
+| blur | 0.137 / 0.180 | 0.213 / 0.256 |
+| low_light | 0.283 / 0.341 | 0.293 / 0.357 |
+| bright_contrast | 0.293 / 0.348 | 0.320 / 0.373 |
+| rotate | 0.260 / 0.319 | 0.270 / 0.345 |
+| crop_zoom | 0.277 / 0.333 | 0.317 / 0.375 |
+| jpeg | 0.323 / 0.372 | 0.317 / 0.379 |
+| busy_bg | 0.073 / 0.114 | 0.167 / 0.223 |
+| perspective | 0.280 / 0.345 | 0.293 / 0.361 |
+| combined | 0.140 / 0.176 | 0.187 / 0.235 |
+
+Per category (clean, non-set, R@1 / MRR):
+
+| category | A frozen | FT |
+|---|---|---|
+| earring | 0.288 / 0.343 | 0.313 / 0.364 |
+| necklace | 0.222 / 0.279 | 0.241 / 0.321 |
+| bracelet | 0.394 / 0.442 | 0.404 / 0.461 |
+
+**Own photos (production boxes; retrieval and fused category from each variant's own neighbours)**
+
+| metric | half | A frozen | FT |
+|---|---|---|---|
+| Category acc (first item) | tune | 0.902 [0.824, 0.980] | 0.882 [0.784, 0.961] |
+| Item-category F1 | tune | 0.712 [0.626, 0.792] | 0.690 [0.608, 0.768] |

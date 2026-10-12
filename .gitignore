@@ -5,3 +5,5 @@ models/*.pkl
 __pycache__/
 *.pyc
 .env
+artifacts_backup/
+artifacts/

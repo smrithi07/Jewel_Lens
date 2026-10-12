@@ -1,0 +1,2352 @@
+[
+  {
+    "photo": "data/stumper/images/mixed/m1.jpeg",
+    "item_index": 0,
+    "box": [
+      192.36131286621094,
+      513.2116088867188,
+      973.1903076171875,
+      1226.6937255859375
+    ],
+    "detector_category": "necklace",
+    "detector_score": 0.35292506217956543,
+    "classifier_category": "earring",
+    "status": "match",
+    "similarity": 0.7247,
+    "top5": [
+      {
+        "catalogue_id": "shopify_rubans.in_9260243452078",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9260243452078/45425171464366.jpg",
+        "score": 0.7247454881668091
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9264440508578",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9264440508578/47605610709154.jpg",
+        "score": 0.6552934175729752
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15306264346790",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15306264346790/77741150437542.jpg",
+        "score": 0.6472549796104431
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9295320711330",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9295320711330/47007726010530.jpg",
+        "score": 0.6414139395952225
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9264442376354",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9264442376354/46604274270370.jpg",
+        "score": 0.6318520432710648
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/mixed/m1.jpeg",
+    "item_index": 1,
+    "box": [
+      823.991943359375,
+      785.9324340820312,
+      991.2274169921875,
+      955.0322265625
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.1216067373752594,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.6485,
+    "top5": [
+      {
+        "catalogue_id": "shopify_voylla.com_15360011042982",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15360011042982/78244821794982.jpg",
+        "score": 0.6485159134864807
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9033089056930",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9033089056930/45063952859298.jpg",
+        "score": 0.6460379099845887
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9257663332514",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9257663332514/46481716576418.jpg",
+        "score": 0.6400426959991455
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15266254618790",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15266254618790/77189327323302.jpg",
+        "score": 0.638878140449524
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15210987913382",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15210987913382/76997874679974.jpg",
+        "score": 0.6364541387557984
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/mixed/m11.jpeg",
+    "item_index": 0,
+    "box": [
+      5.672335624694824,
+      324.2901306152344,
+      1193.5887451171875,
+      1565.1011962890625
+    ],
+    "detector_category": "necklace",
+    "detector_score": 0.46871641278266907,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.5937,
+    "top5": [
+      {
+        "catalogue_id": "shopify_rubans.in_9219995467950",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9219995467950/45184271974574.jpg",
+        "score": 0.5937297368049621
+      },
+      {
+        "catalogue_id": "shopify_giva.co_8602503577762",
+        "category": "earring",
+        "image_path": "data/raw/shopify_giva.co_8602503577762/47079507001506.jpg",
+        "score": 0.5327203893661498
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15266254880934",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_voylla.com_15266254880934/77189332762790.jpg",
+        "score": 0.5163184833526612
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9213109993646",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9213109993646/45113325027502.jpg",
+        "score": 0.5135342800617217
+      },
+      {
+        "catalogue_id": "shopify_giva.co_8126630723746",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_giva.co_8126630723746/47077909987490.jpg",
+        "score": 0.5055660438537598
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/mixed/m12.jpeg",
+    "item_index": 0,
+    "box": [
+      3.538799285888672,
+      34.863426208496094,
+      1176.2138671875,
+      1597.230712890625
+    ],
+    "detector_category": "necklace",
+    "detector_score": 0.36313971877098083,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.6086,
+    "top5": [
+      {
+        "catalogue_id": "shopify_rubans.in_9219995205806",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9219995205806/45184269615278.jpg",
+        "score": 0.608627872467041
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9213112844462",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9213112844462/45113344196782.jpg",
+        "score": 0.5929861831665039
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9219995107502",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9219995107502/45184268566702.jpg",
+        "score": 0.577002899646759
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9209787220142",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9209787220142/45074438062254.jpg",
+        "score": 0.5725011992454528
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15229587226790",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15229587226790/76660296089766.jpg",
+        "score": 0.5506578850746154
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/mixed/m2.jpeg",
+    "item_index": 0,
+    "box": [
+      81.0036849975586,
+      73.29025268554688,
+      915.2257080078125,
+      1096.5440673828125
+    ],
+    "detector_category": "necklace",
+    "detector_score": 0.40594482421875,
+    "classifier_category": "earring",
+    "status": "match",
+    "similarity": 0.8354,
+    "top5": [
+      {
+        "catalogue_id": "shopify_rubans.in_9213065691310",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_9213065691310/45113014354094.jpg",
+        "score": 0.8354354804754257
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9213065887918",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_9213065887918/45113015632046.jpg",
+        "score": 0.7977983659505844
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15454213603494",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_voylla.com_15454213603494/79197388439718.jpg",
+        "score": 0.7927032417058945
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9209789087918",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_9209789087918/45074445631662.jpg",
+        "score": 0.7893573945760727
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15701972549798",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_voylla.com_15701972549798/79782079824038.jpg",
+        "score": 0.7833783334493637
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/mixed/m3.jpeg",
+    "item_index": 0,
+    "box": [
+      189.64732360839844,
+      240.5860137939453,
+      510.4809265136719,
+      958.9976806640625
+    ],
+    "detector_category": "necklace",
+    "detector_score": 0.3655715882778168,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.8072,
+    "top5": [
+      {
+        "catalogue_id": "shopify_rubans.in_9213071687854",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_9213071687854/45113038536878.jpg",
+        "score": 0.8072355556488037
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15454213669030",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_voylla.com_15454213669030/79197389029542.jpg",
+        "score": 0.7850074338912963
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9264442376354",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9264442376354/46604274270370.jpg",
+        "score": 0.7795184421539306
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9213068935342",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_9213068935342/45113033654446.jpg",
+        "score": 0.7721822428703308
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15228242559142",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_voylla.com_15228242559142/76619328979110.jpg",
+        "score": 0.7580794858932495
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/mixed/m8.jpeg",
+    "item_index": 0,
+    "box": [
+      45.35558319091797,
+      90.74859619140625,
+      1052.9610595703125,
+      1578.82958984375
+    ],
+    "detector_category": "necklace",
+    "detector_score": 0.5266783237457275,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.6803,
+    "top5": [
+      {
+        "catalogue_id": "shopify_missoma.com_6972461908071",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_missoma.com_6972461908071/31850033741927.jpg",
+        "score": 0.6803342258930206
+      },
+      {
+        "catalogue_id": "shopify_giva.co_8935959330978",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_giva.co_8935959330978/45850239762594.jpg",
+        "score": 0.6742813146114349
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_8922411368622",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_rubans.in_8922411368622/42138043777198.jpg",
+        "score": 0.673369482755661
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9219995795630",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_9219995795630/45184273088686.jpg",
+        "score": 0.6724029648303985
+      },
+      {
+        "catalogue_id": "shopify_giva.co_8934844334242",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_giva.co_8934844334242/46779147387042.jpg",
+        "score": 0.6715099966526031
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/mixed/m9.jpeg",
+    "item_index": 0,
+    "box": [
+      266.8765869140625,
+      83.7818603515625,
+      725.1351318359375,
+      1535.7607421875
+    ],
+    "detector_category": "necklace",
+    "detector_score": 0.41357317566871643,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.8305,
+    "top5": [
+      {
+        "catalogue_id": "shopify_rubans.in_7940092559534",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_7940092559534/33842055643310.jpg",
+        "score": 0.8304947340488433
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_7940097048750",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_7940097048750/33829347983534.jpg",
+        "score": 0.8008446419239044
+      },
+      {
+        "catalogue_id": "shopify_missoma.com_15884630917507",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_missoma.com_15884630917507/83062352445827.jpg",
+        "score": 0.7856137478351592
+      },
+      {
+        "catalogue_id": "shopify_jokerandwitch.com_7438826111165",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_jokerandwitch.com_7438826111165/33094373048509.jpg",
+        "score": 0.7744835937023162
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9210919551150",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_9210919551150/45086347722926.jpg",
+        "score": 0.7702161991596221
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e1.jpeg",
+    "item_index": 0,
+    "box": [
+      151.19383239746094,
+      412.2857360839844,
+      861.6996459960938,
+      953.4410400390625
+    ],
+    "detector_category": "bracelet",
+    "detector_score": 0.19344967603683472,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.7026,
+    "top5": [
+      {
+        "catalogue_id": "shopify_rubans.in_9213114122414",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9213114122414/45113355272366.jpg",
+        "score": 0.7025914740562439
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9260243452078",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9260243452078/45425171464366.jpg",
+        "score": 0.6808903169631958
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9222079152290",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9222079152290/45506297397410.jpg",
+        "score": 0.6742049407958984
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9077164802210",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9077164802210/45084905242786.jpg",
+        "score": 0.6685578775405884
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9008602415278",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9008602415278/43110551257262.jpg",
+        "score": 0.655302996635437
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e11.jpeg",
+    "item_index": 0,
+    "box": [
+      220.325927734375,
+      321.8097839355469,
+      451.8782958984375,
+      583.7758178710938
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.3775157928466797,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.5537,
+    "top5": [
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9242038141090",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9242038141090/46161320312994.jpg",
+        "score": 0.5537315106391907
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9260234440878",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9260234440878/45425142300846.jpg",
+        "score": 0.5397931134700775
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9219994747054",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9219994747054/45184264339630.jpg",
+        "score": 0.5358830785751343
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9213113860270",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9213113860270/45113352945838.jpg",
+        "score": 0.51856614112854
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9253715443874",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9253715443874/46392022171810.jpg",
+        "score": 0.5133868253231049
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e15.jpeg",
+    "item_index": 0,
+    "box": [
+      231.2301788330078,
+      426.69134521484375,
+      441.4820556640625,
+      1083.9117431640625
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.630365252494812,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.6806,
+    "top5": [
+      {
+        "catalogue_id": "shopify_rubans.in_9210912440494",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9210912440494/45086059331758.jpg",
+        "score": 0.6805989742279053
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9260236669102",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9260236669102/45425151246510.jpg",
+        "score": 0.6745652556419373
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9266306842786",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9266306842786/46627368534178.jpg",
+        "score": 0.6734873056411743
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15449062310054",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15449062310054/79108517429414.jpg",
+        "score": 0.6681190729141235
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7629738770509",
+        "category": "earring",
+        "image_path": "data/raw/shopify_evryjewels.com_7629738770509/34570027696205.jpg",
+        "score": 0.6614900827407837
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e18.jpeg",
+    "item_index": 0,
+    "box": [
+      394.71209716796875,
+      705.9589233398438,
+      573.6134033203125,
+      979.9732055664062
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.2962246835231781,
+    "classifier_category": "earring",
+    "status": "match",
+    "similarity": 0.6535,
+    "top5": [
+      {
+        "catalogue_id": "shopify_giva.co_7526593921186",
+        "category": "earring",
+        "image_path": "data/raw/shopify_giva.co_7526593921186/36583069810850.jpg",
+        "score": 0.6534758162498474
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15360011141286",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15360011141286/78246377259174.jpg",
+        "score": 0.6164258670806885
+      },
+      {
+        "catalogue_id": "shopify_missoma.com_6742462365799",
+        "category": "earring",
+        "image_path": "data/raw/shopify_missoma.com_6742462365799/31439276277863.jpg",
+        "score": 0.6069630336761475
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15360011632806",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15360011632806/78244465377446.jpg",
+        "score": 0.6056731295585632
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15210143416486",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15210143416486/76211054772390.jpg",
+        "score": 0.5978562784194946
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e22.jpeg",
+    "item_index": 0,
+    "box": [
+      97.87611389160156,
+      529.04931640625,
+      558.5181274414062,
+      1110.99169921875
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.3260324001312256,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.6581,
+    "top5": [
+      {
+        "catalogue_id": "shopify_voylla.com_15399582957734",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15399582957734/78724180312230.jpg",
+        "score": 0.6581130313873291
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9209787056302",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9209787056302/45074436522158.jpg",
+        "score": 0.635069637298584
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9271450927266",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9271450927266/46740971094178.jpg",
+        "score": 0.6227641987800598
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9260242731182",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9260242731182/45425168416942.jpg",
+        "score": 0.5898998069763184
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15399582793894",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15399582793894/78724179099814.jpg",
+        "score": 0.585871844291687
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e3.jpeg",
+    "item_index": 0,
+    "box": [
+      798.3526000976562,
+      361.2387390136719,
+      1136.20458984375,
+      993.908203125
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.19641883671283722,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.7311,
+    "top5": [
+      {
+        "catalogue_id": "shopify_rubans.in_9213114253486",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9213114253486/45113355305134.jpg",
+        "score": 0.7311336207389831
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15360011534502",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15360011534502/78244989042854.jpg",
+        "score": 0.7123520183563232
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9242093715618",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9242093715618/46161765662882.jpg",
+        "score": 0.7117126393318176
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15454212325542",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15454212325542/79197381525670.jpg",
+        "score": 0.7112066555023193
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9242859896994",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9242859896994/46178030485666.jpg",
+        "score": 0.7084855842590332
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e30.jpeg",
+    "item_index": 0,
+    "box": [
+      319.80218505859375,
+      534.229248046875,
+      927.1250610351562,
+      1238.58642578125
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.32767561078071594,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.6809,
+    "top5": [
+      {
+        "catalogue_id": "shopify_giva.co_5855892734114",
+        "category": "earring",
+        "image_path": "data/raw/shopify_giva.co_5855892734114/47073174519970.jpg",
+        "score": 0.6808806729316712
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9065597534382",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9065597534382/43714502688942.jpg",
+        "score": 0.6771032285690308
+      },
+      {
+        "catalogue_id": "shopify_missoma.com_6963978043495",
+        "category": "earring",
+        "image_path": "data/raw/shopify_missoma.com_6963978043495/31850041933927.jpg",
+        "score": 0.666118450164795
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9213108748462",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9213108748462/45113317621934.jpg",
+        "score": 0.6639970016479493
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9065597567150",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9065597567150/43714504655022.jpg",
+        "score": 0.6639258933067322
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e31.jpeg",
+    "item_index": 0,
+    "box": [
+      199.4440155029297,
+      607.9136962890625,
+      811.1311645507812,
+      1190.702880859375
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.35437217354774475,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.7502,
+    "top5": [
+      {
+        "catalogue_id": "shopify_giva.co_5855892734114",
+        "category": "earring",
+        "image_path": "data/raw/shopify_giva.co_5855892734114/47073174519970.jpg",
+        "score": 0.7502213072776794
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_7938190737582",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_7938190737582/33570449293486.jpg",
+        "score": 0.7245429706573486
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15569127538854",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15569127538854/79348173996198.jpg",
+        "score": 0.7063469839096069
+      },
+      {
+        "catalogue_id": "shopify_giva.co_8008807973026",
+        "category": "earring",
+        "image_path": "data/raw/shopify_giva.co_8008807973026/47365331943586.jpg",
+        "score": 0.6907004070281982
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15455972851878",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15455972851878/79229583229094.jpg",
+        "score": 0.6860660266876221
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e32.jpeg",
+    "item_index": 0,
+    "box": [
+      351.9955139160156,
+      567.8300170898438,
+      691.1915283203125,
+      898.3773193359375
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.3835444450378418,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.5425,
+    "top5": [
+      {
+        "catalogue_id": "shopify_voylla.com_15210142892198",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15210142892198/76221847371942.jpg",
+        "score": 0.5425476896762848
+      },
+      {
+        "catalogue_id": "shopify_giva.co_8602496467106",
+        "category": "earring",
+        "image_path": "data/raw/shopify_giva.co_8602496467106/47079509131426.jpg",
+        "score": 0.5242481398582458
+      },
+      {
+        "catalogue_id": "shopify_missoma.com_15963783070083",
+        "category": "earring",
+        "image_path": "data/raw/shopify_missoma.com_15963783070083/83912500740483.jpg",
+        "score": 0.516431884765625
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15360011698342",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15360011698342/78244426023078.jpg",
+        "score": 0.510001676082611
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9065600975022",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9065600975022/43714205647022.jpg",
+        "score": 0.5036786961555481
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e35.jpeg",
+    "item_index": 0,
+    "box": [
+      391.62188720703125,
+      825.4932250976562,
+      926.7194213867188,
+      1320.7635498046875
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.11586326360702515,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.5651,
+    "top5": [
+      {
+        "catalogue_id": "shopify_giva.co_8335009841314",
+        "category": "earring",
+        "image_path": "data/raw/shopify_giva.co_8335009841314/47435272388770.jpg",
+        "score": 0.5651384949684143
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9221350621346",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9221350621346/45470901534882.jpg",
+        "score": 0.5642727375030517
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7668584448077",
+        "category": "earring",
+        "image_path": "data/raw/shopify_evryjewels.com_7668584448077/35478884384845.jpg",
+        "score": 0.5581149518489837
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9295303671970",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9295303671970/47007563645090.jpg",
+        "score": 0.5549684524536133
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9232675504290",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9232675504290/45859865034914.jpg",
+        "score": 0.5463812708854675
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e36.jpeg",
+    "item_index": 0,
+    "box": [
+      276.4565734863281,
+      410.9940185546875,
+      998.8684692382812,
+      1311.3956298828125
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.3299091160297394,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.6443,
+    "top5": [
+      {
+        "catalogue_id": "shopify_giva.co_9258514120866",
+        "category": "earring",
+        "image_path": "data/raw/shopify_giva.co_9258514120866/47516679700642.jpg",
+        "score": 0.6442668771743775
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9242038141090",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9242038141090/46161320312994.jpg",
+        "score": 0.6401325798034668
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9232694149282",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9232694149282/45864314699938.jpg",
+        "score": 0.6375617718696595
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9253768822946",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9253768822946/46392753160354.jpg",
+        "score": 0.6370894050598145
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15399582498982",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15399582498982/78724177690790.jpg",
+        "score": 0.6367067432403565
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e40.jpeg",
+    "item_index": 0,
+    "box": [
+      203.2987518310547,
+      587.6950073242188,
+      701.3629150390625,
+      1094.423095703125
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.2370346039533615,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.6402,
+    "top5": [
+      {
+        "catalogue_id": "shopify_voylla.com_15210987913382",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15210987913382/76997874811046.jpg",
+        "score": 0.6402046132087708
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9253812961442",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9253812961442/46393691275426.jpg",
+        "score": 0.6150716590881348
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15210988404902",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_voylla.com_15210988404902/76997888344230.jpg",
+        "score": 0.6033645564317703
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9253768822946",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9253768822946/46392753160354.jpg",
+        "score": 0.5998424339294434
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9253942526114",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9253942526114/46396653863074.jpg",
+        "score": 0.5869780826568604
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e41.jpeg",
+    "item_index": 0,
+    "box": [
+      378.7994689941406,
+      804.5581665039062,
+      743.791748046875,
+      1439.5335693359375
+    ],
+    "detector_category": "necklace",
+    "detector_score": 0.270283579826355,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.6127,
+    "top5": [
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9271449452706",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9271449452706/46740949663906.jpg",
+        "score": 0.6126639246940613
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9266306842786",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9266306842786/47606289596578.jpg",
+        "score": 0.604692816734314
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9271507452066",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9271507452066/46741070708898.jpg",
+        "score": 0.5954114198684692
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9223477133474",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9223477133474/45589446197410.jpg",
+        "score": 0.5937846899032593
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15360011468966",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15360011468966/78245062213798.jpg",
+        "score": 0.5730811357498169
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e45.jpeg",
+    "item_index": 0,
+    "box": [
+      85.05284881591797,
+      679.5005493164062,
+      506.8117370605469,
+      1137.22607421875
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.177344411611557,
+    "classifier_category": "earring",
+    "status": "match",
+    "similarity": 0.7195,
+    "top5": [
+      {
+        "catalogue_id": "shopify_giva.co_7936677773474",
+        "category": "earring",
+        "image_path": "data/raw/shopify_giva.co_7936677773474/47554430632098.jpg",
+        "score": 0.7194967317581177
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9210914799790",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9210914799790/45086160814254.jpg",
+        "score": 0.6799472618103027
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_8832961183918",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_8832961183918/42282311024814.jpg",
+        "score": 0.6579118418693543
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_8673019887790",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_8673019887790/42283435524270.jpg",
+        "score": 0.6304162192344666
+      },
+      {
+        "catalogue_id": "shopify_giva.co_7552094666914",
+        "category": "earring",
+        "image_path": "data/raw/shopify_giva.co_7552094666914/47442659016866.jpg",
+        "score": 0.5797582316398621
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e49.jpeg",
+    "item_index": 0,
+    "box": [
+      593.4652099609375,
+      820.8953857421875,
+      810.4832153320312,
+      1377.0155029296875
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.5651915669441223,
+    "classifier_category": "earring",
+    "status": "match",
+    "similarity": 0.7331,
+    "top5": [
+      {
+        "catalogue_id": "shopify_rubans.in_8066967437486",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_8066967437486/34545241358510.jpg",
+        "score": 0.7330862951278687
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15210142531750",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15210142531750/76221894262950.jpg",
+        "score": 0.6959599924087525
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15210142695590",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15210142695590/76221869719718.jpg",
+        "score": 0.6808464002609254
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15210142826662",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15210142826662/76221855563942.jpg",
+        "score": 0.6613380384445191
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9222051692706",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9222051692706/45496695816354.jpg",
+        "score": 0.650329716205597
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e52.jpeg",
+    "item_index": 0,
+    "box": [
+      308.16534423828125,
+      718.3271484375,
+      855.1531372070312,
+      1182.966552734375
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.18463808298110962,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.7607,
+    "top5": [
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9222052184226",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9222052184226/45496933941410.jpg",
+        "score": 0.7607030868530273
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9291053170850",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9291053170850/46913740636322.jpg",
+        "score": 0.7469029426574707
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9223449903266",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9223449903266/45586103206050.jpg",
+        "score": 0.7445998191833496
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15360011501734",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15360011501734/78245047173286.jpg",
+        "score": 0.7331700921058655
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9291039277218",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9291039277218/46910995038370.jpg",
+        "score": 0.7324526309967041
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e54.jpeg",
+    "item_index": 0,
+    "box": [
+      92.22789764404297,
+      428.0989074707031,
+      934.5816040039062,
+      1459.444091796875
+    ],
+    "detector_category": "necklace",
+    "detector_score": 0.1604902148246765,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.7506,
+    "top5": [
+      {
+        "catalogue_id": "shopify_missoma.com_16215407067523",
+        "category": "earring",
+        "image_path": "data/raw/shopify_missoma.com_16215407067523/85476271128963.jpg",
+        "score": 0.7506170988082885
+      },
+      {
+        "catalogue_id": "shopify_giva.co_8156060811426",
+        "category": "earring",
+        "image_path": "data/raw/shopify_giva.co_8156060811426/47077609111714.jpg",
+        "score": 0.748254370689392
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7681603436621",
+        "category": "earring",
+        "image_path": "data/raw/shopify_evryjewels.com_7681603436621/37128051916877.jpg",
+        "score": 0.7094865560531616
+      },
+      {
+        "catalogue_id": "shopify_missoma.com_15940080959875",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_missoma.com_15940080959875/83592816722307.jpg",
+        "score": 0.6781675112247467
+      },
+      {
+        "catalogue_id": "shopify_missoma.com_15940082073987",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_missoma.com_15940082073987/83592823996803.jpg",
+        "score": 0.6618757736682892
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e56.jpeg",
+    "item_index": 0,
+    "box": [
+      191.246337890625,
+      747.6221923828125,
+      913.2850341796875,
+      1321.354248046875
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.2830263078212738,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.5533,
+    "top5": [
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9271450697890",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9271450697890/46740967063714.jpg",
+        "score": 0.5533165776729584
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15360011075750",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15360011075750/78244830150822.jpg",
+        "score": 0.5452118360996246
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9260233621678",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9260233621678/45425138368686.jpg",
+        "score": 0.5308278048038483
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9260234309806",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9260234309806/45425141612718.jpg",
+        "score": 0.5173510456085205
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9253768822946",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9253768822946/46392753160354.jpg",
+        "score": 0.5162126564979553
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e57.jpeg",
+    "item_index": 0,
+    "box": [
+      115.53679656982422,
+      494.181884765625,
+      910.458740234375,
+      1318.2650146484375
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.3728404641151428,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.6739,
+    "top5": [
+      {
+        "catalogue_id": "shopify_missoma.com_6742461513831",
+        "category": "earring",
+        "image_path": "data/raw/shopify_missoma.com_6742461513831/85669548196227.jpg",
+        "score": 0.673939642906189
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15234745008294",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15234745008294/76951973953702.jpg",
+        "score": 0.6720043396949769
+      },
+      {
+        "catalogue_id": "shopify_jokerandwitch.com_7111538311357",
+        "category": "earring",
+        "image_path": "data/raw/shopify_jokerandwitch.com_7111538311357/31274872045757.jpg",
+        "score": 0.6716558313369752
+      },
+      {
+        "catalogue_id": "shopify_jokerandwitch.com_7586705178813",
+        "category": "earring",
+        "image_path": "data/raw/shopify_jokerandwitch.com_7586705178813/34096360325309.jpg",
+        "score": 0.6612831926345826
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15360011894950",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15360011894950/78244398071974.jpg",
+        "score": 0.6527813649177552
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e58.jpeg",
+    "item_index": 0,
+    "box": [
+      109.00479888916016,
+      512.3390502929688,
+      519.3533935546875,
+      1096.1646728515625
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.10473723709583282,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.5759,
+    "top5": [
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9232647553186",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9232647553186/45859559440546.jpg",
+        "score": 0.5759182929992676
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9232250863778",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9232250863778/45841936842914.jpg",
+        "score": 0.5660042524337768
+      },
+      {
+        "catalogue_id": "shopify_giva.co_9256823980194",
+        "category": "earring",
+        "image_path": "data/raw/shopify_giva.co_9256823980194/47516725870754.jpg",
+        "score": 0.5591378569602966
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15210142498982",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15210142498982/76221896294566.jpg",
+        "score": 0.5468857645988464
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_8066967437486",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_8066967437486/34545240801454.jpg",
+        "score": 0.5406277537345886
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e6.jpeg",
+    "item_index": 0,
+    "box": [
+      686.908447265625,
+      429.3034362792969,
+      1005.146484375,
+      933.7289428710938
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.26554498076438904,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.6119,
+    "top5": [
+      {
+        "catalogue_id": "shopify_voylla.com_15701972254886",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_voylla.com_15701972254886/79782079463590.jpg",
+        "score": 0.6119302409887314
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9253775409314",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9253775409314/46393084739746.jpg",
+        "score": 0.6029163312911987
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15210987880614",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15210987880614/76997891522726.jpg",
+        "score": 0.6020077776908874
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_7401137963174",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_voylla.com_7401137963174/36573241770150.jpg",
+        "score": 0.5876143509149552
+      },
+      {
+        "catalogue_id": "shopify_missoma.com_15940083384707",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_missoma.com_15940083384707/83592829305219.jpg",
+        "score": 0.5858026045560837
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e67.jpeg",
+    "item_index": 0,
+    "box": [
+      525.1560668945312,
+      390.64599609375,
+      951.811279296875,
+      1264.9765625
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.281412810087204,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.6538,
+    "top5": [
+      {
+        "catalogue_id": "shopify_voylla.com_15340788547750",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15340788547750/78134754771110.jpg",
+        "score": 0.65380859375
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_8211624296622",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_8211624296622/35459897983150.jpg",
+        "score": 0.6400402784347534
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15216571383974",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15216571383974/76370003656870.jpg",
+        "score": 0.636340856552124
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9065597173934",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9065597173934/43714186674350.jpg",
+        "score": 0.6347512006759644
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7584948289613",
+        "category": "earring",
+        "image_path": "data/raw/shopify_evryjewels.com_7584948289613/34487844601933.jpg",
+        "score": 0.6324281096458435
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e68.jpeg",
+    "item_index": 0,
+    "box": [
+      73.06444549560547,
+      114.86883544921875,
+      1200.351318359375,
+      1084.7125244140625
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.24253077805042267,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.6313,
+    "top5": [
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9253909725346",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9253909725346/46394245513378.jpg",
+        "score": 0.6313394355773926
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9253952553122",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9253952553122/46397058547874.jpg",
+        "score": 0.6107096719741821
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9242859339938",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9242859339938/46178026291362.jpg",
+        "score": 0.6083252477645874
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9242088636578",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9242088636578/46161362845858.jpg",
+        "score": 0.6052627611160278
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9214803247266",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9214803247266/45255253426338.jpg",
+        "score": 0.6052518534660339
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e69.jpeg",
+    "item_index": 0,
+    "box": [
+      685.697021484375,
+      692.81494140625,
+      1098.16943359375,
+      1310.38427734375
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.22733719646930695,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.7309,
+    "top5": [
+      {
+        "catalogue_id": "shopify_voylla.com_15454212194470",
+        "category": "earring",
+        "image_path": "data/raw/shopify_voylla.com_15454212194470/79197380772006.jpg",
+        "score": 0.7309370994567871
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9271449125026",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9271449125026/46740945895586.jpg",
+        "score": 0.7260615587234497
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9291394941090",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9291394941090/46922532323490.jpg",
+        "score": 0.7260107159614563
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9213066477742",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_9213066477742/45113019695278.jpg",
+        "score": 0.714894151687622
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9232695460002",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9232695460002/45865392242850.jpg",
+        "score": 0.7120750904083252
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/earring/e9.jpeg",
+    "item_index": 0,
+    "box": [
+      157.51089477539062,
+      542.9965209960938,
+      661.5562744140625,
+      897.9906005859375
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.31809812784194946,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.7334,
+    "top5": [
+      {
+        "catalogue_id": "shopify_missoma.com_15383673995651",
+        "category": "earring",
+        "image_path": "data/raw/shopify_missoma.com_15383673995651/85615765160323.jpg",
+        "score": 0.7334012579917908
+      },
+      {
+        "catalogue_id": "shopify_missoma.com_15354963558787",
+        "category": "earring",
+        "image_path": "data/raw/shopify_missoma.com_15354963558787/78273445134723.jpg",
+        "score": 0.7326249074935913
+      },
+      {
+        "catalogue_id": "shopify_missoma.com_16107553259907",
+        "category": "earring",
+        "image_path": "data/raw/shopify_missoma.com_16107553259907/85272488903043.jpg",
+        "score": 0.7290633511543274
+      },
+      {
+        "catalogue_id": "shopify_missoma.com_15383674847619",
+        "category": "earring",
+        "image_path": "data/raw/shopify_missoma.com_15383674847619/78621390242179.jpg",
+        "score": 0.7237965655326843
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_8211624296622",
+        "category": "earring",
+        "image_path": "data/raw/shopify_rubans.in_8211624296622/35459897983150.jpg",
+        "score": 0.7036760044097901
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/necklace/Chain.jpeg",
+    "item_index": 0,
+    "box": [
+      140.9027099609375,
+      62.43286895751953,
+      604.4598388671875,
+      1229.54345703125
+    ],
+    "detector_category": "necklace",
+    "detector_score": 0.3011262118816376,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.6046,
+    "top5": [
+      {
+        "catalogue_id": "shopify_jokerandwitch.com_6675008225469",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_jokerandwitch.com_6675008225469/28735432720573.jpg",
+        "score": 0.6046018999814987
+      },
+      {
+        "catalogue_id": "shopify_missoma.com_15940083384707",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_missoma.com_15940083384707/83592829305219.jpg",
+        "score": 0.5988009375333786
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9260251938990",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_9260251938990/45425209344174.jpg",
+        "score": 0.5952856940031052
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7765447540813",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_evryjewels.com_7765447540813/35290658570317.jpg",
+        "score": 0.5941312116384506
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_7984546480302",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_7984546480302/35107277144238.jpg",
+        "score": 0.5767721337080002
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/necklace/c10.jpeg",
+    "item_index": 0,
+    "box": [
+      94.80442810058594,
+      131.52622985839844,
+      394.1241760253906,
+      1526.633056640625
+    ],
+    "detector_category": "necklace",
+    "detector_score": 0.4194270074367523,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.8888,
+    "top5": [
+      {
+        "catalogue_id": "shopify_rubans.in_7940097048750",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_7940097048750/33829347983534.jpg",
+        "score": 0.8887901389598847
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_7940092559534",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_7940092559534/33842055643310.jpg",
+        "score": 0.8749619805812836
+      },
+      {
+        "catalogue_id": "shopify_missoma.com_16296738554243",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_missoma.com_16296738554243/86269992632707.jpg",
+        "score": 0.8394609773159027
+      },
+      {
+        "catalogue_id": "shopify_jokerandwitch.com_7438826111165",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_jokerandwitch.com_7438826111165/33094373048509.jpg",
+        "score": 0.829897233247757
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7558920831053",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_evryjewels.com_7558920831053/34532665688141.jpg",
+        "score": 0.8285982692241669
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/necklace/c11.jpeg",
+    "item_index": 0,
+    "box": [
+      253.2547149658203,
+      1.043558120727539,
+      489.85504150390625,
+      1423.44775390625
+    ],
+    "detector_category": "necklace",
+    "detector_score": 0.4168122410774231,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.7405,
+    "top5": [
+      {
+        "catalogue_id": "shopify_rubans.in_8662257631406",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_8662257631406/42282055893166.jpg",
+        "score": 0.7405370283126831
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_7984546480302",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_7984546480302/33904497623214.jpg",
+        "score": 0.7313512969017029
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7643965718605",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7643965718605/37128718680141.jpg",
+        "score": 0.7285278224945069
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7703809294413",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7703809294413/35295718834253.jpg",
+        "score": 0.726382532119751
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9260249841838",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_9260249841838/45425199677614.jpg",
+        "score": 0.7254845905303955
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/necklace/c13.jpeg",
+    "item_index": 0,
+    "box": [
+      296.2466735839844,
+      63.03110122680664,
+      847.5589599609375,
+      969.88427734375
+    ],
+    "detector_category": "necklace",
+    "detector_score": 0.3363032937049866,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.7757,
+    "top5": [
+      {
+        "catalogue_id": "shopify_rubans.in_9219996778670",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_9219996778670/45184279249070.jpg",
+        "score": 0.7756666535139084
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_7439343681702",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_voylla.com_7439343681702/42612491976870.jpg",
+        "score": 0.7683662849664689
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9211679211694",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_9211679211694/45095344505006.jpg",
+        "score": 0.7524712079763413
+      },
+      {
+        "catalogue_id": "shopify_giva.co_9243295875234",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_giva.co_9243295875234/46904295751842.jpg",
+        "score": 0.7507855886220932
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_7940097048750",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_7940097048750/33829348966574.jpg",
+        "score": 0.7470476025342941
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/necklace/c18.jpeg",
+    "item_index": 0,
+    "box": [
+      391.520751953125,
+      73.17833709716797,
+      873.1799926757812,
+      1419.0250244140625
+    ],
+    "detector_category": "necklace",
+    "detector_score": 0.29768648743629456,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.8448,
+    "top5": [
+      {
+        "catalogue_id": "shopify_rubans.in_7940092559534",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_7940092559534/33842055643310.jpg",
+        "score": 0.8448496830463409
+      },
+      {
+        "catalogue_id": "shopify_jokerandwitch.com_7438826111165",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_jokerandwitch.com_7438826111165/33094373048509.jpg",
+        "score": 0.8396048319339752
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9065648717998",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_9065648717998/43714692579502.jpg",
+        "score": 0.8270197284221649
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9065647866030",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_9065647866030/43714688254126.jpg",
+        "score": 0.8243908059597015
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9210920304814",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_9210920304814/45086385340590.jpg",
+        "score": 0.8243530762195587
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/necklace/c3.jpeg",
+    "item_index": 0,
+    "box": [
+      37.56230545043945,
+      320.16644287109375,
+      744.302734375,
+      1269.3724365234375
+    ],
+    "detector_category": "necklace",
+    "detector_score": 0.11831767857074738,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.5956,
+    "top5": [
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_9232208789666",
+        "category": "earring",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_9232208789666/45840920871074.jpg",
+        "score": 0.5956020665168762
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15701973205158",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_voylla.com_15701973205158/79782083756198.jpg",
+        "score": 0.5746900135278702
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_8954413121698",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_8954413121698/44691570589858.jpg",
+        "score": 0.5661209517717362
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_8954421248162",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_8954421248162/44691771818146.jpg",
+        "score": 0.5594706827402115
+      },
+      {
+        "catalogue_id": "shopify_sangeetaboochra.com_8941048430754",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_sangeetaboochra.com_8941048430754/44393544286370.jpg",
+        "score": 0.5572239452600479
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/necklace/c4.jpeg",
+    "item_index": 0,
+    "box": [
+      337.4096374511719,
+      -0.38988590240478516,
+      1149.455078125,
+      1157.3714599609375
+    ],
+    "detector_category": "necklace",
+    "detector_score": 0.2694283723831177,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.5658,
+    "top5": [
+      {
+        "catalogue_id": "shopify_jokerandwitch.com_8272453075133",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_jokerandwitch.com_8272453075133/40057273254077.jpg",
+        "score": 0.5658426022529602
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7518596694093",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_evryjewels.com_7518596694093/33475798270029.jpg",
+        "score": 0.5446805691719055
+      },
+      {
+        "catalogue_id": "shopify_giva.co_7348875591842",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_giva.co_7348875591842/47073057996962.jpg",
+        "score": 0.5360691606998443
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9065656254638",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_9065656254638/43714746777774.jpg",
+        "score": 0.5338717436790467
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9219995599022",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_9219995599022/45184272367790.jpg",
+        "score": 0.5249989366531372
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/necklace/c6.jpeg",
+    "item_index": 0,
+    "box": [
+      50.58511734008789,
+      431.2786865234375,
+      677.9658813476562,
+      1086.682861328125
+    ],
+    "detector_category": "necklace",
+    "detector_score": 0.34240251779556274,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.5047,
+    "top5": [
+      {
+        "catalogue_id": "shopify_rubans.in_8669885104302",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_8669885104302/42283491852462.jpg",
+        "score": 0.5046626317501068
+      },
+      {
+        "catalogue_id": "shopify_missoma.com_16296673149315",
+        "category": "earring",
+        "image_path": "data/raw/shopify_missoma.com_16296673149315/86617176441219.jpg",
+        "score": 0.4843220794200897
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7684970119245",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_evryjewels.com_7684970119245/35349367128141.jpg",
+        "score": 0.47377568364143374
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_8662273196206",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_rubans.in_8662273196206/42282055631022.jpg",
+        "score": 0.46706563115119937
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7684970086477",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_evryjewels.com_7684970086477/34982485491789.jpg",
+        "score": 0.46205574154853823
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/bracelet/b1.jpeg",
+    "item_index": 0,
+    "box": [
+      312.0445556640625,
+      719.2607421875,
+      634.3458862304688,
+      1278.798095703125
+    ],
+    "detector_category": "bracelet",
+    "detector_score": 0.5445165038108826,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.756,
+    "top5": [
+      {
+        "catalogue_id": "shopify_evryjewels.com_7712244727885",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7712244727885/35340542443597.jpg",
+        "score": 0.7560495084524155
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7790421147725",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7790421147725/35996070805581.jpg",
+        "score": 0.7301861590147019
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7643965587533",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7643965587533/36199660486733.jpg",
+        "score": 0.7013724392652512
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7652711563341",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7652711563341/34751974637645.jpg",
+        "score": 0.6969329065084457
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7712244793421",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7712244793421/35340623872077.jpg",
+        "score": 0.6945056861639023
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/bracelet/b10.jpeg",
+    "item_index": 0,
+    "box": [
+      38.19194030761719,
+      433.2905578613281,
+      718.2969970703125,
+      763.929443359375
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.2616537809371948,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.7707,
+    "top5": [
+      {
+        "catalogue_id": "shopify_voylla.com_15216571777190",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_voylla.com_15216571777190/76370105368742.jpg",
+        "score": 0.7706745457649231
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15239422083238",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_voylla.com_15239422083238/76870939279526.jpg",
+        "score": 0.7548571419715882
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15216571809958",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_voylla.com_15216571809958/76370111627430.jpg",
+        "score": 0.7410889458656311
+      },
+      {
+        "catalogue_id": "shopify_jokerandwitch.com_8272452845757",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_jokerandwitch.com_8272452845757/40057283707069.jpg",
+        "score": 0.7375155282020569
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_7940192108718",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_rubans.in_7940192108718/39758002553006.jpg",
+        "score": 0.7347603631019592
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/bracelet/b13.jpeg",
+    "item_index": 0,
+    "box": [
+      417.06689453125,
+      539.9777221679688,
+      674.5738525390625,
+      1515.3905029296875
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.333808571100235,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.5821,
+    "top5": [
+      {
+        "catalogue_id": "shopify_evryjewels.com_7584960905293",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_evryjewels.com_7584960905293/34507447173197.jpg",
+        "score": 0.5821133065223694
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7629738672205",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_evryjewels.com_7629738672205/34517525069901.jpg",
+        "score": 0.5728983688354492
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7629738442829",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_evryjewels.com_7629738442829/34517525889101.jpg",
+        "score": 0.5571886110305786
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15210142204070",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_voylla.com_15210142204070/76221922607270.jpg",
+        "score": 0.5232638627290725
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7703809196109",
+        "category": "necklace",
+        "image_path": "data/raw/shopify_evryjewels.com_7703809196109/35430989889613.jpg",
+        "score": 0.5225717234611511
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/bracelet/b17.jpeg",
+    "item_index": 0,
+    "box": [
+      256.8299560546875,
+      571.842041015625,
+      627.4300537109375,
+      1384.999267578125
+    ],
+    "detector_category": "bracelet",
+    "detector_score": 0.3780447244644165,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.676,
+    "top5": [
+      {
+        "catalogue_id": "shopify_evryjewels.com_7766281125965",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7766281125965/35846816104525.jpg",
+        "score": 0.6760343700647354
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7766281257037",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7766281257037/35632294297677.jpg",
+        "score": 0.6708059698343277
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7643965587533",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7643965587533/34480214671437.jpg",
+        "score": 0.6563989907503128
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7652711563341",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7652711563341/34751974637645.jpg",
+        "score": 0.6480883151292801
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7697851875405",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7697851875405/36344811585613.jpg",
+        "score": 0.6446774989366532
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/bracelet/b18.jpeg",
+    "item_index": 0,
+    "box": [
+      453.34661865234375,
+      712.364990234375,
+      879.0961303710938,
+      1570.8603515625
+    ],
+    "detector_category": "earring",
+    "detector_score": 0.3150765597820282,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.7207,
+    "top5": [
+      {
+        "catalogue_id": "shopify_evryjewels.com_7703808966733",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7703808966733/35476437139533.jpg",
+        "score": 0.7206531316041946
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9213457170606",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_rubans.in_9213457170606/45119698075822.jpg",
+        "score": 0.7110574394464493
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_9209786269870",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_rubans.in_9209786269870/45074431869102.jpg",
+        "score": 0.7014163285493851
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7697851875405",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7697851875405/36344811585613.jpg",
+        "score": 0.6786081343889236
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7652711563341",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7652711563341/34751974637645.jpg",
+        "score": 0.6512627750635147
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/bracelet/b20.jpeg",
+    "item_index": 0,
+    "box": [
+      73.56794738769531,
+      370.29925537109375,
+      521.7595825195312,
+      1542.255126953125
+    ],
+    "detector_category": "bracelet",
+    "detector_score": 0.2270069122314453,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.5588,
+    "top5": [
+      {
+        "catalogue_id": "shopify_evryjewels.com_7712244793421",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7712244793421/35340623872077.jpg",
+        "score": 0.5588477194309235
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7643965587533",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7643965587533/36199660486733.jpg",
+        "score": 0.5434899270534516
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7643965653069",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7643965653069/34480213098573.jpg",
+        "score": 0.5312558948993683
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7652711563341",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7652711563341/34752507347021.jpg",
+        "score": 0.5311832368373871
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7643965620301",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7643965620301/34619899281485.jpg",
+        "score": 0.5236324012279511
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/bracelet/b3.jpeg",
+    "item_index": 0,
+    "box": [
+      511.4040222167969,
+      713.9466552734375,
+      648.0491943359375,
+      1142.810302734375
+    ],
+    "detector_category": "bracelet",
+    "detector_score": 0.35732394456863403,
+    "classifier_category": "earring",
+    "status": "match",
+    "similarity": 0.7558,
+    "top5": [
+      {
+        "catalogue_id": "shopify_evryjewels.com_6772691042381",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_6772691042381/29479232372813.jpg",
+        "score": 0.755787239074707
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7643965587533",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7643965587533/34480376774733.jpg",
+        "score": 0.724967405796051
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7652711563341",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7652711563341/34751974637645.jpg",
+        "score": 0.7187437868118286
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7550658183245",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7550658183245/34625558282317.jpg",
+        "score": 0.717884407043457
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7697852334157",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7697852334157/36344814207053.jpg",
+        "score": 0.7108078455924988
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/bracelet/b5.jpeg",
+    "item_index": 0,
+    "box": [
+      319.8366394042969,
+      556.678466796875,
+      544.0719604492188,
+      1001.484130859375
+    ],
+    "detector_category": "bracelet",
+    "detector_score": 0.5302509665489197,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.7975,
+    "top5": [
+      {
+        "catalogue_id": "shopify_evryjewels.com_7643965653069",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7643965653069/34480213098573.jpg",
+        "score": 0.7975099050998687
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7712244793421",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7712244793421/35340623872077.jpg",
+        "score": 0.7896296942234039
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7764187021389",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7764187021389/35887330525261.jpg",
+        "score": 0.7843797767162323
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7703808671821",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7703808671821/35478956769357.jpg",
+        "score": 0.7815629208087921
+      },
+      {
+        "catalogue_id": "shopify_evryjewels.com_7550658183245",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_evryjewels.com_7550658183245/34619963932749.jpg",
+        "score": 0.7758210265636444
+      }
+    ]
+  },
+  {
+    "photo": "data/stumper/images/bracelet/b8.jpeg",
+    "item_index": 0,
+    "box": [
+      191.22337341308594,
+      438.649169921875,
+      903.3845825195312,
+      1071.7156982421875
+    ],
+    "detector_category": "necklace",
+    "detector_score": 0.19484150409698486,
+    "classifier_category": "earring",
+    "status": "uncertain",
+    "similarity": 0.6772,
+    "top5": [
+      {
+        "catalogue_id": "shopify_voylla.com_15374076510374",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_voylla.com_15374076510374/78398457479334.jpg",
+        "score": 0.6772024762630463
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15374076674214",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_voylla.com_15374076674214/78398448042150.jpg",
+        "score": 0.6756892931461335
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15315943686310",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_voylla.com_15315943686310/77854993940646.jpg",
+        "score": 0.6491650474071503
+      },
+      {
+        "catalogue_id": "shopify_voylla.com_15374076543142",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_voylla.com_15374076543142/78398456561830.jpg",
+        "score": 0.6468206179141999
+      },
+      {
+        "catalogue_id": "shopify_rubans.in_8612485660846",
+        "category": "bracelet",
+        "image_path": "data/raw/shopify_rubans.in_8612485660846/37560792842414.jpg",
+        "score": 0.6449979674816132
+      }
+    ]
+  }
+]

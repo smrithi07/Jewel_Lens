@@ -1,0 +1,2789 @@
+{
+  "created": "2026-10-11T20:10:09",
+  "missing_detectors": [],
+  "baseline_tune": {
+    "detection_recall": 0.9344262295081968,
+    "count_exact": 0.47540983606557374,
+    "count_mae": 0.6721311475409836,
+    "item_category_f1": 0.7081967213114754,
+    "category_acc_first": 0.9019607843137255,
+    "under": 0.4098360655737705,
+    "over": 0.11475409836065574,
+    "latency_p50_s": 0.3178014169970993,
+    "latency_p95_s": 0.3789992161968257,
+    "by_tag": {
+      "chain": {
+        "n": 2,
+        "count_exact": 0.0,
+        "f1": 0.5
+      },
+      "overlap": {
+        "n": 14,
+        "count_exact": 0.07142857142857142,
+        "f1": 0.5452380952380952
+      },
+      "hand_held": {
+        "n": 1,
+        "count_exact": 0.0,
+        "f1": 0.6666666666666665
+      },
+      "pendant": {
+        "n": 1,
+        "count_exact": 0.0,
+        "f1": 0.8
+      },
+      "blur": {
+        "n": 4,
+        "count_exact": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "low_light": {
+        "n": 1,
+        "count_exact": 0.0,
+        "f1": 0.0
+      },
+      "multi_item": {
+        "n": 38,
+        "count_exact": 0.3157894736842105,
+        "f1": 0.6543859649122806
+      },
+      "no_tag": {
+        "n": 20,
+        "count_exact": 0.75,
+        "f1": 0.8166666666666667
+      }
+    }
+  },
+  "detector_benchmark": {
+    "owlvit": {
+      "cfg": {
+        "query_set": "current",
+        "agg": "max",
+        "agnostic_queries": false,
+        "nms_per_class": false,
+        "score_thr": 0.1,
+        "tiles": false,
+        "tile_score_thr": null,
+        "verify_sim": null,
+        "min_area_frac": 0.0,
+        "nms_iou": 0.3,
+        "pair_protect": false,
+        "group_drop": false,
+        "chain_merge": false
+      },
+      "tune": {
+        "detection_recall": 0.9344262295081968,
+        "count_exact": 0.47540983606557374,
+        "count_mae": 0.6721311475409836,
+        "item_category_f1": 0.7081967213114754,
+        "category_acc_first": 0.9019607843137255,
+        "under": 0.4098360655737705,
+        "over": 0.11475409836065574,
+        "latency_p50_s": 0.3178014169970993,
+        "latency_p95_s": 0.3789992161968257,
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "count_exact": 0.0,
+            "f1": 0.5
+          },
+          "overlap": {
+            "n": 14,
+            "count_exact": 0.07142857142857142,
+            "f1": 0.5452380952380952
+          },
+          "hand_held": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.6666666666666665
+          },
+          "pendant": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.8
+          },
+          "blur": {
+            "n": 4,
+            "count_exact": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "low_light": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.0
+          },
+          "multi_item": {
+            "n": 38,
+            "count_exact": 0.3157894736842105,
+            "f1": 0.6543859649122806
+          },
+          "no_tag": {
+            "n": 20,
+            "count_exact": 0.75,
+            "f1": 0.8166666666666667
+          }
+        }
+      },
+      "rejected_tuned": {
+        "cfg": {
+          "query_set": "current",
+          "agg": "max",
+          "agnostic_queries": false,
+          "nms_per_class": false,
+          "score_thr": 0.08,
+          "tiles": false,
+          "tile_score_thr": null,
+          "verify_sim": null,
+          "min_area_frac": 0.0,
+          "nms_iou": 0.5,
+          "pair_protect": false,
+          "group_drop": false,
+          "chain_merge": false
+        },
+        "tune": {
+          "detection_recall": 0.9344262295081968,
+          "count_exact": 0.47540983606557374,
+          "count_mae": 0.8360655737704918,
+          "item_category_f1": 0.7191256830601093,
+          "category_acc_first": 0.9019607843137255,
+          "under": 0.26229508196721313,
+          "over": 0.26229508196721313,
+          "latency_p50_s": 0.31779958300467115,
+          "latency_p95_s": 0.3790022163884714,
+          "by_tag": {
+            "chain": {
+              "n": 2,
+              "count_exact": 0.0,
+              "f1": 0.5
+            },
+            "overlap": {
+              "n": 14,
+              "count_exact": 0.2857142857142857,
+              "f1": 0.6071428571428571
+            },
+            "hand_held": {
+              "n": 1,
+              "count_exact": 0.0,
+              "f1": 0.6666666666666666
+            },
+            "pendant": {
+              "n": 1,
+              "count_exact": 1.0,
+              "f1": 1.0
+            },
+            "blur": {
+              "n": 4,
+              "count_exact": 0.75,
+              "f1": 0.75
+            },
+            "low_light": {
+              "n": 1,
+              "count_exact": 0.0,
+              "f1": 0.0
+            },
+            "multi_item": {
+              "n": 38,
+              "count_exact": 0.3684210526315789,
+              "f1": 0.6982456140350877
+            },
+            "no_tag": {
+              "n": 20,
+              "count_exact": 0.65,
+              "f1": 0.7666666666666667
+            }
+          }
+        }
+      }
+    },
+    "owlv2": {
+      "cfg": {
+        "query_set": "current",
+        "agg": "max",
+        "agnostic_queries": false,
+        "nms_per_class": false,
+        "score_thr": 0.12,
+        "tiles": false,
+        "tile_score_thr": null,
+        "verify_sim": null,
+        "min_area_frac": 0.0,
+        "nms_iou": 0.3,
+        "pair_protect": false,
+        "group_drop": false,
+        "chain_merge": false
+      },
+      "tune": {
+        "detection_recall": 0.9180327868852459,
+        "count_exact": 0.2786885245901639,
+        "count_mae": 1.8688524590163935,
+        "item_category_f1": 0.6163023679417121,
+        "category_acc_first": 0.86,
+        "under": 0.22950819672131148,
+        "over": 0.4918032786885246,
+        "latency_p50_s": 3.5502065000036964,
+        "latency_p95_s": 3.8178630332055032,
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "count_exact": 0.5,
+            "f1": 0.875
+          },
+          "overlap": {
+            "n": 14,
+            "count_exact": 0.14285714285714285,
+            "f1": 0.5607142857142857
+          },
+          "hand_held": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.7142857142857143
+          },
+          "pendant": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.42857142857142855
+          },
+          "blur": {
+            "n": 4,
+            "count_exact": 0.0,
+            "f1": 0.3333333333333333
+          },
+          "low_light": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.0
+          },
+          "multi_item": {
+            "n": 38,
+            "count_exact": 0.23684210526315788,
+            "f1": 0.6160192147034252
+          },
+          "no_tag": {
+            "n": 20,
+            "count_exact": 0.4,
+            "f1": 0.6426190476190475
+          }
+        }
+      }
+    },
+    "gdino": {
+      "cfg": {
+        "query_set": "current",
+        "agg": "max",
+        "agnostic_queries": false,
+        "nms_per_class": false,
+        "score_thr": 0.3,
+        "tiles": false,
+        "tile_score_thr": null,
+        "verify_sim": null,
+        "min_area_frac": 0.0,
+        "nms_iou": 0.3,
+        "pair_protect": false,
+        "group_drop": false,
+        "chain_merge": false
+      },
+      "tune": {
+        "detection_recall": 0.9672131147540983,
+        "count_exact": 0.4426229508196721,
+        "count_mae": 0.639344262295082,
+        "item_category_f1": 0.7316939890710382,
+        "category_acc_first": 0.8703703703703703,
+        "under": 0.26229508196721313,
+        "over": 0.29508196721311475,
+        "latency_p50_s": 5.328902499008109,
+        "latency_p95_s": 6.198012241398101,
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "count_exact": 0.0,
+            "f1": 0.6000000000000001
+          },
+          "overlap": {
+            "n": 14,
+            "count_exact": 0.21428571428571427,
+            "f1": 0.6380952380952382
+          },
+          "hand_held": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.5
+          },
+          "pendant": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.8
+          },
+          "blur": {
+            "n": 4,
+            "count_exact": 0.25,
+            "f1": 0.5833333333333333
+          },
+          "low_light": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.0
+          },
+          "multi_item": {
+            "n": 38,
+            "count_exact": 0.39473684210526316,
+            "f1": 0.7052631578947368
+          },
+          "no_tag": {
+            "n": 20,
+            "count_exact": 0.6,
+            "f1": 0.825
+          }
+        }
+      }
+    }
+  },
+  "chosen_detector": "owlvit",
+  "owlvit_threshold_note": "tuned thr/NMS did not beat v1 (0.1 / 0.3) by the margin; v1 kept",
+  "prompt_ensembling": {
+    "current/max": {
+      "cfg": {
+        "query_set": "current",
+        "agg": "max",
+        "agnostic_queries": false,
+        "nms_per_class": false,
+        "score_thr": 0.1,
+        "tiles": false,
+        "tile_score_thr": null,
+        "verify_sim": null,
+        "min_area_frac": 0.0,
+        "nms_iou": 0.3,
+        "pair_protect": false,
+        "group_drop": false,
+        "chain_merge": false
+      },
+      "tune": {
+        "detection_recall": 0.9344262295081968,
+        "count_exact": 0.47540983606557374,
+        "count_mae": 0.6721311475409836,
+        "item_category_f1": 0.7081967213114754,
+        "category_acc_first": 0.9019607843137255,
+        "under": 0.4098360655737705,
+        "over": 0.11475409836065574,
+        "latency_p50_s": 0.3177993749995949,
+        "latency_p95_s": 0.3789948833931703,
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "count_exact": 0.0,
+            "f1": 0.5
+          },
+          "overlap": {
+            "n": 14,
+            "count_exact": 0.07142857142857142,
+            "f1": 0.5452380952380952
+          },
+          "hand_held": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.6666666666666665
+          },
+          "pendant": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.8
+          },
+          "blur": {
+            "n": 4,
+            "count_exact": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "low_light": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.0
+          },
+          "multi_item": {
+            "n": 38,
+            "count_exact": 0.3157894736842105,
+            "f1": 0.6543859649122806
+          },
+          "no_tag": {
+            "n": 20,
+            "count_exact": 0.75,
+            "f1": 0.8166666666666667
+          }
+        }
+      }
+    },
+    "ensemble/max": {
+      "cfg": {
+        "query_set": "ensemble",
+        "agg": "max",
+        "agnostic_queries": false,
+        "nms_per_class": false,
+        "score_thr": 0.08,
+        "tiles": false,
+        "tile_score_thr": null,
+        "verify_sim": null,
+        "min_area_frac": 0.0,
+        "nms_iou": 0.3,
+        "pair_protect": false,
+        "group_drop": false,
+        "chain_merge": false
+      },
+      "tune": {
+        "detection_recall": 0.9672131147540983,
+        "count_exact": 0.4262295081967213,
+        "count_mae": 0.9508196721311475,
+        "item_category_f1": 0.7023419203747072,
+        "category_acc_first": 0.9056603773584906,
+        "under": 0.26229508196721313,
+        "over": 0.3114754098360656,
+        "latency_p50_s": 0.3178917079931125,
+        "latency_p95_s": 0.3790754668036243,
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "count_exact": 0.0,
+            "f1": 0.5
+          },
+          "overlap": {
+            "n": 14,
+            "count_exact": 0.07142857142857142,
+            "f1": 0.5537414965986395
+          },
+          "hand_held": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.7142857142857143
+          },
+          "pendant": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.6666666666666666
+          },
+          "blur": {
+            "n": 4,
+            "count_exact": 0.5,
+            "f1": 0.625
+          },
+          "low_light": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.0
+          },
+          "multi_item": {
+            "n": 38,
+            "count_exact": 0.3157894736842105,
+            "f1": 0.6795739348370928
+          },
+          "no_tag": {
+            "n": 20,
+            "count_exact": 0.65,
+            "f1": 0.775952380952381
+          }
+        }
+      }
+    },
+    "ensemble/mean": {
+      "cfg": {
+        "query_set": "ensemble",
+        "agg": "mean",
+        "agnostic_queries": false,
+        "nms_per_class": false,
+        "score_thr": 0.08,
+        "tiles": false,
+        "tile_score_thr": null,
+        "verify_sim": null,
+        "min_area_frac": 0.0,
+        "nms_iou": 0.3,
+        "pair_protect": false,
+        "group_drop": false,
+        "chain_merge": false
+      },
+      "tune": {
+        "detection_recall": 0.9344262295081968,
+        "count_exact": 0.4918032786885246,
+        "count_mae": 0.6885245901639344,
+        "item_category_f1": 0.6973458235753317,
+        "category_acc_first": 0.9019607843137255,
+        "under": 0.36065573770491804,
+        "over": 0.14754098360655737,
+        "latency_p50_s": 0.3179315830057021,
+        "latency_p95_s": 0.3790902993932832,
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "count_exact": 0.0,
+            "f1": 0.5
+          },
+          "overlap": {
+            "n": 14,
+            "count_exact": 0.14285714285714285,
+            "f1": 0.5170068027210883
+          },
+          "hand_held": {
+            "n": 1,
+            "count_exact": 1.0,
+            "f1": 0.6
+          },
+          "pendant": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.5714285714285715
+          },
+          "blur": {
+            "n": 4,
+            "count_exact": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "low_light": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.0
+          },
+          "multi_item": {
+            "n": 38,
+            "count_exact": 0.34210526315789475,
+            "f1": 0.643984962406015
+          },
+          "no_tag": {
+            "n": 20,
+            "count_exact": 0.75,
+            "f1": 0.8033333333333333
+          }
+        }
+      }
+    },
+    "ensemble/max/+jewellery": {
+      "cfg": {
+        "query_set": "ensemble",
+        "agg": "max",
+        "agnostic_queries": true,
+        "nms_per_class": false,
+        "score_thr": 0.12,
+        "tiles": false,
+        "tile_score_thr": null,
+        "verify_sim": null,
+        "min_area_frac": 0.0,
+        "nms_iou": 0.3,
+        "pair_protect": false,
+        "group_drop": false,
+        "chain_merge": false
+      },
+      "tune": {
+        "detection_recall": 1.0,
+        "count_exact": 0.4426229508196721,
+        "count_mae": 1.4262295081967213,
+        "item_category_f1": 0.7074857961068183,
+        "category_acc_first": 0.9090909090909091,
+        "under": 0.2459016393442623,
+        "over": 0.3114754098360656,
+        "latency_p50_s": 0.31786791600461584,
+        "latency_p95_s": 0.37909705839992963,
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "count_exact": 0.0,
+            "f1": 0.65
+          },
+          "overlap": {
+            "n": 14,
+            "count_exact": 0.07142857142857142,
+            "f1": 0.5872549019607842
+          },
+          "hand_held": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.5882352941176471
+          },
+          "pendant": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.6
+          },
+          "blur": {
+            "n": 4,
+            "count_exact": 0.75,
+            "f1": 0.875
+          },
+          "low_light": {
+            "n": 1,
+            "count_exact": 1.0,
+            "f1": 1.0
+          },
+          "multi_item": {
+            "n": 38,
+            "count_exact": 0.3157894736842105,
+            "f1": 0.6725429884872609
+          },
+          "no_tag": {
+            "n": 20,
+            "count_exact": 0.65,
+            "f1": 0.7549999999999999
+          }
+        }
+      }
+    },
+    "ensemble/mean/+jewellery": {
+      "cfg": {
+        "query_set": "ensemble",
+        "agg": "mean",
+        "agnostic_queries": true,
+        "nms_per_class": false,
+        "score_thr": 0.2,
+        "tiles": false,
+        "tile_score_thr": null,
+        "verify_sim": null,
+        "min_area_frac": 0.0,
+        "nms_iou": 0.3,
+        "pair_protect": false,
+        "group_drop": false,
+        "chain_merge": false
+      },
+      "tune": {
+        "detection_recall": 0.9672131147540983,
+        "count_exact": 0.4426229508196721,
+        "count_mae": 0.9344262295081968,
+        "item_category_f1": 0.7117906683480453,
+        "category_acc_first": 0.9056603773584906,
+        "under": 0.36065573770491804,
+        "over": 0.19672131147540983,
+        "latency_p50_s": 0.3179352910083253,
+        "latency_p95_s": 0.3791284745908342,
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "count_exact": 0.0,
+            "f1": 0.5
+          },
+          "overlap": {
+            "n": 14,
+            "count_exact": 0.07142857142857142,
+            "f1": 0.5608974358974359
+          },
+          "hand_held": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.7692307692307693
+          },
+          "pendant": {
+            "n": 1,
+            "count_exact": 1.0,
+            "f1": 1.0
+          },
+          "blur": {
+            "n": 4,
+            "count_exact": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "low_light": {
+            "n": 1,
+            "count_exact": 0.0,
+            "f1": 0.0
+          },
+          "multi_item": {
+            "n": 38,
+            "count_exact": 0.23684210526315788,
+            "f1": 0.6513832658569501
+          },
+          "no_tag": {
+            "n": 20,
+            "count_exact": 0.8,
+            "f1": 0.8333333333333334
+          }
+        }
+      }
+    }
+  },
+  "chosen_prompts": "current/max",
+  "rule_ablation_tune": {
+    "(none)": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.47540983606557374,
+      "count_mae": 0.6721311475409836,
+      "item_category_f1": 0.7081967213114754,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4098360655737705,
+      "over": 0.11475409836065574,
+      "latency_p50_s": 0.31780887399509083,
+      "latency_p95_s": 0.37901424179144666,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.07142857142857142,
+          "f1": 0.5452380952380952
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.6666666666666665
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3157894736842105,
+          "f1": 0.6543859649122806
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.75,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "+pair_protect": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.47540983606557374,
+      "count_mae": 0.6721311475409836,
+      "item_category_f1": 0.7081967213114754,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4098360655737705,
+      "over": 0.11475409836065574,
+      "latency_p50_s": 0.3178168330050539,
+      "latency_p95_s": 0.3790340745996218,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.07142857142857142,
+          "f1": 0.5452380952380952
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.6666666666666665
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3157894736842105,
+          "f1": 0.6543859649122806
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.75,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "+group_drop": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.5081967213114754,
+      "count_mae": 0.6229508196721312,
+      "item_category_f1": 0.7147540983606556,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4098360655737705,
+      "over": 0.08196721311475409,
+      "latency_p50_s": 0.3178999170049792,
+      "latency_p95_s": 0.37900371619616635,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.07142857142857142,
+          "f1": 0.5452380952380952
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.6666666666666665
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3684210526315789,
+          "f1": 0.6649122807017543
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.75,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "+chain_merge": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.47540983606557374,
+      "count_mae": 0.6721311475409836,
+      "item_category_f1": 0.7081967213114754,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4098360655737705,
+      "over": 0.11475409836065574,
+      "latency_p50_s": 0.31780387500475626,
+      "latency_p95_s": 0.37901964139309713,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.07142857142857142,
+          "f1": 0.5452380952380952
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.6666666666666665
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3157894736842105,
+          "f1": 0.6543859649122806
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.75,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "+min_box": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.47540983606557374,
+      "count_mae": 0.6721311475409836,
+      "item_category_f1": 0.7081967213114754,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4098360655737705,
+      "over": 0.11475409836065574,
+      "latency_p50_s": 0.317800333010382,
+      "latency_p95_s": 0.37899699939007403,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.07142857142857142,
+          "f1": 0.5452380952380952
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.6666666666666665
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3157894736842105,
+          "f1": 0.6543859649122806
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.75,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "+nms_per_class": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.47540983606557374,
+      "count_mae": 0.6721311475409836,
+      "item_category_f1": 0.7125683060109289,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.3770491803278688,
+      "over": 0.14754098360655737,
+      "latency_p50_s": 0.31779812499007676,
+      "latency_p95_s": 0.3789996579900617,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.14285714285714285,
+          "f1": 0.569047619047619
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.6666666666666665
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3157894736842105,
+          "f1": 0.6614035087719298
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.75,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "+tiles": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.45901639344262296,
+      "count_mae": 0.7377049180327869,
+      "item_category_f1": 0.6995316159250585,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.3442622950819672,
+      "over": 0.19672131147540983,
+      "latency_p50_s": 2.5957237090042327,
+      "latency_p95_s": 2.7924183918104974,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.14285714285714285,
+          "f1": 0.5404761904761904
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 1.0,
+          "f1": 0.6
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 1.0,
+          "f1": 1.0
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3157894736842105,
+          "f1": 0.6536340852130325
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.7,
+          "f1": 0.7916666666666666
+        }
+      }
+    },
+    "+tiles(thr 0.15)": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.45901639344262296,
+      "count_mae": 0.7049180327868853,
+      "item_category_f1": 0.7027322404371584,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.39344262295081966,
+      "over": 0.14754098360655737,
+      "latency_p50_s": 2.5956990420090733,
+      "latency_p95_s": 2.7922903168015183,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.07142857142857142,
+          "f1": 0.5452380952380952
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.6666666666666665
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 1.0,
+          "f1": 1.0
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.2894736842105263,
+          "f1": 0.6456140350877192
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.75,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "+tiles(thr 0.2)": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.4426229508196721,
+      "count_mae": 0.7049180327868853,
+      "item_category_f1": 0.701639344262295,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4098360655737705,
+      "over": 0.14754098360655737,
+      "latency_p50_s": 2.595693791998201,
+      "latency_p95_s": 2.792292292203638,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.0,
+          "f1": 0.530952380952381
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.6666666666666665
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.2631578947368421,
+          "f1": 0.643859649122807
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.75,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "+verify(0.45)": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.45901639344262296,
+      "count_mae": 0.6885245901639344,
+      "item_category_f1": 0.6957064793130366,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4426229508196721,
+      "over": 0.09836065573770492,
+      "latency_p50_s": 0.3178005419904366,
+      "latency_p95_s": 0.3789955747924978,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.0,
+          "f1": 0.514625850340136
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.5714285714285715
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.2631578947368421,
+          "f1": 0.6343358395989975
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.8,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "+verify(0.55)": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.4918032786885246,
+      "count_mae": 0.6557377049180327,
+      "item_category_f1": 0.7022638563622171,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4426229508196721,
+      "over": 0.06557377049180328,
+      "latency_p50_s": 0.3177975830039941,
+      "latency_p95_s": 0.378995583197684,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.0,
+          "f1": 0.514625850340136
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.5714285714285715
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3157894736842105,
+          "f1": 0.6448621553884711
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.8,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "grid group_drop=True": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.5081967213114754,
+      "count_mae": 0.6229508196721312,
+      "item_category_f1": 0.7147540983606556,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4098360655737705,
+      "over": 0.08196721311475409,
+      "latency_p50_s": 0.31779970799107105,
+      "latency_p95_s": 0.37899679098918565,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.07142857142857142,
+          "f1": 0.5452380952380952
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.6666666666666665
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3684210526315789,
+          "f1": 0.6649122807017543
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.75,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "grid verify_sim=0.45": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.45901639344262296,
+      "count_mae": 0.6885245901639344,
+      "item_category_f1": 0.6957064793130366,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4426229508196721,
+      "over": 0.09836065573770492,
+      "latency_p50_s": 0.31779716699384153,
+      "latency_p95_s": 0.37899979159701613,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.0,
+          "f1": 0.514625850340136
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.5714285714285715
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.2631578947368421,
+          "f1": 0.6343358395989975
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.8,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "grid verify_sim=0.45, group_drop=True": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.4918032786885246,
+      "count_mae": 0.6557377049180327,
+      "item_category_f1": 0.7022638563622171,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4426229508196721,
+      "over": 0.06557377049180328,
+      "latency_p50_s": 0.3177995409932919,
+      "latency_p95_s": 0.378995507597574,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.0,
+          "f1": 0.514625850340136
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.5714285714285715
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3157894736842105,
+          "f1": 0.6448621553884711
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.8,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "grid verify_sim=0.55": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.4918032786885246,
+      "count_mae": 0.6557377049180327,
+      "item_category_f1": 0.7022638563622171,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4426229508196721,
+      "over": 0.06557377049180328,
+      "latency_p50_s": 0.31779699999606237,
+      "latency_p95_s": 0.3789950911916094,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.0,
+          "f1": 0.514625850340136
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.5714285714285715
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3157894736842105,
+          "f1": 0.6448621553884711
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.8,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "grid verify_sim=0.55, group_drop=True": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.47540983606557374,
+      "count_mae": 0.6721311475409836,
+      "item_category_f1": 0.6967993754878999,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.45901639344262296,
+      "over": 0.06557377049180328,
+      "latency_p50_s": 0.31779887501033954,
+      "latency_p95_s": 0.37899514959135555,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.0,
+          "f1": 0.514625850340136
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.5714285714285715
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.2894736842105263,
+          "f1": 0.6360902255639097
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.8,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "grid tiles=True": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.45901639344262296,
+      "count_mae": 0.7377049180327869,
+      "item_category_f1": 0.6995316159250585,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.3442622950819672,
+      "over": 0.19672131147540983,
+      "latency_p50_s": 2.59570208301011,
+      "latency_p95_s": 2.792297533998499,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.14285714285714285,
+          "f1": 0.5404761904761904
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 1.0,
+          "f1": 0.6
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 1.0,
+          "f1": 1.0
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3157894736842105,
+          "f1": 0.6536340852130325
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.7,
+          "f1": 0.7916666666666666
+        }
+      }
+    },
+    "grid tiles=True, group_drop=True": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.4918032786885246,
+      "count_mae": 0.6721311475409836,
+      "item_category_f1": 0.7076502732240437,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.36065573770491804,
+      "over": 0.14754098360655737,
+      "latency_p50_s": 2.5957075409969548,
+      "latency_p95_s": 2.7923027592041763,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.07142857142857142,
+          "f1": 0.5261904761904762
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 1.0,
+          "f1": 0.6
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3684210526315789,
+          "f1": 0.6666666666666666
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.7,
+          "f1": 0.7916666666666666
+        }
+      }
+    },
+    "grid tiles=True, verify_sim=0.45": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.45901639344262296,
+      "count_mae": 0.7213114754098361,
+      "item_category_f1": 0.6974238875878219,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.39344262295081966,
+      "over": 0.14754098360655737,
+      "latency_p50_s": 2.5957036249892553,
+      "latency_p95_s": 2.7922977008041925,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.14285714285714285,
+          "f1": 0.552721088435374
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.5714285714285715
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 1.0,
+          "f1": 1.0
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.2894736842105263,
+          "f1": 0.6458646616541353
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.75,
+          "f1": 0.7999999999999999
+        }
+      }
+    },
+    "grid tiles=True, verify_sim=0.45, group_drop=True": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.47540983606557374,
+      "count_mae": 0.6885245901639344,
+      "item_category_f1": 0.7022638563622169,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4098360655737705,
+      "over": 0.11475409836065574,
+      "latency_p50_s": 2.5957060840009945,
+      "latency_p95_s": 2.7923083172063343,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.07142857142857142,
+          "f1": 0.5384353741496598
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.5714285714285715
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3157894736842105,
+          "f1": 0.6536340852130326
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.75,
+          "f1": 0.7999999999999999
+        }
+      }
+    },
+    "grid tiles=True, verify_sim=0.55": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.4918032786885246,
+      "count_mae": 0.6885245901639344,
+      "item_category_f1": 0.6985167837626853,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4098360655737705,
+      "over": 0.09836065573770492,
+      "latency_p50_s": 2.5957049999997253,
+      "latency_p95_s": 2.7922986506018788,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.07142857142857142,
+          "f1": 0.5289115646258503
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.5714285714285715
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 1.0,
+          "f1": 1.0
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.34210526315789475,
+          "f1": 0.6476190476190475
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.75,
+          "f1": 0.7999999999999999
+        }
+      }
+    },
+    "grid tiles=True, verify_sim=0.55, group_drop=True": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.45901639344262296,
+      "count_mae": 0.7049180327868853,
+      "item_category_f1": 0.691334894613583,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4426229508196721,
+      "over": 0.09836065573770492,
+      "latency_p50_s": 2.5957064579997677,
+      "latency_p95_s": 2.7923063088033815,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.0,
+          "f1": 0.514625850340136
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.5714285714285715
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.2894736842105263,
+          "f1": 0.6360902255639097
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.75,
+          "f1": 0.7999999999999999
+        }
+      }
+    },
+    "grid tiles=True, tile_score_thr=0.15": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.45901639344262296,
+      "count_mae": 0.7049180327868853,
+      "item_category_f1": 0.7027322404371584,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.39344262295081966,
+      "over": 0.14754098360655737,
+      "latency_p50_s": 2.595698666991666,
+      "latency_p95_s": 2.7922909256012645,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.07142857142857142,
+          "f1": 0.5452380952380952
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.6666666666666665
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 1.0,
+          "f1": 1.0
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.2894736842105263,
+          "f1": 0.6456140350877192
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.75,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "grid tiles=True, tile_score_thr=0.15, group_drop=True": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.47540983606557374,
+      "count_mae": 0.6721311475409836,
+      "item_category_f1": 0.7060109289617486,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4098360655737705,
+      "over": 0.11475409836065574,
+      "latency_p50_s": 2.595705125000677,
+      "latency_p95_s": 2.7923005096061386,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.0,
+          "f1": 0.530952380952381
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.6666666666666665
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3157894736842105,
+          "f1": 0.650877192982456
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.75,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "grid tiles=True, tile_score_thr=0.15, verify_sim=0.45": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.47540983606557374,
+      "count_mae": 0.6885245901639344,
+      "item_category_f1": 0.6989851678376268,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4098360655737705,
+      "over": 0.11475409836065574,
+      "latency_p50_s": 2.595903041001293,
+      "latency_p95_s": 2.792292584004463,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.14285714285714285,
+          "f1": 0.552721088435374
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.5714285714285715
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 1.0,
+          "f1": 1.0
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.2894736842105263,
+          "f1": 0.6395989974937343
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.8,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "grid tiles=True, tile_score_thr=0.15, verify_sim=0.45, group_drop=True": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.4918032786885246,
+      "count_mae": 0.6721311475409836,
+      "item_category_f1": 0.702263856362217,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4262295081967213,
+      "over": 0.08196721311475409,
+      "latency_p50_s": 2.5956990420090733,
+      "latency_p95_s": 2.792292625803384,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.07142857142857142,
+          "f1": 0.5384353741496598
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.5714285714285715
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3157894736842105,
+          "f1": 0.6448621553884711
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.8,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "grid tiles=True, tile_score_thr=0.15, verify_sim=0.55": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.4918032786885246,
+      "count_mae": 0.6721311475409836,
+      "item_category_f1": 0.7000780640124902,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4262295081967213,
+      "over": 0.08196721311475409,
+      "latency_p50_s": 2.595823958006804,
+      "latency_p95_s": 2.792310359200928,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.07142857142857142,
+          "f1": 0.5289115646258503
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.5714285714285715
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 1.0,
+          "f1": 1.0
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3157894736842105,
+          "f1": 0.6413533834586465
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.8,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "grid tiles=True, tile_score_thr=0.15, verify_sim=0.55, group_drop=True": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.45901639344262296,
+      "count_mae": 0.7049180327868853,
+      "item_category_f1": 0.6913348946135831,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.45901639344262296,
+      "over": 0.08196721311475409,
+      "latency_p50_s": 2.595708291992196,
+      "latency_p95_s": 2.792352584010223,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.0,
+          "f1": 0.514625850340136
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.5714285714285715
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.2631578947368421,
+          "f1": 0.6273182957393483
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.8,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "grid tiles=True, tile_score_thr=0.2": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.4426229508196721,
+      "count_mae": 0.7049180327868853,
+      "item_category_f1": 0.701639344262295,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4098360655737705,
+      "over": 0.14754098360655737,
+      "latency_p50_s": 2.595768582992605,
+      "latency_p95_s": 2.7923230587970465,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.0,
+          "f1": 0.530952380952381
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.6666666666666665
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.2631578947368421,
+          "f1": 0.643859649122807
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.75,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "grid tiles=True, tile_score_thr=0.2, group_drop=True": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.47540983606557374,
+      "count_mae": 0.6557377049180327,
+      "item_category_f1": 0.7081967213114754,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4098360655737705,
+      "over": 0.11475409836065574,
+      "latency_p50_s": 2.5957131250033854,
+      "latency_p95_s": 2.792309167404892,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.0,
+          "f1": 0.530952380952381
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.6666666666666665
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3157894736842105,
+          "f1": 0.6543859649122806
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.75,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "grid tiles=True, tile_score_thr=0.2, verify_sim=0.45": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.45901639344262296,
+      "count_mae": 0.6885245901639344,
+      "item_category_f1": 0.6978922716627635,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4262295081967213,
+      "over": 0.11475409836065574,
+      "latency_p50_s": 2.595698832999915,
+      "latency_p95_s": 2.7922946424019757,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.07142857142857142,
+          "f1": 0.5384353741496598
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.5714285714285715
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.2631578947368421,
+          "f1": 0.637844611528822
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.8,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "grid tiles=True, tile_score_thr=0.2, verify_sim=0.45, group_drop=True": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.4918032786885246,
+      "count_mae": 0.6557377049180327,
+      "item_category_f1": 0.7044496487119437,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4262295081967213,
+      "over": 0.08196721311475409,
+      "latency_p50_s": 2.595698999997694,
+      "latency_p95_s": 2.7922992424108086,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.07142857142857142,
+          "f1": 0.5384353741496598
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.5714285714285715
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3157894736842105,
+          "f1": 0.6483709273182957
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.8,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "grid tiles=True, tile_score_thr=0.2, verify_sim=0.55": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.47540983606557374,
+      "count_mae": 0.6721311475409836,
+      "item_category_f1": 0.6989851678376269,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4426229508196721,
+      "over": 0.08196721311475409,
+      "latency_p50_s": 2.595881166998879,
+      "latency_p95_s": 2.792302592599299,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.0,
+          "f1": 0.514625850340136
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.5714285714285715
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.2894736842105263,
+          "f1": 0.6395989974937343
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.8,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "grid tiles=True, tile_score_thr=0.2, verify_sim=0.55, group_drop=True": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.45901639344262296,
+      "count_mae": 0.6885245901639344,
+      "item_category_f1": 0.6935206869633098,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.45901639344262296,
+      "over": 0.08196721311475409,
+      "latency_p50_s": 2.5956985839875415,
+      "latency_p95_s": 2.792299758802983,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.0,
+          "f1": 0.514625850340136
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.5714285714285715
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.2631578947368421,
+          "f1": 0.630827067669173
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.8,
+          "f1": 0.8166666666666667
+        }
+      }
+    },
+    "FINAL (base, no rule beat the margin)": {
+      "detection_recall": 0.9344262295081968,
+      "count_exact": 0.47540983606557374,
+      "count_mae": 0.6721311475409836,
+      "item_category_f1": 0.7081967213114754,
+      "category_acc_first": 0.9019607843137255,
+      "under": 0.4098360655737705,
+      "over": 0.11475409836065574,
+      "latency_p50_s": 0.31779870799800847,
+      "latency_p95_s": 0.3789949828002136,
+      "by_tag": {
+        "chain": {
+          "n": 2,
+          "count_exact": 0.0,
+          "f1": 0.5
+        },
+        "overlap": {
+          "n": 14,
+          "count_exact": 0.07142857142857142,
+          "f1": 0.5452380952380952
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.6666666666666665
+        },
+        "pendant": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.8
+        },
+        "blur": {
+          "n": 4,
+          "count_exact": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "low_light": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.0
+        },
+        "multi_item": {
+          "n": 38,
+          "count_exact": 0.3157894736842105,
+          "f1": 0.6543859649122806
+        },
+        "no_tag": {
+          "n": 20,
+          "count_exact": 0.75,
+          "f1": 0.8166666666666667
+        }
+      }
+    }
+  },
+  "final_config": {
+    "detector": "owlvit",
+    "query_set": "current",
+    "agg": "max",
+    "agnostic_queries": false,
+    "nms_per_class": false,
+    "score_thr": 0.1,
+    "tiles": false,
+    "tile_score_thr": null,
+    "verify_sim": null,
+    "min_area_frac": 0.0,
+    "nms_iou": 0.3,
+    "pair_protect": false,
+    "group_drop": false,
+    "chain_merge": false
+  },
+  "holdout": {
+    "baseline": {
+      "detection_recall": 0.984375,
+      "count_exact": 0.6290322580645161,
+      "count_mae": 0.46774193548387094,
+      "item_category_f1": 0.8130184331797234,
+      "category_acc_first": 0.9464285714285714,
+      "under": 0.3064516129032258,
+      "over": 0.06451612903225806,
+      "latency_p50_s": 0.3164562500023749,
+      "latency_p95_s": 0.38013244959875,
+      "by_tag": {
+        "chain": {
+          "n": 4,
+          "count_exact": 0.0,
+          "f1": 0.6309523809523809
+        },
+        "overlap": {
+          "n": 11,
+          "count_exact": 0.09090909090909091,
+          "f1": 0.6666666666666666
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.6666666666666666
+        },
+        "blur": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.6666666666666666
+        },
+        "multi_item": {
+          "n": 40,
+          "count_exact": 0.475,
+          "f1": 0.7518452380952381
+        },
+        "no_tag": {
+          "n": 22,
+          "count_exact": 0.9090909090909091,
+          "f1": 0.9242424242424242
+        }
+      },
+      "ci": {
+        "detection_recall": {
+          "mean": 0.984375,
+          "lo": 0.953125,
+          "hi": 1.0,
+          "n": 64
+        },
+        "count_exact": {
+          "mean": 0.6290322580645161,
+          "lo": 0.4838709677419355,
+          "hi": 0.7580645161290323,
+          "n": 62
+        },
+        "item_category_f1": {
+          "mean": 0.8130184331797234,
+          "lo": 0.7448367895545315,
+          "hi": 0.8715831413210444,
+          "n": 62
+        },
+        "category_acc_first": {
+          "mean": 0.9464285714285714,
+          "lo": 0.8928571428571429,
+          "hi": 1.0,
+          "n": 56
+        }
+      },
+      "graded": {
+        "n_items": 50,
+        "n_bad_crop": 0,
+        "n_unmatched": 0,
+        "ndcg5": {
+          "mean": 0.894342020245491,
+          "lo": 0.8247563576768822,
+          "hi": 0.9495099214077745,
+          "n": 50
+        },
+        "p5": {
+          "mean": 0.924,
+          "lo": 0.8559,
+          "hi": 0.98,
+          "n": 50
+        },
+        "s1": {
+          "mean": 0.96,
+          "lo": 0.9,
+          "hi": 1.0,
+          "n": 50
+        },
+        "mean_grade": {
+          "mean": 2.676,
+          "lo": 2.4598999999999998,
+          "hi": 2.8480000000000003,
+          "n": 50
+        },
+        "judged": {
+          "mean": 1.0,
+          "lo": 1.0,
+          "hi": 1.0,
+          "n": 50
+        }
+      },
+      "negatives_rejected": {
+        "mean": 0.4444444444444444,
+        "lo": 0.1111111111111111,
+        "hi": 0.7777777777777778,
+        "n": 9
+      }
+    },
+    "final": {
+      "detection_recall": 0.984375,
+      "count_exact": 0.6290322580645161,
+      "count_mae": 0.46774193548387094,
+      "item_category_f1": 0.8130184331797234,
+      "category_acc_first": 0.9464285714285714,
+      "under": 0.3064516129032258,
+      "over": 0.06451612903225806,
+      "latency_p50_s": 0.3164680409972789,
+      "latency_p95_s": 0.3801238166022812,
+      "by_tag": {
+        "chain": {
+          "n": 4,
+          "count_exact": 0.0,
+          "f1": 0.6309523809523809
+        },
+        "overlap": {
+          "n": 11,
+          "count_exact": 0.09090909090909091,
+          "f1": 0.6666666666666666
+        },
+        "hand_held": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.6666666666666666
+        },
+        "blur": {
+          "n": 1,
+          "count_exact": 0.0,
+          "f1": 0.6666666666666666
+        },
+        "multi_item": {
+          "n": 40,
+          "count_exact": 0.475,
+          "f1": 0.7518452380952381
+        },
+        "no_tag": {
+          "n": 22,
+          "count_exact": 0.9090909090909091,
+          "f1": 0.9242424242424242
+        }
+      },
+      "ci": {
+        "detection_recall": {
+          "mean": 0.984375,
+          "lo": 0.953125,
+          "hi": 1.0,
+          "n": 64
+        },
+        "count_exact": {
+          "mean": 0.6290322580645161,
+          "lo": 0.4838709677419355,
+          "hi": 0.7580645161290323,
+          "n": 62
+        },
+        "item_category_f1": {
+          "mean": 0.8130184331797234,
+          "lo": 0.7448367895545315,
+          "hi": 0.8715831413210444,
+          "n": 62
+        },
+        "category_acc_first": {
+          "mean": 0.9464285714285714,
+          "lo": 0.8928571428571429,
+          "hi": 1.0,
+          "n": 56
+        }
+      },
+      "graded": {
+        "n_items": 50,
+        "n_bad_crop": 0,
+        "n_unmatched": 0,
+        "ndcg5": {
+          "mean": 0.894342020245491,
+          "lo": 0.8247563576768822,
+          "hi": 0.9495099214077745,
+          "n": 50
+        },
+        "p5": {
+          "mean": 0.924,
+          "lo": 0.8559,
+          "hi": 0.98,
+          "n": 50
+        },
+        "s1": {
+          "mean": 0.96,
+          "lo": 0.9,
+          "hi": 1.0,
+          "n": 50
+        },
+        "mean_grade": {
+          "mean": 2.676,
+          "lo": 2.4598999999999998,
+          "hi": 2.8480000000000003,
+          "n": 50
+        },
+        "judged": {
+          "mean": 1.0,
+          "lo": 1.0,
+          "hi": 1.0,
+          "n": 50
+        }
+      },
+      "negatives_rejected": {
+        "mean": 0.4444444444444444,
+        "lo": 0.1111111111111111,
+        "hi": 0.7777777777777778,
+        "n": 9
+      }
+    }
+  }
+}

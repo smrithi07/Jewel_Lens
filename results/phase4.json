@@ -1,0 +1,5350 @@
+{
+  "created": "2026-10-11T18:20:46",
+  "n_items": {
+    "tune": 85,
+    "holdout": 98
+  },
+  "knn": {
+    "k": 20,
+    "T": 1.0,
+    "tune_grid": {
+      "k=5,T=0.02": 0.7866666666666666,
+      "k=5,T=0.05": 0.7866666666666666,
+      "k=5,T=1.0": 0.7866666666666666,
+      "k=10,T=0.02": 0.8,
+      "k=10,T=0.05": 0.7733333333333333,
+      "k=10,T=1.0": 0.8,
+      "k=20,T=0.02": 0.8,
+      "k=20,T=0.05": 0.8,
+      "k=20,T=1.0": 0.8133333333333334
+    }
+  },
+  "clip": {
+    "prompt_choice_train_catalogue_acc": {
+      "names|plain": 0.9302353506243997,
+      "names|ensemble": 0.9378001921229587,
+      "names+subtypes|plain": 0.9470461095100865,
+      "names+subtypes|ensemble": 0.9459654178674352
+    },
+    "chosen": "names+subtypes|plain"
+  },
+  "clf_v2": {
+    "classes": [
+      "bracelet",
+      "earring",
+      "necklace"
+    ],
+    "C": 3.0,
+    "temperature": 0.9,
+    "input": "l2_normalised_dinov2_cls",
+    "train_sources": [
+      "clean",
+      "aug",
+      "detcrop"
+    ],
+    "trained_on": "train-split non-set listings"
+  },
+  "ece_stumper": {
+    "legacy": 0.27636955460397217,
+    "knn": 0.04621798964217179,
+    "clip": 0.11567671015495208,
+    "clf_v1": 0.07451278498259983,
+    "clf_v2": 0.06915619097104886
+  },
+  "stack_lr_tune_loo_acc": 0.7733333333333333,
+  "candidates": {
+    "legacy": {
+      "weights": {
+        "legacy": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.6266666666666667,
+          "lo": 0.5196666666666667,
+          "hi": 0.7333333333333333,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.5882352941176471,
+          "lo": 0.45098039215686275,
+          "hi": 0.7254901960784313,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.45500910746812384,
+          "lo": 0.3540755919854281,
+          "hi": 0.5572040072859745,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 47,
+            "necklace": 0,
+            "bracelet": 0
+          },
+          "necklace": {
+            "earring": 14,
+            "necklace": 0,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 14,
+            "necklace": 0,
+            "bracelet": 0
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.4777777777777778,
+            "acc_first": 0.7142857142857143
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.22222222222222224,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6339181286549708,
+            "acc_first": 0.8666666666666667
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.08333333333333333,
+            "acc_first": 0.10526315789473684
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.6966292134831461,
+          "lo": 0.5955056179775281,
+          "hi": 0.7865168539325843,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.5892857142857143,
+          "lo": 0.4642857142857143,
+          "hi": 0.7321428571428571,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.5167434715821813,
+          "lo": 0.41289170506912437,
+          "hi": 0.619456605222734,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 62,
+            "necklace": 0,
+            "bracelet": 0
+          },
+          "necklace": {
+            "earring": 14,
+            "necklace": 0,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 13,
+            "necklace": 0,
+            "bracelet": 0
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.5595238095238095,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.5757575757575757,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": 0.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7342857142857142,
+            "acc_first": 0.8823529411764706
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.1212121212121212,
+            "acc_first": 0.13636363636363635
+          }
+        }
+      }
+    },
+    "det": {
+      "weights": {
+        "det": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.72,
+          "lo": 0.6133333333333333,
+          "hi": 0.8266666666666667,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.7843137254901961,
+          "lo": 0.6666666666666666,
+          "hi": 0.9019607843137255,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6271402550091074,
+          "lo": 0.5287750455373406,
+          "hi": 0.7220628415300545,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 37,
+            "necklace": 7,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 4,
+            "necklace": 10,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 3,
+            "necklace": 4,
+            "bracelet": 7
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.4777777777777778,
+            "acc_first": 0.7142857142857143
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.888888888888889,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.41666666666666663,
+            "acc_first": 0.6666666666666666
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6032163742690058,
+            "acc_first": 0.8
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7166666666666666,
+            "acc_first": 0.7894736842105263
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.8426966292134831,
+          "lo": 0.775,
+          "hi": 0.9213483146067416,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.8571428571428571,
+          "lo": 0.75,
+          "hi": 0.9290178571428568,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.7525345622119815,
+          "lo": 0.665577956989247,
+          "hi": 0.8299711981566819,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 55,
+            "necklace": 3,
+            "bracelet": 4
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 12,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 4,
+            "necklace": 1,
+            "bracelet": 8
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.5606060606060607,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7747619047619047,
+            "acc_first": 0.9411764705882353
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.712121212121212,
+            "acc_first": 0.7272727272727273
+          }
+        }
+      }
+    },
+    "knn": {
+      "weights": {
+        "knn": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8133333333333334,
+          "lo": 0.72,
+          "hi": 0.8933333333333333,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8627450980392157,
+          "lo": 0.7647058823529411,
+          "hi": 0.9607843137254902,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6754098360655737,
+          "lo": 0.5846857923497267,
+          "hi": 0.7623224043715845,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 42,
+            "necklace": 0,
+            "bracelet": 5
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 9,
+            "bracelet": 3
+          },
+          "bracelet": {
+            "earring": 3,
+            "necklace": 1,
+            "bracelet": 10
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.41666666666666663,
+            "acc_first": 0.6666666666666666
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6543859649122806,
+            "acc_first": 0.9
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7666666666666666,
+            "acc_first": 0.8421052631578947
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.898876404494382,
+          "lo": 0.8314606741573034,
+          "hi": 0.9550561797752809,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.8928571428571429,
+          "lo": 0.8035714285714286,
+          "hi": 0.9642857142857143,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.7861367127496159,
+          "lo": 0.7118269969278033,
+          "hi": 0.8516215437788018,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 57,
+            "necklace": 2,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 12,
+            "bracelet": 1
+          },
+          "bracelet": {
+            "earring": 0,
+            "necklace": 2,
+            "bracelet": 11
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.5059523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6212121212121212,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7351785714285713,
+            "acc_first": 0.8823529411764706
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8787878787878788,
+            "acc_first": 0.9090909090909091
+          }
+        }
+      }
+    },
+    "clip": {
+      "weights": {
+        "clip": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.5733333333333334,
+          "lo": 0.4666666666666667,
+          "hi": 0.68,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.6078431372549019,
+          "lo": 0.47058823529411764,
+          "hi": 0.7259803921568623,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.5229508196721312,
+          "lo": 0.4207650273224044,
+          "hi": 0.6202322404371584,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 22,
+            "necklace": 16,
+            "bracelet": 9
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 11,
+            "bracelet": 2
+          },
+          "bracelet": {
+            "earring": 2,
+            "necklace": 2,
+            "bracelet": 10
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.4333333333333333,
+            "acc_first": 0.5714285714285714
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.4,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.3991228070175438,
+            "acc_first": 0.4666666666666667
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7366666666666666,
+            "acc_first": 0.7894736842105263
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.6853932584269663,
+          "lo": 0.5842696629213483,
+          "hi": 0.7865168539325843,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.7678571428571429,
+          "lo": 0.6428571428571429,
+          "hi": 0.875,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.6521761392729134,
+          "lo": 0.5630856374807987,
+          "hi": 0.741077188940092,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 36,
+            "necklace": 20,
+            "bracelet": 6
+          },
+          "necklace": {
+            "earring": 0,
+            "necklace": 13,
+            "bracelet": 1
+          },
+          "bracelet": {
+            "earring": 0,
+            "necklace": 1,
+            "bracelet": 12
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.5252525252525252,
+            "acc_first": 0.7142857142857143
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.5525396825396826,
+            "acc_first": 0.7058823529411765
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8333333333333333,
+            "acc_first": 0.8636363636363636
+          }
+        }
+      }
+    },
+    "clf_v1": {
+      "weights": {
+        "clf_v1": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.76,
+          "lo": 0.6666666666666666,
+          "hi": 0.8533333333333334,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.803921568627451,
+          "lo": 0.6862745098039216,
+          "hi": 0.9019607843137255,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.629143897996357,
+          "lo": 0.5392941712204007,
+          "hi": 0.719867941712204,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 37,
+            "necklace": 7,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 0,
+            "necklace": 10,
+            "bracelet": 4
+          },
+          "bracelet": {
+            "earring": 2,
+            "necklace": 2,
+            "bracelet": 10
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5293650793650794,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.4444444444444445,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.5959064327485379,
+            "acc_first": 0.8666666666666667
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.6866666666666666,
+            "acc_first": 0.6842105263157895
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.8314606741573034,
+          "lo": 0.7528089887640449,
+          "hi": 0.898876404494382,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.8392857142857143,
+          "lo": 0.7495535714285715,
+          "hi": 0.9285714285714286,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.7398617511520736,
+          "lo": 0.6613556067588324,
+          "hi": 0.8118433179723503,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 52,
+            "necklace": 7,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 11,
+            "bracelet": 1
+          },
+          "bracelet": {
+            "earring": 1,
+            "necklace": 1,
+            "bracelet": 11
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.5595238095238095,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6363636363636364,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7301190476190476,
+            "acc_first": 0.8823529411764706
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.7575757575757575,
+            "acc_first": 0.7727272727272727
+          }
+        }
+      }
+    },
+    "clf_v2": {
+      "weights": {
+        "clf_v2": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8133333333333334,
+          "lo": 0.7333333333333333,
+          "hi": 0.8933333333333333,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8823529411764706,
+          "lo": 0.7843137254901961,
+          "hi": 0.9607843137254902,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6806921675774135,
+          "lo": 0.5934380692167577,
+          "hi": 0.7634016393442623,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 43,
+            "necklace": 0,
+            "bracelet": 4
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 9,
+            "bracelet": 3
+          },
+          "bracelet": {
+            "earring": 4,
+            "necklace": 1,
+            "bracelet": 9
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.49682539682539684,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.888888888888889,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.4,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.654093567251462,
+            "acc_first": 0.9333333333333333
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7333333333333333,
+            "acc_first": 0.7894736842105263
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.9550561797752809,
+          "lo": 0.9101123595505618,
+          "hi": 0.9887640449438202,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9642857142857143,
+          "lo": 0.9107142857142857,
+          "hi": 1.0,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.829147465437788,
+          "lo": 0.7690850614439322,
+          "hi": 0.8803859447004607,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 59,
+            "necklace": 1,
+            "bracelet": 2
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 0,
+            "necklace": 0,
+            "bracelet": 13
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7768452380952381,
+            "acc_first": 0.9705882352941176
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.9242424242424242,
+            "acc_first": 0.9545454545454546
+          }
+        }
+      }
+    },
+    "det+knn": {
+      "weights": {
+        "det": 1.0,
+        "knn": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8133333333333334,
+          "lo": 0.72,
+          "hi": 0.8933333333333333,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8627450980392157,
+          "lo": 0.7647058823529411,
+          "hi": 0.9607843137254902,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6672131147540983,
+          "lo": 0.5797677595628414,
+          "hi": 0.7579234972677594,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 43,
+            "necklace": 2,
+            "bracelet": 2
+          },
+          "necklace": {
+            "earring": 3,
+            "necklace": 10,
+            "bracelet": 1
+          },
+          "bracelet": {
+            "earring": 4,
+            "necklace": 2,
+            "bracelet": 8
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5095238095238095,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.41666666666666663,
+            "acc_first": 0.6666666666666666
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6675438596491228,
+            "acc_first": 0.9333333333333333
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7166666666666666,
+            "acc_first": 0.7894736842105263
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.898876404494382,
+          "lo": 0.8314606741573034,
+          "hi": 0.9550561797752809,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.8928571428571429,
+          "lo": 0.8035714285714286,
+          "hi": 0.9642857142857143,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.7955453149001535,
+          "lo": 0.7185003840245775,
+          "hi": 0.8629032258064515,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 57,
+            "necklace": 3,
+            "bracelet": 2
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 12,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 2,
+            "necklace": 0,
+            "bracelet": 11
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7914285714285714,
+            "acc_first": 0.9411764705882353
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8030303030303031,
+            "acc_first": 0.8181818181818182
+          }
+        }
+      }
+    },
+    "det+clip": {
+      "weights": {
+        "det": 1.0,
+        "clip": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.7733333333333333,
+          "lo": 0.68,
+          "hi": 0.8666666666666667,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8431372549019608,
+          "lo": 0.7450980392156863,
+          "hi": 0.9411764705882353,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6561020036429872,
+          "lo": 0.5648360655737702,
+          "hi": 0.7468169398907103,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 39,
+            "necklace": 3,
+            "bracelet": 5
+          },
+          "necklace": {
+            "earring": 4,
+            "necklace": 10,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 3,
+            "necklace": 2,
+            "bracelet": 9
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.49682539682539684,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.888888888888889,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.4,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.5970760233918128,
+            "acc_first": 0.8333333333333334
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7666666666666666,
+            "acc_first": 0.8421052631578947
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.8876404494382022,
+          "lo": 0.8202247191011236,
+          "hi": 0.9550561797752809,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9107142857142857,
+          "lo": 0.8392857142857143,
+          "hi": 0.9821428571428571,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.8062980030721966,
+          "lo": 0.7342473118279571,
+          "hi": 0.8687211981566819,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 56,
+            "necklace": 2,
+            "bracelet": 4
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 3,
+            "necklace": 0,
+            "bracelet": 10
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6060606060606061,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7914285714285715,
+            "acc_first": 0.9411764705882353
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8333333333333333,
+            "acc_first": 0.8636363636363636
+          }
+        }
+      }
+    },
+    "det+clf_v1": {
+      "weights": {
+        "det": 1.0,
+        "clf_v1": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8,
+          "lo": 0.7066666666666667,
+          "hi": 0.8933333333333333,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8235294117647058,
+          "lo": 0.7058823529411765,
+          "hi": 0.9215686274509803,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6670309653916211,
+          "lo": 0.5710018214936249,
+          "hi": 0.754471766848816,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 40,
+            "necklace": 4,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 3,
+            "necklace": 11,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 2,
+            "necklace": 3,
+            "bracelet": 9
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5325396825396825,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.888888888888889,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.4,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.41666666666666663,
+            "acc_first": 0.6666666666666666
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6409356725146198,
+            "acc_first": 0.8333333333333334
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7666666666666666,
+            "acc_first": 0.8421052631578947
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.8876404494382022,
+          "lo": 0.8202247191011236,
+          "hi": 0.9438202247191011,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9107142857142857,
+          "lo": 0.8392857142857143,
+          "hi": 0.9821428571428571,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.8009216589861751,
+          "lo": 0.7283141321044547,
+          "hi": 0.8676056067588326,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 56,
+            "necklace": 2,
+            "bracelet": 4
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 2,
+            "necklace": 1,
+            "bracelet": 10
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6363636363636364,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7997619047619048,
+            "acc_first": 0.9705882352941176
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8030303030303029,
+            "acc_first": 0.8181818181818182
+          }
+        }
+      }
+    },
+    "det+clf_v2": {
+      "weights": {
+        "det": 1.0,
+        "clf_v2": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8133333333333334,
+          "lo": 0.72,
+          "hi": 0.8933333333333333,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8627450980392157,
+          "lo": 0.7647058823529411,
+          "hi": 0.9607843137254902,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6790528233151184,
+          "lo": 0.5917759562841529,
+          "hi": 0.7557923497267759,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 42,
+            "necklace": 2,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 10,
+            "bracelet": 2
+          },
+          "bracelet": {
+            "earring": 4,
+            "necklace": 1,
+            "bracelet": 9
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5253968253968254,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.888888888888889,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.41666666666666663,
+            "acc_first": 0.6666666666666666
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.660233918128655,
+            "acc_first": 0.9
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7666666666666666,
+            "acc_first": 0.8421052631578947
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.8764044943820225,
+          "lo": 0.797752808988764,
+          "hi": 0.9438202247191011,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.875,
+          "lo": 0.7857142857142857,
+          "hi": 0.9464285714285714,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.7767281105990782,
+          "lo": 0.7039439324116743,
+          "hi": 0.8461155913978493,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 57,
+            "necklace": 1,
+            "bracelet": 4
+          },
+          "necklace": {
+            "earring": 3,
+            "necklace": 11,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 2,
+            "necklace": 1,
+            "bracelet": 10
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.5909090909090909,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7705952380952381,
+            "acc_first": 0.9117647058823529
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.7878787878787878,
+            "acc_first": 0.8181818181818182
+          }
+        }
+      }
+    },
+    "knn+clip": {
+      "weights": {
+        "knn": 1.0,
+        "clip": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8,
+          "lo": 0.7066666666666667,
+          "hi": 0.88,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8431372549019608,
+          "lo": 0.7450980392156863,
+          "hi": 0.9411764705882353,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6710382513661202,
+          "lo": 0.5835109289617487,
+          "hi": 0.7568579234972677,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 39,
+            "necklace": 2,
+            "bracelet": 6
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 10,
+            "bracelet": 2
+          },
+          "bracelet": {
+            "earring": 3,
+            "necklace": 0,
+            "bracelet": 11
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.41666666666666663,
+            "acc_first": 0.6666666666666666
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6105263157894737,
+            "acc_first": 0.8333333333333334
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.8366666666666667,
+            "acc_first": 0.8947368421052632
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.8876404494382022,
+          "lo": 0.8202247191011236,
+          "hi": 0.9438202247191011,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9107142857142857,
+          "lo": 0.8392857142857143,
+          "hi": 0.9821428571428571,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.7888248847926266,
+          "lo": 0.7136856758832565,
+          "hi": 0.8540101766513056,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 55,
+            "necklace": 6,
+            "bracelet": 1
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 12,
+            "bracelet": 1
+          },
+          "bracelet": {
+            "earring": 0,
+            "necklace": 1,
+            "bracelet": 12
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7393452380952381,
+            "acc_first": 0.9117647058823529
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8787878787878788,
+            "acc_first": 0.9090909090909091
+          }
+        }
+      }
+    },
+    "knn+clf_v1": {
+      "weights": {
+        "knn": 1.0,
+        "clf_v1": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.7866666666666666,
+          "lo": 0.6933333333333334,
+          "hi": 0.88,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8235294117647058,
+          "lo": 0.7058823529411765,
+          "hi": 0.9215686274509803,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6437158469945354,
+          "lo": 0.5557377049180328,
+          "hi": 0.7295218579234973,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 39,
+            "necklace": 5,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 10,
+            "bracelet": 3
+          },
+          "bracelet": {
+            "earring": 3,
+            "necklace": 1,
+            "bracelet": 10
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.41666666666666663,
+            "acc_first": 0.6666666666666666
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6456140350877192,
+            "acc_first": 0.9
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.6866666666666666,
+            "acc_first": 0.7368421052631579
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.9213483146067416,
+          "lo": 0.8651685393258427,
+          "hi": 0.9662921348314607,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9107142857142857,
+          "lo": 0.8392857142857143,
+          "hi": 0.9821428571428571,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.7968894009216589,
+          "lo": 0.7273473502304145,
+          "hi": 0.8569892473118278,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 58,
+            "necklace": 3,
+            "bracelet": 1
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 1,
+            "necklace": 1,
+            "bracelet": 11
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7768452380952381,
+            "acc_first": 0.9411764705882353
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8333333333333333,
+            "acc_first": 0.8636363636363636
+          }
+        }
+      }
+    },
+    "knn+clf_v2": {
+      "weights": {
+        "knn": 1.0,
+        "clf_v2": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8,
+          "lo": 0.7066666666666667,
+          "hi": 0.8933333333333333,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8431372549019608,
+          "lo": 0.7254901960784313,
+          "hi": 0.9411764705882353,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6644808743169398,
+          "lo": 0.5704644808743168,
+          "hi": 0.7524999999999998,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 42,
+            "necklace": 0,
+            "bracelet": 5
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 8,
+            "bracelet": 4
+          },
+          "bracelet": {
+            "earring": 3,
+            "necklace": 1,
+            "bracelet": 10
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.41666666666666663,
+            "acc_first": 0.6666666666666666
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6543859649122806,
+            "acc_first": 0.9
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7333333333333333,
+            "acc_first": 0.7894736842105263
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.9550561797752809,
+          "lo": 0.9101123595505618,
+          "hi": 0.9887640449438202,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9642857142857143,
+          "lo": 0.9107142857142857,
+          "hi": 1.0,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.829147465437788,
+          "lo": 0.7690850614439322,
+          "hi": 0.8803859447004607,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 59,
+            "necklace": 1,
+            "bracelet": 2
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 0,
+            "necklace": 0,
+            "bracelet": 13
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7768452380952381,
+            "acc_first": 0.9705882352941176
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.9242424242424242,
+            "acc_first": 0.9545454545454546
+          }
+        }
+      }
+    },
+    "clip+clf_v1": {
+      "weights": {
+        "clip": 1.0,
+        "clf_v1": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.7733333333333333,
+          "lo": 0.68,
+          "hi": 0.8666666666666667,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8235294117647058,
+          "lo": 0.7058823529411765,
+          "hi": 0.9215686274509803,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6409836065573771,
+          "lo": 0.553551912568306,
+          "hi": 0.7267896174863389,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 36,
+            "necklace": 8,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 0,
+            "necklace": 12,
+            "bracelet": 2
+          },
+          "bracelet": {
+            "earring": 2,
+            "necklace": 2,
+            "bracelet": 10
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.5885964912280701,
+            "acc_first": 0.8333333333333334
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7366666666666666,
+            "acc_first": 0.7894736842105263
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.8426966292134831,
+          "lo": 0.7640449438202247,
+          "hi": 0.9213483146067416,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.8928571428571429,
+          "lo": 0.8035714285714286,
+          "hi": 0.9642857142857143,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.7632872503840245,
+          "lo": 0.6858582949308755,
+          "hi": 0.832795698924731,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 50,
+            "necklace": 9,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 0,
+            "necklace": 13,
+            "bracelet": 1
+          },
+          "bracelet": {
+            "earring": 0,
+            "necklace": 1,
+            "bracelet": 12
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6363636363636364,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.6997619047619048,
+            "acc_first": 0.8823529411764706
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8787878787878788,
+            "acc_first": 0.9090909090909091
+          }
+        }
+      }
+    },
+    "clip+clf_v2": {
+      "weights": {
+        "clip": 1.0,
+        "clf_v2": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8,
+          "lo": 0.7066666666666667,
+          "hi": 0.88,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8627450980392157,
+          "lo": 0.7647058823529411,
+          "hi": 0.9416666666666662,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6737704918032787,
+          "lo": 0.5906830601092896,
+          "hi": 0.7524726775956284,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 40,
+            "necklace": 1,
+            "bracelet": 6
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 10,
+            "bracelet": 2
+          },
+          "bracelet": {
+            "earring": 4,
+            "necklace": 0,
+            "bracelet": 10
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6149122807017543,
+            "acc_first": 0.8666666666666667
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7866666666666666,
+            "acc_first": 0.8421052631578947
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.9101123595505618,
+          "lo": 0.8539325842696629,
+          "hi": 0.9662921348314607,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9464285714285714,
+          "lo": 0.8928571428571429,
+          "hi": 1.0,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.8130184331797234,
+          "lo": 0.7448367895545315,
+          "hi": 0.8715831413210444,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 55,
+            "necklace": 3,
+            "bracelet": 4
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 0,
+            "necklace": 0,
+            "bracelet": 13
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7518452380952381,
+            "acc_first": 0.9411764705882353
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.9242424242424242,
+            "acc_first": 0.9545454545454546
+          }
+        }
+      }
+    },
+    "clf_v1+clf_v2": {
+      "weights": {
+        "clf_v1": 1.0,
+        "clf_v2": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8133333333333334,
+          "lo": 0.7333333333333333,
+          "hi": 0.8936666666666664,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.803921568627451,
+          "lo": 0.6862745098039216,
+          "hi": 0.9019607843137255,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6655737704918033,
+          "lo": 0.5748633879781422,
+          "hi": 0.7519262295081967,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 41,
+            "necklace": 2,
+            "bracelet": 4
+          },
+          "necklace": {
+            "earring": 0,
+            "necklace": 10,
+            "bracelet": 4
+          },
+          "bracelet": {
+            "earring": 3,
+            "necklace": 1,
+            "bracelet": 10
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6543859649122806,
+            "acc_first": 0.8666666666666667
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.6866666666666666,
+            "acc_first": 0.6842105263157895
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.9213483146067416,
+          "lo": 0.8648876404494382,
+          "hi": 0.9775280898876404,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.8928571428571429,
+          "lo": 0.8035714285714286,
+          "hi": 0.9642857142857143,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.8009216589861751,
+          "lo": 0.7358678955453148,
+          "hi": 0.8596966205837173,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 57,
+            "necklace": 2,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 1,
+            "necklace": 0,
+            "bracelet": 12
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.758095238095238,
+            "acc_first": 0.8823529411764706
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8787878787878788,
+            "acc_first": 0.9090909090909091
+          }
+        }
+      }
+    },
+    "det+knn+clip": {
+      "weights": {
+        "det": 1.0,
+        "knn": 1.0,
+        "clip": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8,
+          "lo": 0.7066666666666667,
+          "hi": 0.88,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8431372549019608,
+          "lo": 0.7450980392156863,
+          "hi": 0.9411764705882353,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6644808743169398,
+          "lo": 0.5737295081967212,
+          "hi": 0.7502868852459017,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 41,
+            "necklace": 1,
+            "bracelet": 5
+          },
+          "necklace": {
+            "earring": 3,
+            "necklace": 10,
+            "bracelet": 1
+          },
+          "bracelet": {
+            "earring": 4,
+            "necklace": 1,
+            "bracelet": 9
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.41666666666666663,
+            "acc_first": 0.6666666666666666
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6368421052631579,
+            "acc_first": 0.8666666666666667
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7666666666666666,
+            "acc_first": 0.8421052631578947
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.898876404494382,
+          "lo": 0.8314606741573034,
+          "hi": 0.9550561797752809,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9285714285714286,
+          "lo": 0.8571428571428571,
+          "hi": 0.9821428571428571,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.811674347158218,
+          "lo": 0.7419316436251919,
+          "hi": 0.8702899385560675,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 57,
+            "necklace": 2,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 12,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 1,
+            "necklace": 1,
+            "bracelet": 11
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6363636363636364,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7997619047619048,
+            "acc_first": 0.9705882352941176
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8333333333333333,
+            "acc_first": 0.8636363636363636
+          }
+        }
+      }
+    },
+    "det+knn+clf_v1": {
+      "weights": {
+        "det": 1.0,
+        "knn": 1.0,
+        "clf_v1": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8133333333333334,
+          "lo": 0.72,
+          "hi": 0.8933333333333333,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8627450980392157,
+          "lo": 0.7647058823529411,
+          "hi": 0.9607843137254902,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6754098360655737,
+          "lo": 0.5868715846994534,
+          "hi": 0.756311475409836,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 42,
+            "necklace": 3,
+            "bracelet": 2
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 10,
+            "bracelet": 2
+          },
+          "bracelet": {
+            "earring": 2,
+            "necklace": 3,
+            "bracelet": 9
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.41666666666666663,
+            "acc_first": 0.6666666666666666
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6543859649122806,
+            "acc_first": 0.9
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7666666666666666,
+            "acc_first": 0.8421052631578947
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.8876404494382022,
+          "lo": 0.8202247191011236,
+          "hi": 0.9438202247191011,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.8928571428571429,
+          "lo": 0.8035714285714286,
+          "hi": 0.9642857142857143,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.7982334869431643,
+          "lo": 0.7231009984639016,
+          "hi": 0.8643759600614439,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 56,
+            "necklace": 4,
+            "bracelet": 2
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 12,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 1,
+            "necklace": 1,
+            "bracelet": 11
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.795595238095238,
+            "acc_first": 0.9411764705882353
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8030303030303031,
+            "acc_first": 0.8181818181818182
+          }
+        }
+      }
+    },
+    "det+knn+clf_v2": {
+      "weights": {
+        "det": 1.0,
+        "knn": 1.0,
+        "clf_v2": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8,
+          "lo": 0.7066666666666667,
+          "hi": 0.8803333333333331,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8627450980392157,
+          "lo": 0.7647058823529411,
+          "hi": 0.9607843137254902,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6672131147540983,
+          "lo": 0.5764890710382513,
+          "hi": 0.7486612021857922,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 41,
+            "necklace": 1,
+            "bracelet": 5
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 10,
+            "bracelet": 2
+          },
+          "bracelet": {
+            "earring": 4,
+            "necklace": 1,
+            "bracelet": 9
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5095238095238095,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.41666666666666663,
+            "acc_first": 0.6666666666666666
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6412280701754385,
+            "acc_first": 0.9
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7666666666666666,
+            "acc_first": 0.8421052631578947
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.9550561797752809,
+          "lo": 0.9098314606741573,
+          "hi": 0.9890449438202245,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9464285714285714,
+          "lo": 0.875,
+          "hi": 1.0,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.8170506912442396,
+          "lo": 0.7497926267281104,
+          "hi": 0.873506144393241,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 60,
+            "necklace": 0,
+            "bracelet": 2
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 1,
+            "necklace": 0,
+            "bracelet": 12
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7830952380952381,
+            "acc_first": 0.9705882352941176
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8787878787878788,
+            "acc_first": 0.9090909090909091
+          }
+        }
+      }
+    },
+    "det+clip+clf_v1": {
+      "weights": {
+        "det": 1.0,
+        "clip": 1.0,
+        "clf_v1": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8,
+          "lo": 0.7066666666666667,
+          "hi": 0.8933333333333333,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8431372549019608,
+          "lo": 0.7450980392156863,
+          "hi": 0.9411764705882353,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6644808743169398,
+          "lo": 0.5770491803278688,
+          "hi": 0.7481010928961749,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 39,
+            "necklace": 6,
+            "bracelet": 2
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 11,
+            "bracelet": 1
+          },
+          "bracelet": {
+            "earring": 2,
+            "necklace": 2,
+            "bracelet": 10
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5166666666666666,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.4,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6,
+            "acc_first": 0.8333333333333334
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7866666666666666,
+            "acc_first": 0.8421052631578947
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.8651685393258427,
+          "lo": 0.7865168539325843,
+          "hi": 0.9325842696629213,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.8928571428571429,
+          "lo": 0.8035714285714286,
+          "hi": 0.9642857142857143,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.7955453149001535,
+          "lo": 0.7225460829493086,
+          "hi": 0.8623751920122888,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 53,
+            "necklace": 5,
+            "bracelet": 4
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 1,
+            "necklace": 1,
+            "bracelet": 11
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6060606060606061,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7664285714285715,
+            "acc_first": 0.9117647058823529
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8484848484848485,
+            "acc_first": 0.8636363636363636
+          }
+        }
+      }
+    },
+    "det+clip+clf_v2": {
+      "weights": {
+        "det": 1.0,
+        "clip": 1.0,
+        "clf_v2": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8,
+          "lo": 0.7066666666666667,
+          "hi": 0.88,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8627450980392157,
+          "lo": 0.7647058823529411,
+          "hi": 0.9607843137254902,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6763205828779599,
+          "lo": 0.5896129326047358,
+          "hi": 0.7621174863387978,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 41,
+            "necklace": 1,
+            "bracelet": 5
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 10,
+            "bracelet": 2
+          },
+          "bracelet": {
+            "earring": 4,
+            "necklace": 1,
+            "bracelet": 9
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5253968253968254,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.888888888888889,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.62953216374269,
+            "acc_first": 0.8666666666666667
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7666666666666666,
+            "acc_first": 0.8421052631578947
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.9213483146067416,
+          "lo": 0.8539325842696629,
+          "hi": 0.9775280898876404,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9285714285714286,
+          "lo": 0.8571428571428571,
+          "hi": 0.9821428571428571,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.8197388632872502,
+          "lo": 0.752855222734255,
+          "hi": 0.8748195084485406,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 57,
+            "necklace": 1,
+            "bracelet": 4
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 1,
+            "necklace": 0,
+            "bracelet": 12
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6363636363636364,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7872619047619047,
+            "acc_first": 0.9411764705882353
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8787878787878788,
+            "acc_first": 0.9090909090909091
+          }
+        }
+      }
+    },
+    "det+clf_v1+clf_v2": {
+      "weights": {
+        "det": 1.0,
+        "clf_v1": 1.0,
+        "clf_v2": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8,
+          "lo": 0.7066666666666667,
+          "hi": 0.88,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8627450980392157,
+          "lo": 0.7647058823529411,
+          "hi": 0.9416666666666662,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6726775956284152,
+          "lo": 0.5813934426229508,
+          "hi": 0.7579234972677594,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 42,
+            "necklace": 1,
+            "bracelet": 4
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 9,
+            "bracelet": 3
+          },
+          "bracelet": {
+            "earring": 3,
+            "necklace": 2,
+            "bracelet": 9
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5095238095238095,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6412280701754385,
+            "acc_first": 0.9
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7333333333333333,
+            "acc_first": 0.7894736842105263
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.9213483146067416,
+          "lo": 0.8651685393258427,
+          "hi": 0.9775280898876404,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9107142857142857,
+          "lo": 0.8392857142857143,
+          "hi": 0.9642857142857143,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.8170506912442396,
+          "lo": 0.7497926267281104,
+          "hi": 0.873506144393241,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 57,
+            "necklace": 1,
+            "bracelet": 4
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 1,
+            "necklace": 0,
+            "bracelet": 12
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7830952380952381,
+            "acc_first": 0.9411764705882353
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8787878787878788,
+            "acc_first": 0.8636363636363636
+          }
+        }
+      }
+    },
+    "knn+clip+clf_v1": {
+      "weights": {
+        "knn": 1.0,
+        "clip": 1.0,
+        "clf_v1": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8,
+          "lo": 0.7066666666666667,
+          "hi": 0.8933333333333333,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8431372549019608,
+          "lo": 0.7450980392156863,
+          "hi": 0.9411764705882353,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6655737704918033,
+          "lo": 0.5786202185792348,
+          "hi": 0.7530191256830601,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 39,
+            "necklace": 5,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 11,
+            "bracelet": 2
+          },
+          "bracelet": {
+            "earring": 3,
+            "necklace": 1,
+            "bracelet": 10
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6280701754385964,
+            "acc_first": 0.8666666666666667
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7366666666666666,
+            "acc_first": 0.7894736842105263
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.898876404494382,
+          "lo": 0.8314606741573034,
+          "hi": 0.9550561797752809,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9107142857142857,
+          "lo": 0.8392857142857143,
+          "hi": 0.9821428571428571,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.7888248847926266,
+          "lo": 0.7142098694316436,
+          "hi": 0.852272465437788,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 55,
+            "necklace": 6,
+            "bracelet": 1
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 0,
+            "necklace": 1,
+            "bracelet": 12
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7393452380952381,
+            "acc_first": 0.9117647058823529
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8787878787878788,
+            "acc_first": 0.9090909090909091
+          }
+        }
+      }
+    },
+    "knn+clip+clf_v2": {
+      "weights": {
+        "knn": 1.0,
+        "clip": 1.0,
+        "clf_v2": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.84,
+          "lo": 0.76,
+          "hi": 0.92,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.9019607843137255,
+          "lo": 0.8235294117647058,
+          "hi": 0.9803921568627451,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.7081967213114754,
+          "lo": 0.6196584699453551,
+          "hi": 0.7885382513661201,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 43,
+            "necklace": 0,
+            "bracelet": 4
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 10,
+            "bracelet": 2
+          },
+          "bracelet": {
+            "earring": 3,
+            "necklace": 1,
+            "bracelet": 10
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6543859649122806,
+            "acc_first": 0.9
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.8166666666666667,
+            "acc_first": 0.8947368421052632
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.9325842696629213,
+          "lo": 0.8764044943820225,
+          "hi": 0.9775280898876404,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9464285714285714,
+          "lo": 0.8928571428571429,
+          "hi": 1.0,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.8130184331797234,
+          "lo": 0.7448367895545315,
+          "hi": 0.8715831413210444,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 57,
+            "necklace": 3,
+            "bracelet": 2
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 0,
+            "necklace": 0,
+            "bracelet": 13
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7518452380952381,
+            "acc_first": 0.9411764705882353
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.9242424242424242,
+            "acc_first": 0.9545454545454546
+          }
+        }
+      }
+    },
+    "knn+clf_v1+clf_v2": {
+      "weights": {
+        "knn": 1.0,
+        "clf_v1": 1.0,
+        "clf_v2": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8133333333333334,
+          "lo": 0.72,
+          "hi": 0.8933333333333333,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8627450980392157,
+          "lo": 0.7647058823529411,
+          "hi": 0.9607843137254902,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6754098360655737,
+          "lo": 0.5846994535519126,
+          "hi": 0.7595901639344262,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 44,
+            "necklace": 0,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 8,
+            "bracelet": 4
+          },
+          "bracelet": {
+            "earring": 3,
+            "necklace": 2,
+            "bracelet": 9
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6719298245614035,
+            "acc_first": 0.9333333333333333
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.6833333333333333,
+            "acc_first": 0.7368421052631579
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.9325842696629213,
+          "lo": 0.8764044943820225,
+          "hi": 0.9775280898876404,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9285714285714286,
+          "lo": 0.8571428571428571,
+          "hi": 0.9821428571428571,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.8130184331797234,
+          "lo": 0.7436597542242702,
+          "hi": 0.8700182411674346,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 58,
+            "necklace": 2,
+            "bracelet": 2
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 1,
+            "necklace": 0,
+            "bracelet": 12
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7768452380952381,
+            "acc_first": 0.9411764705882353
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8787878787878788,
+            "acc_first": 0.9090909090909091
+          }
+        }
+      }
+    },
+    "clip+clf_v1+clf_v2": {
+      "weights": {
+        "clip": 1.0,
+        "clf_v1": 1.0,
+        "clf_v2": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8133333333333334,
+          "lo": 0.72,
+          "hi": 0.8933333333333333,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8431372549019608,
+          "lo": 0.7450980392156863,
+          "hi": 0.9411764705882353,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6819672131147542,
+          "lo": 0.6027322404371585,
+          "hi": 0.7606693989071038,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 40,
+            "necklace": 4,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 0,
+            "necklace": 11,
+            "bracelet": 3
+          },
+          "bracelet": {
+            "earring": 3,
+            "necklace": 1,
+            "bracelet": 10
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6280701754385964,
+            "acc_first": 0.8666666666666667
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7866666666666666,
+            "acc_first": 0.7894736842105263
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.9213483146067416,
+          "lo": 0.8651685393258427,
+          "hi": 0.9775280898876404,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9285714285714286,
+          "lo": 0.8571428571428571,
+          "hi": 0.9821428571428571,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.8170506912442396,
+          "lo": 0.7494086021505376,
+          "hi": 0.8760407066052226,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 56,
+            "necklace": 4,
+            "bracelet": 2
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 0,
+            "necklace": 0,
+            "bracelet": 13
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.758095238095238,
+            "acc_first": 0.9117647058823529
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.9242424242424242,
+            "acc_first": 0.9545454545454546
+          }
+        }
+      }
+    },
+    "det+knn+clip+clf_v1": {
+      "weights": {
+        "det": 1.0,
+        "knn": 1.0,
+        "clip": 1.0,
+        "clf_v1": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8266666666666667,
+          "lo": 0.7333333333333333,
+          "hi": 0.9066666666666666,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8823529411764706,
+          "lo": 0.7843137254901961,
+          "hi": 0.9607843137254902,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6918032786885245,
+          "lo": 0.6060109289617487,
+          "hi": 0.7710655737704917,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 43,
+            "necklace": 1,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 10,
+            "bracelet": 2
+          },
+          "bracelet": {
+            "earring": 2,
+            "necklace": 3,
+            "bracelet": 9
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6543859649122806,
+            "acc_first": 0.9
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7666666666666666,
+            "acc_first": 0.8421052631578947
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.898876404494382,
+          "lo": 0.8314606741573034,
+          "hi": 0.9550561797752809,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9107142857142857,
+          "lo": 0.8392857142857143,
+          "hi": 0.9821428571428571,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.7955453149001535,
+          "lo": 0.7225768049155147,
+          "hi": 0.8564612135176649,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 56,
+            "necklace": 3,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 1,
+            "necklace": 1,
+            "bracelet": 11
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6363636363636364,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7747619047619048,
+            "acc_first": 0.9411764705882353
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8333333333333333,
+            "acc_first": 0.8636363636363636
+          }
+        }
+      }
+    },
+    "det+knn+clip+clf_v2": {
+      "weights": {
+        "det": 1.0,
+        "knn": 1.0,
+        "clip": 1.0,
+        "clf_v2": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8133333333333334,
+          "lo": 0.72,
+          "hi": 0.8933333333333333,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8823529411764706,
+          "lo": 0.7843137254901961,
+          "hi": 0.9607843137254902,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6836065573770491,
+          "lo": 0.5977868852459016,
+          "hi": 0.7634016393442624,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 42,
+            "necklace": 0,
+            "bracelet": 5
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 10,
+            "bracelet": 2
+          },
+          "bracelet": {
+            "earring": 4,
+            "necklace": 1,
+            "bracelet": 9
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5095238095238095,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6412280701754385,
+            "acc_first": 0.9
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7666666666666666,
+            "acc_first": 0.8421052631578947
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.9550561797752809,
+          "lo": 0.9101123595505618,
+          "hi": 0.9887640449438202,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9642857142857143,
+          "lo": 0.9107142857142857,
+          "hi": 1.0,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.8331797235023041,
+          "lo": 0.7718798003072195,
+          "hi": 0.8847926267281105,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 59,
+            "necklace": 0,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 0,
+            "necklace": 0,
+            "bracelet": 13
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7830952380952381,
+            "acc_first": 0.9705882352941176
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.9242424242424242,
+            "acc_first": 0.9545454545454546
+          }
+        }
+      }
+    },
+    "det+knn+clf_v1+clf_v2": {
+      "weights": {
+        "det": 1.0,
+        "knn": 1.0,
+        "clf_v1": 1.0,
+        "clf_v2": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8266666666666667,
+          "lo": 0.7333333333333333,
+          "hi": 0.9066666666666666,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8823529411764706,
+          "lo": 0.7843137254901961,
+          "hi": 0.9607843137254902,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6918032786885245,
+          "lo": 0.6060109289617487,
+          "hi": 0.7710655737704917,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 43,
+            "necklace": 1,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 10,
+            "bracelet": 2
+          },
+          "bracelet": {
+            "earring": 4,
+            "necklace": 1,
+            "bracelet": 9
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6543859649122806,
+            "acc_first": 0.9
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7666666666666666,
+            "acc_first": 0.8421052631578947
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.9438202247191011,
+          "lo": 0.8876404494382022,
+          "hi": 0.9887640449438202,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9285714285714286,
+          "lo": 0.8571428571428571,
+          "hi": 0.9821428571428571,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.8170506912442396,
+          "lo": 0.7497926267281104,
+          "hi": 0.873506144393241,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 59,
+            "necklace": 1,
+            "bracelet": 2
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 1,
+            "necklace": 0,
+            "bracelet": 12
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7830952380952381,
+            "acc_first": 0.9411764705882353
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8787878787878788,
+            "acc_first": 0.9090909090909091
+          }
+        }
+      }
+    },
+    "det+clip+clf_v1+clf_v2": {
+      "weights": {
+        "det": 1.0,
+        "clip": 1.0,
+        "clf_v1": 1.0,
+        "clf_v2": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8266666666666667,
+          "lo": 0.7333333333333333,
+          "hi": 0.9066666666666666,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8823529411764706,
+          "lo": 0.7843137254901961,
+          "hi": 0.9607843137254902,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6918032786885245,
+          "lo": 0.6060109289617487,
+          "hi": 0.7710655737704917,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 43,
+            "necklace": 2,
+            "bracelet": 2
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 10,
+            "bracelet": 2
+          },
+          "bracelet": {
+            "earring": 3,
+            "necklace": 2,
+            "bracelet": 9
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6543859649122806,
+            "acc_first": 0.9
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7666666666666666,
+            "acc_first": 0.8421052631578947
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.898876404494382,
+          "lo": 0.8314606741573034,
+          "hi": 0.9550561797752809,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9107142857142857,
+          "lo": 0.8388392857142858,
+          "hi": 0.9821428571428571,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.8036098310291857,
+          "lo": 0.7338709677419354,
+          "hi": 0.8627630568356374,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 55,
+            "necklace": 4,
+            "bracelet": 3
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 1,
+            "necklace": 0,
+            "bracelet": 12
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6363636363636364,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7622619047619048,
+            "acc_first": 0.9117647058823529
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8787878787878788,
+            "acc_first": 0.9090909090909091
+          }
+        }
+      }
+    },
+    "knn+clip+clf_v1+clf_v2": {
+      "weights": {
+        "knn": 1.0,
+        "clip": 1.0,
+        "clf_v1": 1.0,
+        "clf_v2": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8266666666666667,
+          "lo": 0.7333333333333333,
+          "hi": 0.9066666666666666,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8627450980392157,
+          "lo": 0.7647058823529411,
+          "hi": 0.9416666666666662,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6901639344262296,
+          "lo": 0.609275956284153,
+          "hi": 0.7715846994535519,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 42,
+            "necklace": 1,
+            "bracelet": 4
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 10,
+            "bracelet": 2
+          },
+          "bracelet": {
+            "earring": 3,
+            "necklace": 1,
+            "bracelet": 10
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6412280701754385,
+            "acc_first": 0.8666666666666667
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7866666666666666,
+            "acc_first": 0.8421052631578947
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.9325842696629213,
+          "lo": 0.8764044943820225,
+          "hi": 0.9775280898876404,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9285714285714286,
+          "lo": 0.8571428571428571,
+          "hi": 0.9821428571428571,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.8210829493087557,
+          "lo": 0.7578869047619047,
+          "hi": 0.8756182795698924,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 57,
+            "necklace": 4,
+            "bracelet": 1
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 0,
+            "necklace": 0,
+            "bracelet": 13
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.764345238095238,
+            "acc_first": 0.9117647058823529
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.9242424242424242,
+            "acc_first": 0.9545454545454546
+          }
+        }
+      }
+    },
+    "det+knn+clip+clf_v1+clf_v2": {
+      "weights": {
+        "det": 1.0,
+        "knn": 1.0,
+        "clip": 1.0,
+        "clf_v1": 1.0,
+        "clf_v2": 1.0
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8266666666666667,
+          "lo": 0.7333333333333333,
+          "hi": 0.9066666666666666,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.8823529411764706,
+          "lo": 0.7843137254901961,
+          "hi": 0.9607843137254902,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.6918032786885245,
+          "lo": 0.6060109289617487,
+          "hi": 0.7710655737704917,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 43,
+            "necklace": 0,
+            "bracelet": 4
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 10,
+            "bracelet": 2
+          },
+          "bracelet": {
+            "earring": 4,
+            "necklace": 1,
+            "bracelet": 9
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6543859649122806,
+            "acc_first": 0.9
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7666666666666666,
+            "acc_first": 0.8421052631578947
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.9325842696629213,
+          "lo": 0.8764044943820225,
+          "hi": 0.9775280898876404,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9285714285714286,
+          "lo": 0.8571428571428571,
+          "hi": 0.9821428571428571,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.8170506912442396,
+          "lo": 0.7497926267281104,
+          "hi": 0.873506144393241,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 58,
+            "necklace": 2,
+            "bracelet": 2
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 1,
+            "necklace": 0,
+            "bracelet": 12
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7830952380952381,
+            "acc_first": 0.9411764705882353
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.8787878787878788,
+            "acc_first": 0.9090909090909091
+          }
+        }
+      }
+    },
+    "fused_grid": {
+      "weights": {
+        "knn": 1,
+        "clip": 1,
+        "clf_v1": 0.5,
+        "clf_v2": 1
+      },
+      "tune": {
+        "item_acc": {
+          "mean": 0.8533333333333334,
+          "lo": 0.7733333333333333,
+          "hi": 0.92,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.9019607843137255,
+          "lo": 0.8235294117647058,
+          "hi": 0.9803921568627451,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.7147540983606557,
+          "lo": 0.6321857923497267,
+          "hi": 0.7929098360655739,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 43,
+            "necklace": 0,
+            "bracelet": 4
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 10,
+            "bracelet": 2
+          },
+          "bracelet": {
+            "earring": 3,
+            "necklace": 0,
+            "bracelet": 11
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5452380952380952,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666665,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6543859649122806,
+            "acc_first": 0.9
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.8366666666666667,
+            "acc_first": 0.8947368421052632
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.9325842696629213,
+          "lo": 0.8764044943820225,
+          "hi": 0.9775280898876404,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.9285714285714286,
+          "lo": 0.8571428571428571,
+          "hi": 0.9821428571428571,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.8210829493087557,
+          "lo": 0.7578869047619047,
+          "hi": 0.8756182795698924,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 57,
+            "necklace": 3,
+            "bracelet": 2
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 13,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 0,
+            "necklace": 0,
+            "bracelet": 13
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6666666666666666,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.764345238095238,
+            "acc_first": 0.9117647058823529
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.9242424242424242,
+            "acc_first": 0.9545454545454546
+          }
+        }
+      }
+    },
+    "stack_lr": {
+      "weights": null,
+      "tune": {
+        "item_acc": {
+          "mean": 0.8933333333333333,
+          "lo": 0.8133333333333334,
+          "hi": 0.96,
+          "n": 75
+        },
+        "photo_acc_first": {
+          "mean": 0.9411764705882353,
+          "lo": 0.8627450980392157,
+          "hi": 1.0,
+          "n": 51
+        },
+        "item_category_f1": {
+          "mean": 0.7291438979963568,
+          "lo": 0.6542577413479053,
+          "hi": 0.804011839708561,
+          "n": 61
+        },
+        "confusion": {
+          "earring": {
+            "earring": 46,
+            "necklace": 1,
+            "bracelet": 0
+          },
+          "necklace": {
+            "earring": 2,
+            "necklace": 12,
+            "bracelet": 0
+          },
+          "bracelet": {
+            "earring": 5,
+            "necklace": 0,
+            "bracelet": 9
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 2,
+            "f1": 0.5,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 14,
+            "f1": 0.5769841269841269,
+            "acc_first": 1.0
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.4444444444444445,
+            "acc_first": null
+          },
+          "pendant": {
+            "n": 1,
+            "f1": 0.8,
+            "acc_first": null
+          },
+          "blur": {
+            "n": 4,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "low_light": {
+            "n": 1,
+            "f1": 0.0,
+            "acc_first": null
+          },
+          "multi_item": {
+            "n": 38,
+            "f1": 0.6967836257309942,
+            "acc_first": 0.9666666666666667
+          },
+          "no_tag": {
+            "n": 20,
+            "f1": 0.7999999999999999,
+            "acc_first": 0.8947368421052632
+          }
+        }
+      },
+      "holdout": {
+        "item_acc": {
+          "mean": 0.8651685393258427,
+          "lo": 0.7865168539325843,
+          "hi": 0.9438202247191011,
+          "n": 89
+        },
+        "photo_acc_first": {
+          "mean": 0.8571428571428571,
+          "lo": 0.7674107142857144,
+          "hi": 0.9464285714285714,
+          "n": 56
+        },
+        "item_category_f1": {
+          "mean": 0.7552227342549922,
+          "lo": 0.6741935483870968,
+          "hi": 0.8247369431643625,
+          "n": 62
+        },
+        "confusion": {
+          "earring": {
+            "earring": 57,
+            "necklace": 1,
+            "bracelet": 4
+          },
+          "necklace": {
+            "earring": 1,
+            "necklace": 12,
+            "bracelet": 1
+          },
+          "bracelet": {
+            "earring": 2,
+            "necklace": 3,
+            "bracelet": 8
+          }
+        },
+        "by_tag": {
+          "chain": {
+            "n": 4,
+            "f1": 0.6309523809523809,
+            "acc_first": null
+          },
+          "overlap": {
+            "n": 11,
+            "f1": 0.6363636363636364,
+            "acc_first": 0.8571428571428571
+          },
+          "hand_held": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "blur": {
+            "n": 1,
+            "f1": 0.6666666666666666,
+            "acc_first": 1.0
+          },
+          "multi_item": {
+            "n": 40,
+            "f1": 0.7872619047619047,
+            "acc_first": 0.9411764705882353
+          },
+          "no_tag": {
+            "n": 22,
+            "f1": 0.6969696969696969,
+            "acc_first": 0.7272727272727273
+          }
+        }
+      }
+    }
+  },
+  "selection": {
+    "honest_tune_acc": {
+      "legacy": 0.6266666666666667,
+      "det": 0.72,
+      "knn": 0.8133333333333334,
+      "clip": 0.5733333333333334,
+      "clf_v1": 0.76,
+      "clf_v2": 0.8133333333333334,
+      "det+knn": 0.8133333333333334,
+      "det+clip": 0.7733333333333333,
+      "det+clf_v1": 0.8,
+      "det+clf_v2": 0.8133333333333334,
+      "knn+clip": 0.8,
+      "knn+clf_v1": 0.7866666666666666,
+      "knn+clf_v2": 0.8,
+      "clip+clf_v1": 0.7733333333333333,
+      "clip+clf_v2": 0.8,
+      "clf_v1+clf_v2": 0.8133333333333334,
+      "det+knn+clip": 0.8,
+      "det+knn+clf_v1": 0.8133333333333334,
+      "det+knn+clf_v2": 0.8,
+      "det+clip+clf_v1": 0.8,
+      "det+clip+clf_v2": 0.8,
+      "det+clf_v1+clf_v2": 0.8,
+      "knn+clip+clf_v1": 0.8,
+      "knn+clip+clf_v2": 0.84,
+      "knn+clf_v1+clf_v2": 0.8133333333333334,
+      "clip+clf_v1+clf_v2": 0.8133333333333334,
+      "det+knn+clip+clf_v1": 0.8266666666666667,
+      "det+knn+clip+clf_v2": 0.8133333333333334,
+      "det+knn+clf_v1+clf_v2": 0.8266666666666667,
+      "det+clip+clf_v1+clf_v2": 0.8266666666666667,
+      "knn+clip+clf_v1+clf_v2": 0.8266666666666667,
+      "det+knn+clip+clf_v1+clf_v2": 0.8266666666666667,
+      "fused_grid": 0.8533333333333334,
+      "stack_lr": 0.7733333333333333
+    },
+    "best_equal_weight": "knn+clip+clf_v2",
+    "rule": "max honest tune item acc; grid needs > 1 item margin over best equal-weight"
+  },
+  "winner": "knn+clip+clf_v2"
+}

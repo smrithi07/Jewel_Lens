@@ -27,10 +27,15 @@ def load_embedder():
 
 def embed_image(image):
     """image: PIL Image (RGB). Returns a normalized 1D numpy vector."""
+    return embed_image_with_raw(image)[0]
+
+
+def embed_image_with_raw(image):
+    """Same forward pass; returns (L2-normalised vector, raw CLS vector)."""
     processor, model = load_embedder()
     inputs = processor(images=image, return_tensors="pt")
     with torch.no_grad():
         outputs = model(**inputs)
-    embedding = outputs.last_hidden_state[:, 0, :].numpy()[0]  # CLS token
-    embedding = embedding / (np.linalg.norm(embedding) + 1e-8)  # L2 normalize, matches catalogue index
-    return embedding.astype("float32")
+    raw = outputs.last_hidden_state[:, 0, :].numpy()[0].astype("float32")  # CLS token
+    embedding = raw / (np.linalg.norm(raw) + 1e-8)  # L2 normalize, matches catalogue index
+    return embedding.astype("float32"), raw

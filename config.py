@@ -33,6 +33,12 @@ TARGET_PER_SUBTYPE = 160
 TARGET_PER_COLOR = 65
 
 RAW_IMAGE_DIR = "data/raw"
+
+# --- Prices (v2): Shopify products.json returns each store's own currency. Converted to INR at load
+# time in src/pipeline/filter.py; the metadata parquet keeps the original values. Fixed rates — update
+# them before a demo. Price <= 0 is treated as unknown.
+SHOP_CURRENCY = {"evryjewels.com": "USD", "missoma.com": "GBP"}   # every other store lists in INR
+CURRENCY_TO_INR = {"INR": 1.0, "USD": 88.0, "GBP": 117.0}         # approximate, set 2026-10-12
 CATALOGUE_METADATA_PATH = "data/catalogue_metadata.parquet"
 
 FAISS_INDEX_PATH = "indices/catalogue.faiss"
@@ -50,7 +56,6 @@ PHASH_THRESHOLD = 5   # Hamming distance; lower = stricter match
 DEDUP_LOG_PATH = "data/dedup_log.csv"
 
 SIMILARITY_THRESHOLD = 0.5
-MARGIN_THRESHOLD = 0.05
 
 DETECTION_PROMPTS = ["earring", "necklace", "bracelet"]
 DETECTION_PROMPT_TEMPLATES = {
@@ -67,9 +72,23 @@ CLASSIFIER_TEST_SIZE = 0.15
 RERANK_BOOST_WEIGHT = 0.08   # additive boost to cosine sim for category-matching candidates
 RERANK_MIN_CONFIDENCE = 0.4  # below this, classifier's vote isn't trusted enough to matter
 
-HIGH_MATCH_THRESHOLD = 0.65
-LOW_MATCH_THRESHOLD = 0.45
-MARGIN_THRESHOLD = 0.03   # top1 - top2 gap; below this, top1 isn't a confident winner
+# --- Phase 4 (v2): fused category ---
+# "legacy" = v1 behaviour (classifier fed the L2-normalised embedding; detector label shown in the UI)
+# "fused"  = src/pipeline/category.py (weights in CATEGORY_V2_DIR/fusion.json) used for re-rank and display
+CATEGORY_MODE = "fused"
+CATEGORY_V2_DIR = "artifacts/category_v2"
+
+# --- Phase 8 (v2): calibrated decision thresholds (src/eval/calibrate.py, results/phase8_calibration.json) ---
+# v1 hand-set values were 0.65 / 0.45 / 0.03. Scores are post-re-rank top-1 scores (cosine + category boost).
+HIGH_MATCH_THRESHOLD = 0.74   # "Closest matches" tier: P(grade >= 2) >= 0.9 on tune photos (holdout check 1.00)
+LOW_MATCH_THRESHOLD = 0.475   # no_match below this; set for a 2.5% false-reject budget on tune positive photos
+MARGIN_THRESHOLD = 0.0        # top1 - top2 gap did not improve "match" precision on tune, so it is not used
+OOS_THRESHOLD = 0.813         # CLIP out-of-scope probability above this -> no_match (2.5% false-reject budget)
+OPENSET_DIR = "artifacts/openset"
+# MMR diversity re-rank over the top 20; 1.0 = off. Per endpoint (Phase 8): it helped catalogue-to-catalogue
+# retrieval (val nDCG@5 +0.016) but hurt photo search (own-photo holdout nDCG@5 -0.093, tune -0.039).
+MMR_LAMBDA_PREDICT = 1.0      # /predict (photo search): off
+MMR_LAMBDA_SIMILAR = 0.7      # /similar ("more like this")
 # --- Shopify backup source ---
 SHOPIFY_STORE_DOMAINS = [
     # "jokerandwitch.com",
